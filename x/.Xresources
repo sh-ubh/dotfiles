@@ -1,0 +1,70 @@
+URxvt.urgentOnBell: off
+URxvt.visualBell: false
+URxvt.iso14755: false
+URxvt.iso14755_52: off
+URxvt.meta8: false
+URxvt.depth: 32
+URxvt.metaSendsEscape: true
+
+URxvt.scrollBar: off
+URxvt.cursorBlink: true
+URxvt.cursorUnderline: true
+URxvt.saveLines: 10000
+URxvt.scrollTtyOutput:   false
+URxvt.scrollWithBuffer:  true
+URxvt.scrollTtyKeypress: true
+
+URxvt.font: xft:Hermit:style=medium:pixelsize=12, xft:DejaVu Sans Mono:pixelsize:12
+URxvt.letterSpace: 1
+urxvt*termName: rxvt
+urxvt*scrollBar: false
+urxvt*matcher.button: 1
+urxvt.transparent: false
+!urxvt.boldFont:
+Xft*dpi: 96
+Xft*antialias: true
+Xft*hinting: true
+Xft*hintstyle: hintfull
+URxvt*cursorUnderline:  true
+Xft*rgba: rgb
+URxvt*geometry: 85x20
+*internalBorder: 10
+URxvt*fading: 0
+URxvt*tintColor: #ffffff
+URxvt*shading: 0
+URxvt*inheritPixmap: False
+
+URxvt.foreground: #839496
+URxvt.background: #09090d
+URxvt.cursor:  #839496
+URxvt.color0: #353540
+URxvt.color8: #545466
+URxvt.color1: #8c5760
+URxvt.color9: #b26f7a
+URxvt.color2: #7b8c58
+URxvt.color10: #9db270
+URxvt.color3: #8c6e43
+URxvt.color11: #b28c55
+URxvt.color4: #58698c
+URxvt.color12: #7086b2
+URxvt.color5: #7b5e7d
+URxvt.color13: #9c77b2
+URxvt.color6: #66808c
+URxvt.color14: #82a2b2
+URxvt.color7: #8c8b8b
+URxvt.color15: #b8b8c8
+!#include "/home/ssaini/.cache/wal/colors.Xresources"
+
+! Perls
+URxvt.perl-ext-common : default,matcher,keyboard-select,url-select
+
+URxvt.keysym.M-Escape          	: perl:keyboard-select:activate
+URxvt.keysym.M-u           	: perl:url-select:select_next
+URxvt.keysym.M-s           	: perl:keyboard-select:search
+!URxvt.perl-ext-common     	: tabbed,default,matcher
+!Urxvt.perl-lib            	: /usr/lib/urxvt/perl/
+URxvt.url-select.launcher  	: firefox
+URxvt.url-select.autocopy  	: true
+URxvt.url-select.underline 	: true
+URxvt.url-select.button:   1
+

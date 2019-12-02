@@ -1,0 +1,84 @@
+[global]
+    # Make the width 3740 (3840 - 100), have 50 left margin and 95 above
+    geometry = "350x5-10+38"
+    monitor = 0
+    follow = keyboard
+    indicate_hidden = yes
+    shrink = yes
+    transparency = 10
+    notification_height = 0
+    # Show multiple notifications in the same box
+    separator_height = 2
+    separator_color = frame
+    sort = yes
+
+    # Add vertical padding to the inside of the notification
+    padding = 14
+
+    # Add horizontal padding for when the text gets long enough
+    horizontal_padding = 14
+
+    # The frame color and width of the notification
+    frame_color = "#0f161f"
+    frame_width = 2
+    line_height = 0
+
+    # How long a user needs to be idle for sticky notifications
+    idle_threshold = 120
+
+    # Font and typography settings
+    icon_path = /usr/share/icons/Papirus/48x48/status/:/usr/share/icons/Papirus/48x48/devices/:/usr/share/icons/Papirus/48x48/apps
+    font = Hermit 10
+    alignment = center
+    show_age_threshold = 60
+    ellipsize = middle
+    ignore_newline = no
+    stack_duplicates = true
+    hide_duplicate_count = true
+    show_indicators = yes
+    icon_position = left
+    max_icon_size = 40
+    sticky_history = yes
+    history_length = 20
+    dmenu = /usr/bin/dmenu -p dunst:
+    browser = /usr/bin/firefox -new-tab
+
+    # Always run rule-defined scripts, even if the notification is suppressed
+    always_run_script = true
+
+    title = Dunst
+    class = Dunst
+    startup_notification = false
+    force_xinerama = false
+    word_wrap = yes
+
+    # Format for how notifications will be displayed
+    # Usage: `notify-send 'Title' 'Summary'`
+    format = "<b>%s</b>: %b"
+
+    # Allow some HTML tags like <i> and <u> in notifications
+    markup = full
+
+# These are the keybindings used to control dunst notifications
+[shortcuts]
+    close = ctrl+space
+    close_all = ctrl+shift+space
+    history = ctrl+grave
+
+# Set the background and foreground (text) color for all notifications
+[urgency_low]
+background = "#09090d"
+foreground = "#839496"
+timeout = 5
+
+[urgency_normal]
+background = "#09090d"
+foreground = "#839496"
+timeout = 5
+
+[urgency_critical]
+background = "#09090d"
+foreground = "#8c5780"
+timeout = 0
+# vim:ft=cfg
+

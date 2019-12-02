@@ -1,0 +1,201 @@
+[settings]
+screenchange-reload = true
+
+[colors]
+#background = ${xrdb:color0:#222}
+background = ${xrdb:background:#09090d}
+background-alt = ${xrdb:color0:#000}
+;foreground = ${xrdb:color7:#222}
+foreground = ${xrdb:foreground:#dfdfdf}
+foreground-alt = ${xrdb:colorBD:#444}
+primary = ${xrdb:color4:#ffb52a}
+secondary = ${xrdb:color3:#e60053}
+alert = ${xrdb:color1:#bd2c40}
+
+[bar/top]
+;monitor = ${env:MONITOR:HDMI-1}
+width = 100%
+height = 20
+;offset-x = 1%
+;offset-y = 1%
+radius = 0
+fixed-center = false
+bottom = false
+background = ${colors.background}
+foreground = ${colors.foreground}
+line-size = 3
+line-color = #f00
+border-size = 0
+border-color = #00000000
+padding-left = 2
+padding-right = 2
+module-margin-left = 1.5
+module-margin-right = 1.5
+font-0 = Hermit:style=medium:pixelsize=10;1
+font-1 = Font Awesome:style=Regular:size=10;0
+font-2 = fixed:pixelsize=10;1
+font-3 = unifont:fontformat=truetype:size=15:antialias=false;0
+font-4 = siji:pixelsize=10;1 
+modules-left = pulseaudio battery date time bspwm
+modules-center = 
+modules-right = spotify cmus xwindow
+tray-position = right
+cursor-click = pointer
+cursor-scroll = ns-resize
+
+[module/xwindow]
+type = internal/xwindow
+label = %title:0:20:...%
+
+
+[module/bspwm]
+type = internal/bspwm
+format = <label-state> <label-mode>
+index-sort = true
+wrapping-scroll = false
+
+; Only show workspaces on the same output as the bar
+pin-workspaces = true
+
+ws-icon-0 = term;
+ws-icon-1 = web;
+ws-icon-2 = music;ﱘ
+ws-icon-3 = files;
+ws-icon-4 = code;
+ws-icon-5 = virt;ﮊ
+ws-icon-6 = chat;
+ws-icon-7 = game;戮
+ws-icon-default = 
+
+label-focused = %name%
+label-focused-foreground = ${xrdb:color4:#8c5760}
+label-focused-padding = 1
+;label-focused-font = 10
+
+label-occupied = %name%
+label-occupied-foreground = ${xrdb:color15:#839496}
+label-occupied-padding = 1
+
+label-empty = 
+label-empty-foreground = ${xrdb:color1:#bd2c40}
+label-empty-padding = 1
+
+; urgent = Workspace with urgency hint set
+label-urgent = 
+label-urgent-foreground = ${xrdb:color1:#bd2c40}
+label-urgent-padding = 1
+
+; Separator in between workspaces
+;label-separator = |
+
+[module/wlan]
+type = internal/network
+interface = wlo1
+interval = 3.0
+format-connected = <label-connected>
+label-connected =  %essid%
+label-font = 1
+label-connected-background = ${colors.background}
+label-connected-padding = 0
+format-disconnected =
+
+[module/eth]
+type = internal/network
+interface = eno1
+interval = 3.0
+format-connected-underline = ${xrdb:color11:#55aa55}
+;format-connected-prefix = 
+format-connected-prefix-foreground = ${colors.foreground-alt}
+label-connected =  %local_ip% ↑%upspeed% ↓%downspeed%
+format-disconnected =
+
+[module/time]
+type = internal/date
+interval = 1.0
+date = %I:%M %p
+
+[module/date]
+type = internal/date
+date = %a, %d %b
+label = %date%
+
+[module/battery]
+type = internal/battery
+battery = BAT0
+adapter = ADP1
+poll-interval = 1
+full-at = 98
+label-discharging = %percentage%%
+label-charging = %percentage%%
+label-full = %percentage%%
+format-discharging = <ramp-capacity> <label-discharging>
+format-full = <ramp-capacity> <label-full>
+format-charging =  <label-charging>
+ramp-capacity-0 = 
+ramp-capacity-1 = 
+ramp-capacity-2 = 
+ramp-capacity-3 = 
+ramp-capacity-4 = 
+
+[module/pulseaudio]
+type = internal/pulseaudio
+format-volume = <ramp-volume> <label-volume>
+label-volume = %percentage%%
+label-muted =  muted
+ramp-volume-0 = 
+ramp-volume-1 = 
+ramp-volume-2 = 
+
+[module/spotify]
+type = custom/script
+interval = 1
+format-prefix = " "
+format = <label>
+format-foreground = #7b8c58
+exec = python ~/.config/polybar/spotify.py -f '{artist}: {song}'
+
+[module/cmus]
+type = custom/script
+exec = ~/.config/polybar/cmus.sh
+exec-if = pgrep -x cmus
+interval = 1
+click-left = cmus-remote --next
+click-right = cmus-remote --prev
+click-middle = cmus-remote --pause
+scroll-up = cmus-remote --volume +5%
+scroll-down = cmus-remote --volume -5%
+format = <label>
+format-prefix = " "
+format-foreground = #7b8c58
+label = %output%
+label-maxlen = 50
+
+[module/mpd]
+type = internal/mpd
+label-offline = mpd is offline
+format-online = <label-song> <icon-prev> <toggle> <icon-next> 
+format-offline = <label-offline>
+host = 127.0.0.1
+port = 6600
+icon-prev = 
+icon-stop = 
+icon-play = 
+icon-pause = 
+icon-next = 
+label-song-maxlen = 25
+label-song-ellipsis = true
+bar-progress-width = 10
+bar-progress-indicator = |
+bar-progress-fill = ─
+bar-progress-empty = ─
+
+[module/backlight]
+type = internal/backlight
+; Use the following command to list available cards:
+; $ ls -1 /sys/class/backlight/
+card = intel_backlight
+format = <ramp> <label>
+label = %percentage%%
+ramp-0 = 
+ramp-1 = 
+ramp-2 = 
