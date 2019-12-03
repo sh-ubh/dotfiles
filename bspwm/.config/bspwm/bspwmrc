@@ -2,8 +2,10 @@
 
 sxhkd &
 dunst &
+xset b off &
 unclutter &
-xss-lock /home/ssaini/.config/lock.sh &
+light-locker &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 compton --config ~/.config/compton.conf &
 ~/.config/bat_check.sh &
 redshift -l 13.082680:80.270718 &

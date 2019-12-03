@@ -28,9 +28,9 @@ super + Escape
 #
 # bspwm hotkeys
 super + shift + w 
- 	/opt/brave-v1.3.43-linux-x64/brave	
+ 	brave	
 control + alt + l
-	/home/ssaini/.config/lock.sh
+	light-locker-command -l
 super + shift + f
 	pcmanfm
 Print

@@ -61,6 +61,4 @@ if [ "$2" = "nvidia" ]; then
 	xrandr --auto
 fi
 
-
-xsetroot -cursor_name left_ptr &
-exec ck-launch-session dbus-launch --sh-syntax --exit-with-x11 bspwm
+exec bspwm

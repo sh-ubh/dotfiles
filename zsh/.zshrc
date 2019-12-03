@@ -5,7 +5,8 @@
 export ZSH="/home/ssaini/.oh-my-zsh"
 export VISUAL=nvim
 export EDITOR="$VISUAL"
-export BROWSER=/opt/brave-v1.3.43-linux-x64/brave
+export BROWSER=brave
+export PATH=$PATH:$HOME/.local/bin
 export XDG_CURRENT_DESKTOP=bspwm
 
 # Set name of the theme to load --- if set to "random", it will
@@ -74,7 +75,7 @@ SPACESHIP_PROMPT_ADD_NEWLINE=false
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sudo extract python common-aliases) 
+plugins=(git sudo archlinux extract python common-aliases) 
 
 source $ZSH/oh-my-zsh.sh
 
@@ -106,26 +107,21 @@ source $ZSH/oh-my-zsh.sh
 alias key="vim $HOME/.config/sxhkd/sxhkdrc"
 alias wm="vim ~/.config/bspwm/bspwmrc"
 alias f="ranger"
-alias xi="sudo xbps-install "
-alias xr="sudo xbps-remove -R "
-alias xu="sudo xbps-install -Syu "
-alias xo="sudo xbps-remove -o"
-alias xob="sudo xbps-remove -O"
 alias bb="cat /proc/acpi/bbswitch"
-alias ncu="sudo nmcli connection up "
-alias ncd="sudo nmcli connection down "
+alias ncu="nmcli connection up "
+alias ncd="nmcli connection down "
 alias pg="ping google.com"
 alias py="/bin/python"
 alias pubip="curl ipinfo.io/ip"
+alias mirror="sudo reflector --verbose --latest 5 --sort rate --save /etc/pacman.d/mirrorlist"
 alias k="pkill "
 alias m="cmus"
 alias vimrc="vim $HOME/.config/nvim/init.vim"
 alias poly="vim $HOME/.config/polybar/config"
-alias todo="cat ~/Projects/todo"
 alias z="zathura"
 alias v="/usr/bin/nvim"
+alias vim="/usr/bin/nvim"
 alias site="cd ~/Projects/site/"
-alias mt="udisksctl mount -b /dev/sda5"
 alias sudo="sudo "
 
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh

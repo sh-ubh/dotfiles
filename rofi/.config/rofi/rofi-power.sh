@@ -21,16 +21,16 @@ then
         eval $1
         ;;
       Reboot)
-        sudo reboot
+        reboot
         ;;
       Shut-down)
-        sudo poweroff
+        poweroff
         ;;
       Suspend)
-	sudo zzz
+	suspend
         ;;
       Lock)
-        /home/ssaini/.config/lock.sh
+        light-locker-command -l
         ;;
       *)
         ;;
