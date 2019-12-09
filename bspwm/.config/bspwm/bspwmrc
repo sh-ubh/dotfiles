@@ -7,7 +7,7 @@ unclutter &
 light-locker &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 compton --config ~/.config/compton.conf &
-~/.config/bat_check.sh &
+~/scrypts/bat_check.sh &
 redshift -l 13.082680:80.270718 &
 xbacklight -set 30 & 
 feh --bg-fill ~/Pictures/mountains.jpg  &
