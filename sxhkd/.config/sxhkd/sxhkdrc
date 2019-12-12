@@ -35,6 +35,8 @@ super + shift + f
 	pcmanfm
 Print
 	scrot
+ctrl + Print
+	scrot 
 super + x
 	~/.config/rofi/rofi-power.sh
 super + shift + p
@@ -155,4 +157,4 @@ XF86Audio{Play,Next,Prev}
 
 #light
 XF86MonBrightness{Down,Up}
-	xbacklight {-dec 5,-inc 5}
+	xbacklight {-dec 3,-inc 3}
