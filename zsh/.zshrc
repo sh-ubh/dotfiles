@@ -5,7 +5,7 @@
 export ZSH="/home/ssaini/.oh-my-zsh"
 export VISUAL=nvim
 export EDITOR="$VISUAL"
-export BROWSER=brave
+export BROWSER=firefox
 export PATH=$PATH:$HOME/.local/bin
 export XDG_CURRENT_DESKTOP=bspwm
 
@@ -13,7 +13,7 @@ export XDG_CURRENT_DESKTOP=bspwm
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="gianu"
+ZSH_THEME="takashiyoshida"
 SPACESHIP_CHAR_SYMBOL=" "
 SPACESHIP_PROMPT_ADD_NEWLINE=false
 
