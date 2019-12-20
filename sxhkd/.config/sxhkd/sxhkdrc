@@ -28,7 +28,7 @@ super + Escape
 #
 # bspwm hotkeys
 super + shift + w 
- 	firefox
+ 	brave-beta
 control + alt + l
 	light-locker-command -l
 super + shift + f
