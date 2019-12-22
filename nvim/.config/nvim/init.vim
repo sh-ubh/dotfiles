@@ -126,7 +126,7 @@ let g:airline_theme='molokai'
 set guicursor=
 set mouse=a
 syntax on
-"set cursorline
+set cursorline
 set smartcase
 set wildmenu                                      " Tab autocomplete in command mode
 set autoread                                      " Auto reload changed files
