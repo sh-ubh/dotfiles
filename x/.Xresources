@@ -14,8 +14,8 @@ URxvt.scrollTtyOutput:   false
 URxvt.scrollWithBuffer:  true
 URxvt.scrollTtyKeypress: true
 
-URxvt.font: xft:mononoki:pixelsize=12.5, xft:DejaVu Sans Mono:pixelsize:12.5
-!URxvt.letterSpace: 1
+URxvt.font: xft:Hermit:pixelsize=12, xft:DejaVu Sans Mono:pixelsize:12
+URxvt.letterSpace: 1
 urxvt*termName: rxvt
 urxvt*scrollBar: false
 urxvt*matcher.button: 1

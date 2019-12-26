@@ -31,7 +31,7 @@ padding-left = 2
 padding-right = 2
 module-margin-left = 1.5
 module-margin-right = 1.5
-font-0 = mononoki:style=medium:pixelsize=11;1
+font-0 = Hermit:style=medium:pixelsize=10;1
 font-1 = SauceCodePro Nerd Font:style=medium:pixelsize=10;1
 font-2 = FontAwesome5Free:style=Solid:size=10;1
 font-3 = FontAwesome5Free:style=Regular:size=10;1
