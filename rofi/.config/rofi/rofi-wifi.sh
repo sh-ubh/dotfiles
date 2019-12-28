@@ -9,7 +9,7 @@ FIELDS=SSID,SECURITY
 POSITION=5
 #YOFF=-40
 #XOFF=-120
-FONT="mononoki 12"
+FONT="Hermit 12"
 
 if [ -r "$DIR/config" ]; then
 	source ./config
