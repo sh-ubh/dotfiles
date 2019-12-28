@@ -3,11 +3,9 @@ set number relativenumber
 
 call plug#begin()
 "Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
-Plug 'iamcco/markdown-preview.nvim', { 'do': { -> mkdp#util#install() } }
 Plug 'Shougo/deol.nvim'
 Plug 'ap/vim-css-color'
 Plug 'luochen1990/rainbow'
-Plug 'zchee/deoplete-jedi'
 Plug 'tpope/vim-eunuch'
 Plug 'scrooloose/nerdtree'
 Plug 'junegunn/goyo.vim'
@@ -120,9 +118,13 @@ let g:airline_symbols.linenr = ''
 "let g:airline_theme='ubaryd'
 "let g:airline_theme='laederon'
 "let g:airline_theme='kolor'
-let g:airline_theme='molokai'
+let g:airline_theme='deus'
 "let g:airline_theme='powerlineish'
-"
+
+" nerdtree
+let g:NERDTreeWinPos = "right"
+map <C-n> :NERDTreeToggle<CR>
+
 set guicursor=
 set mouse=a
 syntax on
@@ -130,8 +132,3 @@ set cursorline
 set smartcase
 set wildmenu                                      " Tab autocomplete in command mode
 set autoread                                      " Auto reload changed files
-
-
-" mapping
-map <C-n> :NERDTreeToggle<CR>
-nmap <C-l> <Plug>MarkdownPreviewToggle
