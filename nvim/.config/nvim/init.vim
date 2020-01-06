@@ -17,6 +17,23 @@ Plug 'panozzaj/vim-autocorrect'
 Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
+set guicursor=
+set mouse=a
+set background=dark
+syntax on
+set cursorline
+set smartcase
+set wildmenu                                      " Tab autocomplete in command mode
+set autoread                                      " Auto reload changed files
+
+" Spaces & Tabs
+set tabstop=4       " number of visual spaces per TAB
+set softtabstop=4   " number of spaces in tab when editing
+set shiftwidth=4    " number of spaces to use for autoindent
+set expandtab       " tabs are space
+set autoindent
+set copyindent      " copy indent from the previous line
+
 " deoplete
 let g:deoplete#enable_at_startup = 1
 
@@ -114,21 +131,14 @@ let g:airline_symbols.linenr = ''
 "let g:airline_theme='badwolf'
 "let g:airline_theme='ravenpower'
 "let g:airline_theme='simple'
-"let g:airline_theme='term'
+let g:airline_theme='term'
 "let g:airline_theme='ubaryd'
 "let g:airline_theme='laederon'
 "let g:airline_theme='kolor'
-let g:airline_theme='deus'
+"let g:airline_theme='deus'
 "let g:airline_theme='powerlineish'
 
 " nerdtree
 let g:NERDTreeWinPos = "right"
 map <C-n> :NERDTreeToggle<CR>
 
-set guicursor=
-set mouse=a
-syntax on
-set cursorline
-set smartcase
-set wildmenu                                      " Tab autocomplete in command mode
-set autoread                                      " Auto reload changed files
