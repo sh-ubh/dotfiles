@@ -2,7 +2,10 @@ runtime! archlinux.vim
 set number relativenumber
 
 call plug#begin()
-"Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'Shougo/deoplete-clangx'
+Plug 'deoplete-plugins/deoplete-jedi'
+Plug 'deoplete-plugins/deoplete-zsh'
 Plug 'Shougo/deol.nvim'
 Plug 'ap/vim-css-color'
 Plug 'luochen1990/rainbow'
