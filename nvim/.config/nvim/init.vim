@@ -144,4 +144,4 @@ let g:airline_theme='term'
 " nerdtree
 let g:NERDTreeWinPos = "right"
 map <C-n> :NERDTreeToggle<CR>
-
+nnoremap <c-p> :FZF<CR>

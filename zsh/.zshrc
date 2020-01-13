@@ -73,7 +73,7 @@ ZSH_THEME="minimal"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sudo archlinux extract python common-aliases) 
+plugins=(git sudo archlinux extract python common-aliases autojump fzf) 
 
 source $ZSH/oh-my-zsh.sh
 
@@ -121,7 +121,6 @@ alias poly="vim $HOME/.config/polybar/config"
 alias z="zathura"
 alias v="/usr/bin/nvim"
 alias vim="/usr/bin/nvim"
-alias site="cd ~/Projects/site/"
 alias sudo="sudo "
 
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
