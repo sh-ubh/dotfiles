@@ -14,7 +14,9 @@ URxvt.scrollTtyOutput:   false
 URxvt.scrollWithBuffer:  true
 URxvt.scrollTtyKeypress: true
 
-URxvt.font: xft:Hermit:pixelsize=12, xft:DejaVu Sans Mono:pixelsize:12
+URxvt.font: xft:Hermit:style=Medium:size=9.5:antialias=true,xft:DejaVu Sans Mono:size=9.5:style=Medium:antialias=true 
+URxvt.boldFont: xft:Hermit:size=9.5:style=Bold:antialias=true
+URxvt.italicFont: xft:Hermit:size=9.5:style=Italic:antialias=true
 URxvt.letterSpace: 1
 urxvt*termName: rxvt
 urxvt*scrollBar: false
@@ -28,7 +30,7 @@ Xft*hintstyle: hintfull
 URxvt*cursorUnderline:  true
 Xft*rgba: rgb
 URxvt*geometry: 85x20
-*internalBorder: 10
+*internalBorder: 15
 URxvt*fading: 0
 URxvt*tintColor: #ffffff
 URxvt*shading: 0
