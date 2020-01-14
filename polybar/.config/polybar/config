@@ -3,10 +3,10 @@ screenchange-reload = true
 
 [colors]
 #background = ${xrdb:color0:#222}
-background = ${xrdb:background:#09090d}
+background = ${xrdb:background:#161719}
 background-alt = ${xrdb:color0:#000}
 ;foreground = ${xrdb:color7:#222}
-foreground = ${xrdb:foreground:#dfdfdf}
+foreground = ${xrdb:foreground:#c5c8c6}
 foreground-alt = ${xrdb:colorBD:#444}
 primary = ${xrdb:color4:#ffb52a}
 secondary = ${xrdb:color3:#e60053}
@@ -68,12 +68,13 @@ ws-icon-7 = game;戮
 ws-icon-default = 
 
 label-focused = %name%
-label-focused-foreground = ${xrdb:color4:#8c5760}
+label-focused-foreground = ${xrdb:color12:#ffd7b1}
 label-focused-padding = 1
 ;label-focused-font = 10
 
 label-occupied = %name%
-label-occupied-foreground = ${xrdb:color15:#839496}
+;label-occupied-foreground = ${xrdb:color15:#85befd}
+label-occupied-foreground = #5e5c5c
 label-occupied-padding = 1
 
 label-empty = 

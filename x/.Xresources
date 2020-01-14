@@ -33,26 +33,46 @@ URxvt*fading: 0
 URxvt*tintColor: #ffffff
 URxvt*shading: 0
 URxvt*inheritPixmap: False
-
-URxvt.foreground: #839496
-URxvt.background: #09090d
-URxvt.cursor:  #839496
-URxvt.color0: #353540
-URxvt.color8: #545466
-URxvt.color1: #8c5760
-URxvt.color9: #b26f7a
-URxvt.color2: #7b8c58
-URxvt.color10: #9db270
-URxvt.color3: #8c6e43
-URxvt.color11: #b28c55
-URxvt.color4: #58698c
-URxvt.color12: #7086b2
-URxvt.color5: #7b5e7d
-URxvt.color13: #9c77b2
-URxvt.color6: #66808c
-URxvt.color14: #82a2b2
-URxvt.color7: #8c8b8b
-URxvt.color15: #b8b8c8
+*.foreground:  #c5c8c6
+*.background:  #161719
+*.cursorColor: #d0d0d0
+!
+! Black
+*.color0:      #000000
+*.color8:      #000000
+!
+! Red
+*.color1:      #d12121
+*.color9:      #d12121
+!
+! Green
+*.color2:      #87c38a
+*.color10:     #94fa36
+!
+! Yellow
+*.color3:      #ffd7b1
+*.color11:     #f5ffa8
+!
+! Blue
+*.color4:      #85befd
+*.color12:     #96cbfe
+!
+! Magenta
+*.color5:      #b9b6fc
+*.color13:     #b9b6fc
+!
+! Cyan
+*.color6:      #85befd
+*.color14:     #85befd
+!
+! White
+*.color7:      #e0e0e0
+*.color15:     #e0e0e0
+!
+! Bold, Italic, Underline
+*.colorBD:     #c5c8c6
+!*.colorIT:
+!*.colorUL:
 !#include "/home/ssaini/.cache/wal/colors.Xresources"
 
 ! Perls
