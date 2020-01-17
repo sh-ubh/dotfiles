@@ -5,7 +5,7 @@
 export ZSH="/home/ssaini/.oh-my-zsh"
 export VISUAL=nvim
 export EDITOR="$VISUAL"
-export BROWSER=brave-beta
+export BROWSER=firefox
 export PATH=$PATH:$HOME/.local/bin
 export XDG_CURRENT_DESKTOP=bspwm
 

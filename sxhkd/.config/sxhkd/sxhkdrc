@@ -10,7 +10,7 @@ super + @space
 	rofi -show drun -show-icons
 
 super + c
-	rofi -show calc -modi calc -no-show-match -no-sort
+    rofi -show calc -modi calc -no-show-match -no-sort -no-history
 super + i
 	~/.config/rofi/rofi-wifi.sh
 
