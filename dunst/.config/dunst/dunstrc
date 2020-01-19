@@ -1,6 +1,6 @@
 [global]
     # Make the width 3740 (3840 - 100), have 50 left margin and 95 above
-    geometry = "350x5-10+38"
+    geometry = "350x5-10+30"
     monitor = 0
     follow = keyboard
     indicate_hidden = yes
@@ -72,7 +72,7 @@ foreground = "#839496"
 timeout = 5
 
 [urgency_normal]
-background = "#09090d"
+background = "#0c0d0d"
 foreground = "#839496"
 timeout = 5
 
