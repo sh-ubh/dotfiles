@@ -1,0 +1,8 @@
+#!/bin/sh
+set -e
+printf "\033[0;35mSetting wlo1 down....\033[0m\n"
+sudo ip link set wlo1 down
+printf "\033[0;36mChanging MAC address....\033[0m\n"
+sudo macchanger -a wlo1
+printf "\033[0;32mEnjoy....\033[0m\n"
+
