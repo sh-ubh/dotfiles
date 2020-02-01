@@ -74,8 +74,8 @@ URxvt*inheritPixmap: False
 *.color15:      #d2d4de
 
 ! Perls
-URxvt.perl-ext-common : default,matcher,keyboard-select,url-select
-
+URxvt.perl-ext-common : default,matcher,keyboard-select,url-select,resize-font
+URxvt.resize-font.step: 1
 URxvt.keysym.M-Escape          	: perl:keyboard-select:activate
 URxvt.keysym.M-u           	: perl:url-select:select_next
 URxvt.keysym.M-s           	: perl:keyboard-select:search
