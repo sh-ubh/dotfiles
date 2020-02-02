@@ -1,5 +1,5 @@
 #!/bin/sh
-//whitelist escape
+#whitelist escape
 set -e
 printf "\033[0;35mSetting wlo1 down....\033[0m\n"
 sudo ip link set wlo1 down
