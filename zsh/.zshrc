@@ -13,7 +13,7 @@ export XDG_CURRENT_DESKTOP=bspwm
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="jaischeema"
+ZSH_THEME="theunraveler"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -73,7 +73,7 @@ ZSH_THEME="jaischeema"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sudo archlinux extract python common-aliases autojump fzf) 
+plugins=(git sudo extract python common-aliases autojump) 
 
 source $ZSH/oh-my-zsh.sh
 
@@ -106,15 +106,17 @@ alias key="vim $HOME/.config/sxhkd/sxhkdrc"
 alias wm="vim ~/.config/bspwm/bspwmrc"
 alias f="ranger"
 alias bb="cat /proc/acpi/bbswitch"
-alias nu="nmcli connection up "
-alias nt="nmtui-connect"
-alias nd="nmcli connection down "
+alias nu="sudo nmcli connection up "
+alias nt="sudo nmtui-connect"
+alias nd="sudo nmcli connection down "
+alias xi="sudo xbps-install -S "
+alias xu="sudo xbps-install -Syu"
+alias xr="sudo xbps-remove -R "
 alias pg="ping google.com"
 alias weather="curl wttr.in"
 alias py="/bin/python"
 alias py2="/bin/python2"
 alias pubip="curl ipinfo.io/ip"
-alias mirror="sudo reflector --verbose --latest 5 --sort rate --save /etc/pacman.d/mirrorlist"
 alias k="pkill "
 alias m="cmus"
 alias vimrc="vim $HOME/.config/nvim/init.vim"

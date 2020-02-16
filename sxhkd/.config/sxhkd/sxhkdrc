@@ -30,7 +30,7 @@ super + Escape
 super + shift + w 
  	firefox
 control + alt + l
-	light-locker-command -l
+	~/.local/bin/lock
 super + shift + f
 	pcmanfm
 Print
@@ -163,4 +163,4 @@ XF86Audio{Play,Next,Prev}
 
 #light
 XF86MonBrightness{Down,Up}
-	xbacklight {-dec 3,-inc 3}
+	light {-U 3,-A 3}
