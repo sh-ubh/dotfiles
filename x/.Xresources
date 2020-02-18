@@ -5,7 +5,6 @@ URxvt.iso14755_52: off
 URxvt.meta8: false
 URxvt.depth: 32
 URxvt.metaSendsEscape: true
-
 URxvt.scrollBar: off
 URxvt.cursorBlink: true
 URxvt.cursorUnderline: true
@@ -36,24 +35,26 @@ URxvt*tintColor: #ffffff
 URxvt*shading: 0
 URxvt*inheritPixmap: False
 
-*.foreground: #F8F8F2
-*.background: #121212
-*.color0:     #000000
-*.color8:     #4D4D4D
-*.color1:     #FF5555
-*.color9:     #FF6E67
-*.color2:     #50FA7B
-*.color10:    #5AF78E
-*.color3:     #F1FA8C
-*.color11:    #F4F99D
-*.color4:     #BD93F9
-*.color12:    #CAA9FA
-*.color5:     #FF79C6
-*.color13:    #FF92D0
-*.color6:     #8BE9FD
-*.color14:    #9AEDFE
-*.color7:     #BFBFBF
-*.color15:    #E6E6E6
+*background:    #0b0d12
+*foreground:	#b3b8c4
+
+*color0:	#3e4853
+*color1:	#b06a58
+*color2:	#95b47b
+*color3:	#e5c078
+*color4:	#58698c
+*color5:	#7b5e8d
+*color6:	#82a1b2
+*color7:	#cccaca
+
+*color8:	#525c67
+*color9:	#ba7e6c
+*color10:	#a9c88f
+*color11:	#f9d48c
+*color12:	#6c7da0
+*color13:	#8f72a1
+*color14:	#96b5c6
+*color15:	#e0dede
 
 ! Perls
 URxvt.perl-ext-common : default,matcher,keyboard-select,url-select,resize-font

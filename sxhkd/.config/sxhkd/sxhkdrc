@@ -163,4 +163,4 @@ XF86Audio{Play,Next,Prev}
 
 #light
 XF86MonBrightness{Down,Up}
-	light {-U 3,-A 3}
+	xbacklight {-dec 3,-inc 3}

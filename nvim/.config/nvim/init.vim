@@ -38,6 +38,8 @@ set copyindent      " copy indent from the previous line
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
+let g:python3_host_prog= '/bin/python3'
+let g:python_host_prog= '/bin/python2'
 
 " git gutter settings
 let g:gitgutter_override_sign_column_highlight = 0
