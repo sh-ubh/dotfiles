@@ -5,7 +5,7 @@ dunst &
 xset b off &
 xset s 600 &
 xbacklight -set 40 &
-xss-lock -- /home/ssaini/.local/bin/lock &
+xss-lock -- /home/ssaini/bin/lock &
 unclutter &
 compton --config ~/.config/compton.conf &
 ~/scrypts/bat_check.sh &
