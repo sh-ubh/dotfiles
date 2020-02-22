@@ -73,7 +73,7 @@ ZSH_THEME="michelebologna"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sudo extract python common-aliases autojump) 
+plugins=(git sudo extract python common-aliases archlinux fzf autojump) 
 
 source $ZSH/oh-my-zsh.sh
 
@@ -106,12 +106,9 @@ alias key="vim $HOME/.config/sxhkd/sxhkdrc"
 alias wm="vim ~/.config/bspwm/bspwmrc"
 alias f="ranger"
 alias bb="cat /proc/acpi/bbswitch"
-alias nu="sudo nmcli connection up "
-alias nt="sudo nmtui-connect"
-alias nd="sudo nmcli connection down "
-alias xi="sudo xbps-install -S "
-alias xu="sudo xbps-install -Syu"
-alias xr="sudo xbps-remove -R "
+alias nu="nmcli connection up "
+alias nt="nmtui-connect"
+alias nd="nmcli connection down "
 alias pg="ping google.com"
 alias weather="curl wttr.in"
 alias py="/bin/python"
@@ -125,6 +122,8 @@ alias z="zathura"
 alias v="/usr/bin/nvim"
 alias vim="/usr/bin/nvim"
 alias sudo="sudo "
+alias drctf="docker run --rm -v $PWD:/ctf --cap-add=SYS_PTRACE --security-opt seccomp=unconfined -d --name ctf -i ctf"
+alias dectf="docker exec -it ctf /bin/bash"
 
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -140,3 +139,4 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 # To add support for TTYs this line can be optionally added.
 #source ~/.cache/wal/colors-tty.sh
+

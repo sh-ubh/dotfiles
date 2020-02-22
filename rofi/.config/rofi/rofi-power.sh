@@ -21,10 +21,10 @@ then
         eval $1
         ;;
       Reboot)
-        sudo reboot
+        reboot
         ;;
       Shut-down)
-        sudo poweroff
+        poweroff
         ;;
       Suspend)
 	suspend

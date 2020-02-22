@@ -41,4 +41,4 @@ if [ -n "$DISPLAY" ]; then
 fi
 
 xsetroot -cursor_name left_ptr
-exec dbus-launch --sh-syntax --exit-with-x11 bspwm
+exec dbus-launch bspwm

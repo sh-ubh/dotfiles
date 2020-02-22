@@ -1,0 +1,553 @@
+[    45.546] (WW) Failed to open protocol names file lib/xorg/protocol.txt
+[    45.547] 
+X.Org X Server 1.20.7
+X Protocol Version 11, Revision 0
+[    45.547] Build Operating System: Linux Arch Linux
+[    45.548] Current Operating System: Linux ghost 5.5.4-arch1-1 #1 SMP PREEMPT Sat, 15 Feb 2020 00:36:29 +0000 x86_64
+[    45.548] Kernel command line: BOOT_IMAGE=/boot/vmlinuz-linux root=UUID=9d59c72f-a333-447f-8949-22c489f05b18 rw loglevel=3 quiet
+[    45.548] Build Date: 14 January 2020  07:13:52AM
+[    45.548]  
+[    45.548] Current version of pixman: 0.38.4
+[    45.548] 	Before reporting problems, check http://wiki.x.org
+	to make sure that you have the latest version.
+[    45.549] Markers: (--) probed, (**) from config file, (==) default setting,
+	(++) from command line, (!!) notice, (II) informational,
+	(WW) warning, (EE) error, (NI) not implemented, (??) unknown.
+[    45.549] (==) Log file: "/home/ssaini/.local/share/xorg/Xorg.0.log", Time: Sat Feb 22 11:15:04 2020
+[    45.613] (==) Using config file: "/etc/X11/xorg.conf"
+[    45.613] (==) Using config directory: "/etc/X11/xorg.conf.d"
+[    45.614] (==) Using system config directory "/usr/share/X11/xorg.conf.d"
+[    45.683] (==) ServerLayout "layout"
+[    45.683] (**) |-->Screen "intel" (0)
+[    45.683] (**) |   |-->Monitor "<default monitor>"
+[    45.702] (**) |   |-->Device "intel"
+[    45.702] (==) No monitor specified for screen "intel".
+	Using a default monitor configuration.
+[    45.702] (==) Automatically adding devices
+[    45.702] (==) Automatically enabling devices
+[    45.702] (==) Automatically adding GPU devices
+[    45.702] (==) Automatically binding GPU devices
+[    45.702] (==) Max clients allowed: 256, resource mask: 0x1fffff
+[    45.718] (WW) The directory "/usr/share/fonts/misc" does not exist.
+[    45.718] 	Entry deleted from font path.
+[    45.740] (WW) The directory "/usr/share/fonts/Type1" does not exist.
+[    45.740] 	Entry deleted from font path.
+[    45.740] (WW) The directory "/usr/share/fonts/100dpi" does not exist.
+[    45.740] 	Entry deleted from font path.
+[    45.740] (WW) The directory "/usr/share/fonts/75dpi" does not exist.
+[    45.740] 	Entry deleted from font path.
+[    45.740] (==) FontPath set to:
+	/usr/share/fonts/TTF,
+	/usr/share/fonts/OTF
+[    45.740] (==) ModulePath set to "/usr/lib/xorg/modules"
+[    45.740] (II) The server relies on udev to provide the list of input devices.
+	If no devices become available, reconfigure udev or disable AutoAddDevices.
+[    45.740] (II) Module ABI versions:
+[    45.740] 	X.Org ANSI C Emulation: 0.4
+[    45.740] 	X.Org Video Driver: 24.1
+[    45.740] 	X.Org XInput driver : 24.1
+[    45.740] 	X.Org Server Extension : 10.0
+[    45.742] (++) using VT number 1
+
+[    45.747] (II) systemd-logind: took control of session /org/freedesktop/login1/session/_31
+[    45.748] (II) xfree86: Adding drm device (/dev/dri/card0)
+[    45.750] (II) systemd-logind: got fd for /dev/dri/card0 226:0 fd 10 paused 0
+[    45.751] (II) xfree86: Adding drm device (/dev/dri/card1)
+[    45.752] (II) systemd-logind: got fd for /dev/dri/card1 226:1 fd 11 paused 0
+[    45.757] (--) PCI:*(0@0:2:0) 8086:5916:103c:8216 rev 2, Mem @ 0xb2000000/16777216, 0xc0000000/268435456, I/O @ 0x00005000/64, BIOS @ 0x????????/131072
+[    45.757] (--) PCI: (1@0:0:0) 10de:134d:103c:8216 rev 162, Mem @ 0xb3000000/16777216, 0xa0000000/268435456, 0xb0000000/33554432, I/O @ 0x00004000/128
+[    45.758] (II) Open ACPI successful (/var/run/acpid.socket)
+[    45.758] (II) LoadModule: "glx"
+[    45.784] (II) Loading /usr/lib/xorg/modules/extensions/libglx.so
+[    45.850] (II) Module glx: vendor="X.Org Foundation"
+[    45.850] 	compiled for 1.20.7, module version = 1.0.0
+[    45.850] 	ABI class: X.Org Server Extension, version 10.0
+[    45.850] (II) LoadModule: "intel"
+[    45.850] (II) Loading /usr/lib/xorg/modules/drivers/intel_drv.so
+[    45.898] (II) Module intel: vendor="X.Org Foundation"
+[    45.898] 	compiled for 1.20.6, module version = 2.99.917
+[    45.898] 	Module class: X.Org Video Driver
+[    45.898] 	ABI class: X.Org Video Driver, version 24.0
+[    45.898] (II) intel: Driver for Intel(R) Integrated Graphics Chipsets:
+	i810, i810-dc100, i810e, i815, i830M, 845G, 854, 852GM/855GM, 865G,
+	915G, E7221 (i915), 915GM, 945G, 945GM, 945GME, Pineview GM,
+	Pineview G, 965G, G35, 965Q, 946GZ, 965GM, 965GME/GLE, G33, Q35, Q33,
+	GM45, 4 Series, G45/G43, Q45/Q43, G41, B43
+[    45.899] (II) intel: Driver for Intel(R) HD Graphics
+[    45.899] (II) intel: Driver for Intel(R) Iris(TM) Graphics
+[    45.899] (II) intel: Driver for Intel(R) Iris(TM) Pro Graphics
+[    45.899] xf86EnableIOPorts: failed to set IOPL for I/O (Operation not permitted)
+[    45.900] (II) intel(0): Using Kernel Mode Setting driver: i915, version 1.6.0 20191101
+[    45.900] (II) intel(0): SNA compiled from 2.99.917-899-gf66d3954
+[    45.928] (WW) VGA arbiter: cannot open kernel arbiter, no multi-card support
+[    45.929] (--) intel(0): Integrated Graphics Chipset: Intel(R) HD Graphics 620
+[    45.929] (--) intel(0): CPU: x86-64, sse2, sse3, ssse3, sse4.1, sse4.2, avx, avx2; using a maximum of 2 threads
+[    45.929] (II) intel(0): Creating default Display subsection in Screen section
+	"intel" for depth/fbbpp 24/32
+[    45.929] (==) intel(0): Depth 24, (--) framebuffer bpp 32
+[    45.929] (==) intel(0): RGB weight 888
+[    45.929] (==) intel(0): Default visual is TrueColor
+[    45.929] (**) intel(0): Option "TearFree" "true"
+[    45.948] (II) intel(0): Output eDP1 has no monitor section
+[    45.949] (**) intel(0): Found backlight control interface intel_backlight (type 'raw') for output eDP1
+[    45.949] (II) intel(0): Enabled output eDP1
+[    45.950] (II) intel(0): Output HDMI1 has no monitor section
+[    45.950] (II) intel(0): Enabled output HDMI1
+[    45.950] (--) intel(0): Using a maximum size of 256x256 for hardware cursors
+[    45.950] (II) intel(0): Output VIRTUAL1 has no monitor section
+[    45.950] (II) intel(0): Enabled output VIRTUAL1
+[    45.950] (--) intel(0): Output eDP1 using initial mode 1366x768 on pipe 0
+[    45.951] (**) intel(0): TearFree enabled
+[    45.951] (==) intel(0): Using gamma correction (1.0, 1.0, 1.0)
+[    45.951] (==) intel(0): DPI set to (96, 96)
+[    45.951] (II) Loading sub module "dri3"
+[    45.951] (II) LoadModule: "dri3"
+[    45.951] (II) Module "dri3" already built-in
+[    45.951] (II) Loading sub module "dri2"
+[    45.951] (II) LoadModule: "dri2"
+[    45.951] (II) Module "dri2" already built-in
+[    45.951] (II) Loading sub module "present"
+[    45.951] (II) LoadModule: "present"
+[    45.951] (II) Module "present" already built-in
+[    45.965] (II) intel(0): SNA initialized with Kabylake (gen9) backend
+[    45.965] (==) intel(0): Backing store enabled
+[    45.965] (==) intel(0): Silken mouse disabled
+[    45.966] (II) intel(0): HW Cursor enabled
+[    45.967] (==) intel(0): DPMS enabled
+[    45.967] (==) intel(0): Display hotplug detection enabled
+[    45.973] (II) intel(0): [DRI2] Setup complete
+[    45.973] (II) intel(0): [DRI2]   DRI driver: i965
+[    45.973] (II) intel(0): [DRI2]   VDPAU driver: va_gl
+[    45.973] (II) intel(0): direct rendering: DRI2 DRI3 enabled
+[    45.973] (II) intel(0): hardware support for Present enabled
+[    45.973] (II) Initializing extension Generic Event Extension
+[    45.973] (II) Initializing extension SHAPE
+[    45.973] (II) Initializing extension MIT-SHM
+[    45.973] (II) Initializing extension XInputExtension
+[    45.974] (II) Initializing extension XTEST
+[    45.974] (II) Initializing extension BIG-REQUESTS
+[    45.974] (II) Initializing extension SYNC
+[    45.974] (II) Initializing extension XKEYBOARD
+[    45.974] (II) Initializing extension XC-MISC
+[    45.974] (II) Initializing extension SECURITY
+[    45.974] (II) Initializing extension XFIXES
+[    45.974] (II) Initializing extension RENDER
+[    45.974] (II) Initializing extension RANDR
+[    45.974] (II) Initializing extension COMPOSITE
+[    45.974] (II) Initializing extension DAMAGE
+[    45.974] (II) Initializing extension MIT-SCREEN-SAVER
+[    45.974] (II) Initializing extension DOUBLE-BUFFER
+[    45.974] (II) Initializing extension RECORD
+[    45.974] (II) Initializing extension DPMS
+[    45.974] (II) Initializing extension Present
+[    45.974] (II) Initializing extension DRI3
+[    45.974] (II) Initializing extension X-Resource
+[    45.974] (II) Initializing extension XVideo
+[    45.974] (II) Initializing extension XVideo-MotionCompensation
+[    45.974] (II) Initializing extension GLX
+[    46.348] (II) AIGLX: Loaded and initialized i965
+[    46.348] (II) GLX: Initialized DRI2 GL provider for screen 0
+[    46.348] (II) Initializing extension XFree86-VidModeExtension
+[    46.348] (II) Initializing extension XFree86-DGA
+[    46.348] (II) Initializing extension XFree86-DRI
+[    46.348] (II) Initializing extension DRI2
+[    46.381] (II) intel(0): switch to mode 1366x768@60.0 on eDP1 using pipe 0, position (0, 0), rotation normal, reflection none
+[    46.387] (II) intel(0): Setting screen physical size to 361 x 203
+[    46.714] (II) config/udev: Adding input device Power Button (/dev/input/event2)
+[    46.714] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[    46.714] (II) LoadModule: "libinput"
+[    46.727] (II) Loading /usr/lib/xorg/modules/input/libinput_drv.so
+[    46.758] (II) Module libinput: vendor="X.Org Foundation"
+[    46.759] 	compiled for 1.20.5, module version = 0.29.0
+[    46.759] 	Module class: X.Org XInput Driver
+[    46.759] 	ABI class: X.Org XInput driver, version 24.1
+[    46.759] (II) Using input driver 'libinput' for 'Power Button'
+[    46.761] (II) systemd-logind: got fd for /dev/input/event2 13:66 fd 18 paused 0
+[    46.761] (**) Power Button: always reports core events
+[    46.761] (**) Option "Device" "/dev/input/event2"
+[    46.761] (**) Option "_source" "server/udev"
+[    46.784] (II) event2  - Power Button: is tagged by udev as: Keyboard
+[    46.784] (II) event2  - Power Button: device is a keyboard
+[    46.785] (II) event2  - Power Button: device removed
+[    46.785] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXPWRBN:00/input/input2/event2"
+[    46.785] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 6)
+[    46.787] (II) event2  - Power Button: is tagged by udev as: Keyboard
+[    46.787] (II) event2  - Power Button: device is a keyboard
+[    46.789] (II) config/udev: Adding input device Video Bus (/dev/input/event9)
+[    46.789] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[    46.789] (II) Using input driver 'libinput' for 'Video Bus'
+[    46.791] (II) systemd-logind: got fd for /dev/input/event9 13:73 fd 21 paused 0
+[    46.791] (**) Video Bus: always reports core events
+[    46.791] (**) Option "Device" "/dev/input/event9"
+[    46.791] (**) Option "_source" "server/udev"
+[    46.793] (II) event9  - Video Bus: is tagged by udev as: Keyboard
+[    46.793] (II) event9  - Video Bus: device is a keyboard
+[    46.794] (II) event9  - Video Bus: device removed
+[    46.794] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/LNXVIDEO:00/input/input21/event9"
+[    46.794] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 7)
+[    46.796] (II) event9  - Video Bus: is tagged by udev as: Keyboard
+[    46.797] (II) event9  - Video Bus: device is a keyboard
+[    46.798] (II) config/udev: Adding input device Video Bus (/dev/input/event10)
+[    46.798] (**) Video Bus: Applying InputClass "libinput keyboard catchall"
+[    46.798] (II) Using input driver 'libinput' for 'Video Bus'
+[    46.800] (II) systemd-logind: got fd for /dev/input/event10 13:74 fd 22 paused 0
+[    46.800] (**) Video Bus: always reports core events
+[    46.800] (**) Option "Device" "/dev/input/event10"
+[    46.800] (**) Option "_source" "server/udev"
+[    46.803] (II) event10 - Video Bus: is tagged by udev as: Keyboard
+[    46.804] (II) event10 - Video Bus: device is a keyboard
+[    46.804] (II) event10 - Video Bus: device removed
+[    46.804] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0A08:00/device:35/LNXVIDEO:01/input/input22/event10"
+[    46.804] (II) XINPUT: Adding extended input device "Video Bus" (type: KEYBOARD, id 8)
+[    46.807] (II) event10 - Video Bus: is tagged by udev as: Keyboard
+[    46.807] (II) event10 - Video Bus: device is a keyboard
+[    46.809] (II) config/udev: Adding input device Power Button (/dev/input/event1)
+[    46.809] (**) Power Button: Applying InputClass "libinput keyboard catchall"
+[    46.809] (II) Using input driver 'libinput' for 'Power Button'
+[    46.811] (II) systemd-logind: got fd for /dev/input/event1 13:65 fd 23 paused 0
+[    46.811] (**) Power Button: always reports core events
+[    46.811] (**) Option "Device" "/dev/input/event1"
+[    46.811] (**) Option "_source" "server/udev"
+[    46.813] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[    46.813] (II) event1  - Power Button: device is a keyboard
+[    46.814] (II) event1  - Power Button: device removed
+[    46.814] (**) Option "config_info" "udev:/sys/devices/LNXSYSTM:00/LNXSYBUS:00/PNP0C0C:00/input/input1/event1"
+[    46.814] (II) XINPUT: Adding extended input device "Power Button" (type: KEYBOARD, id 9)
+[    46.816] (II) event1  - Power Button: is tagged by udev as: Keyboard
+[    46.816] (II) event1  - Power Button: device is a keyboard
+[    46.817] (II) config/udev: Adding input device Lid Switch (/dev/input/event0)
+[    46.817] (II) No input driver specified, ignoring this device.
+[    46.817] (II) This device may have been added with another device file.
+[    46.819] (II) config/udev: Adding input device HP Wide version HD: HP Wide ver (/dev/input/event19)
+[    46.819] (**) HP Wide version HD: HP Wide ver: Applying InputClass "libinput keyboard catchall"
+[    46.819] (II) Using input driver 'libinput' for 'HP Wide version HD: HP Wide ver'
+[    46.821] (II) systemd-logind: got fd for /dev/input/event19 13:83 fd 24 paused 0
+[    46.821] (**) HP Wide version HD: HP Wide ver: always reports core events
+[    46.821] (**) Option "Device" "/dev/input/event19"
+[    46.821] (**) Option "_source" "server/udev"
+[    46.824] (II) event19 - HP Wide version HD: HP Wide ver: is tagged by udev as: Keyboard
+[    46.824] (II) event19 - HP Wide version HD: HP Wide ver: device is a keyboard
+[    46.824] (II) event19 - HP Wide version HD: HP Wide ver: device removed
+[    46.824] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-3/1-3:1.0/input/input30/event19"
+[    46.824] (II) XINPUT: Adding extended input device "HP Wide version HD: HP Wide ver" (type: KEYBOARD, id 10)
+[    46.827] (II) event19 - HP Wide version HD: HP Wide ver: is tagged by udev as: Keyboard
+[    46.828] (II) event19 - HP Wide version HD: HP Wide ver: device is a keyboard
+[    46.829] (II) config/udev: Adding input device Logitech Wireless Mouse (/dev/input/event4)
+[    46.830] (**) Logitech Wireless Mouse: Applying InputClass "libinput pointer catchall"
+[    46.830] (II) Using input driver 'libinput' for 'Logitech Wireless Mouse'
+[    46.831] (II) systemd-logind: got fd for /dev/input/event4 13:68 fd 25 paused 0
+[    46.832] (**) Logitech Wireless Mouse: always reports core events
+[    46.832] (**) Option "Device" "/dev/input/event4"
+[    46.832] (**) Option "_source" "server/udev"
+[    46.835] (II) event4  - Logitech Wireless Mouse: is tagged by udev as: Mouse
+[    46.836] (II) event4  - Logitech Wireless Mouse: device is a pointer
+[    46.836] (II) event4  - Logitech Wireless Mouse: device removed
+[    46.836] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-6/1-6:1.1/0003:046D:C534.0002/0003:046D:4054.0003/input/input15/event4"
+[    46.836] (II) XINPUT: Adding extended input device "Logitech Wireless Mouse" (type: MOUSE, id 11)
+[    46.837] (**) Option "AccelerationScheme" "none"
+[    46.837] (**) Logitech Wireless Mouse: (accel) selected scheme none/0
+[    46.837] (**) Logitech Wireless Mouse: (accel) acceleration factor: 2.000
+[    46.837] (**) Logitech Wireless Mouse: (accel) acceleration threshold: 4
+[    46.840] (II) event4  - Logitech Wireless Mouse: is tagged by udev as: Mouse
+[    46.841] (II) event4  - Logitech Wireless Mouse: device is a pointer
+[    46.843] (II) config/udev: Adding input device Logitech Wireless Mouse (/dev/input/mouse0)
+[    46.843] (II) No input driver specified, ignoring this device.
+[    46.843] (II) This device may have been added with another device file.
+[    46.844] (II) config/udev: Adding input device HDA Intel PCH Mic (/dev/input/event12)
+[    46.844] (II) No input driver specified, ignoring this device.
+[    46.844] (II) This device may have been added with another device file.
+[    46.845] (II) config/udev: Adding input device HDA Intel PCH Headphone (/dev/input/event13)
+[    46.845] (II) No input driver specified, ignoring this device.
+[    46.845] (II) This device may have been added with another device file.
+[    46.846] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=3 (/dev/input/event14)
+[    46.846] (II) No input driver specified, ignoring this device.
+[    46.846] (II) This device may have been added with another device file.
+[    46.847] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=7 (/dev/input/event15)
+[    46.847] (II) No input driver specified, ignoring this device.
+[    46.847] (II) This device may have been added with another device file.
+[    46.847] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=8 (/dev/input/event16)
+[    46.847] (II) No input driver specified, ignoring this device.
+[    46.848] (II) This device may have been added with another device file.
+[    46.848] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=9 (/dev/input/event17)
+[    46.848] (II) No input driver specified, ignoring this device.
+[    46.848] (II) This device may have been added with another device file.
+[    46.849] (II) config/udev: Adding input device HDA Intel PCH HDMI/DP,pcm=10 (/dev/input/event18)
+[    46.849] (II) No input driver specified, ignoring this device.
+[    46.849] (II) This device may have been added with another device file.
+[    46.850] (II) config/udev: Adding input device AT Translated Set 2 keyboard (/dev/input/event3)
+[    46.850] (**) AT Translated Set 2 keyboard: Applying InputClass "libinput keyboard catchall"
+[    46.850] (II) Using input driver 'libinput' for 'AT Translated Set 2 keyboard'
+[    46.852] (II) systemd-logind: got fd for /dev/input/event3 13:67 fd 26 paused 0
+[    46.852] (**) AT Translated Set 2 keyboard: always reports core events
+[    46.852] (**) Option "Device" "/dev/input/event3"
+[    46.852] (**) Option "_source" "server/udev"
+[    46.854] (II) event3  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[    46.855] (II) event3  - AT Translated Set 2 keyboard: device is a keyboard
+[    46.856] (II) event3  - AT Translated Set 2 keyboard: device removed
+[    46.856] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio0/input/input3/event3"
+[    46.856] (II) XINPUT: Adding extended input device "AT Translated Set 2 keyboard" (type: KEYBOARD, id 12)
+[    46.859] (II) event3  - AT Translated Set 2 keyboard: is tagged by udev as: Keyboard
+[    46.859] (II) event3  - AT Translated Set 2 keyboard: device is a keyboard
+[    46.861] (II) config/udev: Adding input device SynPS/2 Synaptics TouchPad (/dev/input/event11)
+[    46.861] (**) SynPS/2 Synaptics TouchPad: Applying InputClass "libinput touchpad catchall"
+[    46.861] (**) SynPS/2 Synaptics TouchPad: Applying InputClass "touchpad"
+[    46.861] (II) Using input driver 'libinput' for 'SynPS/2 Synaptics TouchPad'
+[    46.863] (II) systemd-logind: got fd for /dev/input/event11 13:75 fd 27 paused 0
+[    46.863] (**) SynPS/2 Synaptics TouchPad: always reports core events
+[    46.863] (**) Option "Device" "/dev/input/event11"
+[    46.863] (**) Option "_source" "server/udev"
+[    46.865] (II) event11 - SynPS/2 Synaptics TouchPad: is tagged by udev as: Touchpad
+[    46.868] (II) event11 - SynPS/2 Synaptics TouchPad: device is a touchpad
+[    46.868] (II) event11 - SynPS/2 Synaptics TouchPad: device removed
+[    46.868] (**) Option "Tapping" "on"
+[    46.869] (**) Option "config_info" "udev:/sys/devices/platform/i8042/serio1/input/input19/event11"
+[    46.869] (II) XINPUT: Adding extended input device "SynPS/2 Synaptics TouchPad" (type: TOUCHPAD, id 13)
+[    46.871] (**) Option "AccelerationScheme" "none"
+[    46.871] (**) SynPS/2 Synaptics TouchPad: (accel) selected scheme none/0
+[    46.871] (**) SynPS/2 Synaptics TouchPad: (accel) acceleration factor: 2.000
+[    46.871] (**) SynPS/2 Synaptics TouchPad: (accel) acceleration threshold: 4
+[    46.873] (II) event11 - SynPS/2 Synaptics TouchPad: is tagged by udev as: Touchpad
+[    46.876] (II) event11 - SynPS/2 Synaptics TouchPad: device is a touchpad
+[    46.877] (II) config/udev: Adding input device SynPS/2 Synaptics TouchPad (/dev/input/mouse1)
+[    46.877] (**) SynPS/2 Synaptics TouchPad: Applying InputClass "touchpad"
+[    46.877] (II) Using input driver 'libinput' for 'SynPS/2 Synaptics TouchPad'
+[    46.877] (**) SynPS/2 Synaptics TouchPad: always reports core events
+[    46.878] (**) Option "Device" "/dev/input/mouse1"
+[    46.878] (**) Option "_source" "server/udev"
+[    46.878] (EE) xf86OpenSerial: Cannot open device /dev/input/mouse1
+	Permission denied.
+[    46.878] (II) mouse1: opening input device '/dev/input/mouse1' failed (Permission denied).
+[    46.878] (II) mouse1  - failed to create input device '/dev/input/mouse1'.
+[    46.878] (EE) libinput: SynPS/2 Synaptics TouchPad: Failed to create a device for /dev/input/mouse1
+[    46.878] (EE) PreInit returned 2 for "SynPS/2 Synaptics TouchPad"
+[    46.878] (II) UnloadModule: "libinput"
+[    46.879] (II) config/udev: Adding input device ST LIS3LV02DL Accelerometer (/dev/input/event6)
+[    46.879] (II) No input driver specified, ignoring this device.
+[    46.879] (II) This device may have been added with another device file.
+[    46.880] (II) config/udev: Adding input device ST LIS3LV02DL Accelerometer (/dev/input/js0)
+[    46.880] (II) No input driver specified, ignoring this device.
+[    46.880] (II) This device may have been added with another device file.
+[    46.880] (II) config/udev: Adding input device PC Speaker (/dev/input/event7)
+[    46.880] (II) No input driver specified, ignoring this device.
+[    46.880] (II) This device may have been added with another device file.
+[    46.882] (II) config/udev: Adding input device HP Wireless hotkeys (/dev/input/event5)
+[    46.882] (**) HP Wireless hotkeys: Applying InputClass "libinput keyboard catchall"
+[    46.882] (II) Using input driver 'libinput' for 'HP Wireless hotkeys'
+[    46.884] (II) systemd-logind: got fd for /dev/input/event5 13:69 fd 28 paused 0
+[    46.884] (**) HP Wireless hotkeys: always reports core events
+[    46.884] (**) Option "Device" "/dev/input/event5"
+[    46.884] (**) Option "_source" "server/udev"
+[    46.885] (II) event5  - HP Wireless hotkeys: is tagged by udev as: Keyboard
+[    46.885] (II) event5  - HP Wireless hotkeys: device is a keyboard
+[    46.886] (II) event5  - HP Wireless hotkeys: device removed
+[    46.886] (**) Option "config_info" "udev:/sys/devices/virtual/input/input16/event5"
+[    46.886] (II) XINPUT: Adding extended input device "HP Wireless hotkeys" (type: KEYBOARD, id 14)
+[    46.887] (II) event5  - HP Wireless hotkeys: is tagged by udev as: Keyboard
+[    46.888] (II) event5  - HP Wireless hotkeys: device is a keyboard
+[    46.889] (II) config/udev: Adding input device HP WMI hotkeys (/dev/input/event8)
+[    46.889] (**) HP WMI hotkeys: Applying InputClass "libinput keyboard catchall"
+[    46.889] (II) Using input driver 'libinput' for 'HP WMI hotkeys'
+[    46.890] (II) systemd-logind: got fd for /dev/input/event8 13:72 fd 29 paused 0
+[    46.890] (**) HP WMI hotkeys: always reports core events
+[    46.890] (**) Option "Device" "/dev/input/event8"
+[    46.891] (**) Option "_source" "server/udev"
+[    46.892] (II) event8  - HP WMI hotkeys: is tagged by udev as: Keyboard Switch
+[    46.892] (II) event8  - HP WMI hotkeys: device is a keyboard
+[    46.892] (II) event8  - HP WMI hotkeys: device removed
+[    46.893] (**) Option "config_info" "udev:/sys/devices/virtual/input/input20/event8"
+[    46.893] (II) XINPUT: Adding extended input device "HP WMI hotkeys" (type: KEYBOARD, id 15)
+[    46.894] (II) event8  - HP WMI hotkeys: is tagged by udev as: Keyboard Switch
+[    46.894] (II) event8  - HP WMI hotkeys: device is a keyboard
+[    47.968] (II) intel(0): EDID vendor "BOE", prod id 1700
+[    47.968] (II) intel(0): Printing DDC gathered Modelines:
+[    47.968] (II) intel(0): Modeline "1366x768"x0.0   71.12  1366 1414 1446 1467  768 772 776 808 +hsync -vsync (48.5 kHz eP)
+[    47.968] (II) intel(0): Modeline "1366x768"x0.0   60.20  1366 1466 1566 1750  768 788 808 860 +hsync -vsync (34.4 kHz e)
+[   113.607] (EE) event11 - SynPS/2 Synaptics TouchPad: kernel bug: Wrong slot count (2), reducing to 1
+[   168.919] (EE) event11 - SynPS/2 Synaptics TouchPad: kernel bug: touch 1 ended and began in in same frame.
+[   169.571] (EE) event11 - SynPS/2 Synaptics TouchPad: kernel bug: touch 1 ended and began in in same frame.
+[   216.931] (II) config/udev: Adding input device Uproar Wireless (AVRCP) (/dev/input/event20)
+[   216.931] (**) Uproar Wireless (AVRCP): Applying InputClass "libinput keyboard catchall"
+[   216.931] (II) Using input driver 'libinput' for 'Uproar Wireless (AVRCP)'
+[   216.932] (EE) systemd-logind: failed to take device /dev/input/event20: No such device
+[   216.932] (**) Uproar Wireless (AVRCP): always reports core events
+[   216.932] (**) Option "Device" "/dev/input/event20"
+[   216.932] (**) Option "_source" "server/udev"
+[   216.932] (EE) client bug: Invalid path /dev/input/event20
+[   216.932] (EE) libinput: Uproar Wireless (AVRCP): Failed to create a device for /dev/input/event20
+[   216.932] (EE) PreInit returned 2 for "Uproar Wireless (AVRCP)"
+[   216.932] (II) UnloadModule: "libinput"
+[   220.125] (II) config/udev: Adding input device Uproar Wireless (AVRCP) (/dev/input/event20)
+[   220.125] (**) Uproar Wireless (AVRCP): Applying InputClass "libinput keyboard catchall"
+[   220.125] (II) Using input driver 'libinput' for 'Uproar Wireless (AVRCP)'
+[   220.126] (II) systemd-logind: got fd for /dev/input/event20 13:84 fd 64 paused 0
+[   220.126] (**) Uproar Wireless (AVRCP): always reports core events
+[   220.126] (**) Option "Device" "/dev/input/event20"
+[   220.126] (**) Option "_source" "server/udev"
+[   220.126] (II) event20 - Uproar Wireless (AVRCP): is tagged by udev as: Keyboard
+[   220.126] (II) event20 - Uproar Wireless (AVRCP): device is a keyboard
+[   220.127] (II) event20 - Uproar Wireless (AVRCP): device removed
+[   220.127] (**) Option "config_info" "udev:/sys/devices/virtual/input/input32/event20"
+[   220.127] (II) XINPUT: Adding extended input device "Uproar Wireless (AVRCP)" (type: KEYBOARD, id 16)
+[   220.128] (II) event20 - Uproar Wireless (AVRCP): is tagged by udev as: Keyboard
+[   220.128] (II) event20 - Uproar Wireless (AVRCP): device is a keyboard
+[   875.873] (II) config/udev: removing device Logitech Wireless Mouse
+[   875.873] (**) Option "fd" "25"
+[   875.873] (II) event4  - Logitech Wireless Mouse: device removed
+[   875.876] (II) UnloadModule: "libinput"
+[   875.876] (II) systemd-logind: releasing fd for 13:68
+[   892.935] (II) config/udev: Adding input device Logitech Wireless Mouse (/dev/input/mouse0)
+[   892.935] (II) No input driver specified, ignoring this device.
+[   892.935] (II) This device may have been added with another device file.
+[   892.958] (II) config/udev: Adding input device Logitech Wireless Mouse (/dev/input/event4)
+[   892.958] (**) Logitech Wireless Mouse: Applying InputClass "libinput pointer catchall"
+[   892.958] (II) Using input driver 'libinput' for 'Logitech Wireless Mouse'
+[   892.959] (II) systemd-logind: got fd for /dev/input/event4 13:68 fd 62 paused 0
+[   892.959] (**) Logitech Wireless Mouse: always reports core events
+[   892.959] (**) Option "Device" "/dev/input/event4"
+[   892.959] (**) Option "_source" "server/udev"
+[   892.960] (II) event4  - Logitech Wireless Mouse: is tagged by udev as: Mouse
+[   892.960] (II) event4  - Logitech Wireless Mouse: device is a pointer
+[   892.961] (II) event4  - Logitech Wireless Mouse: device removed
+[   892.961] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-6/1-6:1.1/0003:046D:C534.0014/0003:046D:4054.0015/input/input37/event4"
+[   892.961] (II) XINPUT: Adding extended input device "Logitech Wireless Mouse" (type: MOUSE, id 11)
+[   892.961] (**) Option "AccelerationScheme" "none"
+[   892.961] (**) Logitech Wireless Mouse: (accel) selected scheme none/0
+[   892.961] (**) Logitech Wireless Mouse: (accel) acceleration factor: 2.000
+[   892.961] (**) Logitech Wireless Mouse: (accel) acceleration threshold: 4
+[   892.962] (II) event4  - Logitech Wireless Mouse: is tagged by udev as: Mouse
+[   892.962] (II) event4  - Logitech Wireless Mouse: device is a pointer
+[  1056.534] (II) config/udev: removing device Logitech Wireless Mouse
+[  1056.534] (**) Option "fd" "62"
+[  1056.534] (II) event4  - Logitech Wireless Mouse: device removed
+[  1056.539] (II) UnloadModule: "libinput"
+[  1056.539] (II) systemd-logind: releasing fd for 13:68
+[  1068.011] (II) config/udev: Adding input device Logitech Wireless Mouse (/dev/input/mouse0)
+[  1068.011] (II) No input driver specified, ignoring this device.
+[  1068.011] (II) This device may have been added with another device file.
+[  1068.042] (II) config/udev: Adding input device Logitech Wireless Mouse (/dev/input/event4)
+[  1068.042] (**) Logitech Wireless Mouse: Applying InputClass "libinput pointer catchall"
+[  1068.042] (II) Using input driver 'libinput' for 'Logitech Wireless Mouse'
+[  1068.045] (II) systemd-logind: got fd for /dev/input/event4 13:68 fd 62 paused 0
+[  1068.045] (**) Logitech Wireless Mouse: always reports core events
+[  1068.045] (**) Option "Device" "/dev/input/event4"
+[  1068.045] (**) Option "_source" "server/udev"
+[  1068.052] (II) event4  - Logitech Wireless Mouse: is tagged by udev as: Mouse
+[  1068.053] (II) event4  - Logitech Wireless Mouse: device is a pointer
+[  1068.054] (II) event4  - Logitech Wireless Mouse: device removed
+[  1068.054] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-6/1-6:1.1/0003:046D:C534.0020/0003:046D:4054.0021/input/input41/event4"
+[  1068.054] (II) XINPUT: Adding extended input device "Logitech Wireless Mouse" (type: MOUSE, id 11)
+[  1068.056] (**) Option "AccelerationScheme" "none"
+[  1068.058] (**) Logitech Wireless Mouse: (accel) selected scheme none/0
+[  1068.058] (**) Logitech Wireless Mouse: (accel) acceleration factor: 2.000
+[  1068.058] (**) Logitech Wireless Mouse: (accel) acceleration threshold: 4
+[  1068.063] (II) event4  - Logitech Wireless Mouse: is tagged by udev as: Mouse
+[  1068.064] (II) event4  - Logitech Wireless Mouse: device is a pointer
+[  1068.183] (II) config/udev: removing device Logitech Wireless Mouse
+[  1068.183] (**) Option "fd" "62"
+[  1068.183] (II) event4  - Logitech Wireless Mouse: device removed
+[  1068.187] (II) UnloadModule: "libinput"
+[  1068.187] (II) systemd-logind: releasing fd for 13:68
+[  1071.793] (II) config/udev: Adding input device Logitech Wireless Mouse (/dev/input/mouse0)
+[  1071.793] (II) No input driver specified, ignoring this device.
+[  1071.793] (II) This device may have been added with another device file.
+[  1071.823] (II) config/udev: Adding input device Logitech Wireless Mouse (/dev/input/event4)
+[  1071.823] (**) Logitech Wireless Mouse: Applying InputClass "libinput pointer catchall"
+[  1071.823] (II) Using input driver 'libinput' for 'Logitech Wireless Mouse'
+[  1071.825] (II) systemd-logind: got fd for /dev/input/event4 13:68 fd 62 paused 0
+[  1071.826] (**) Logitech Wireless Mouse: always reports core events
+[  1071.826] (**) Option "Device" "/dev/input/event4"
+[  1071.826] (**) Option "_source" "server/udev"
+[  1071.830] (II) event4  - Logitech Wireless Mouse: is tagged by udev as: Mouse
+[  1071.830] (II) event4  - Logitech Wireless Mouse: device is a pointer
+[  1071.831] (II) event4  - Logitech Wireless Mouse: device removed
+[  1071.831] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-6/1-6:1.1/0003:046D:C534.0023/0003:046D:4054.0024/input/input42/event4"
+[  1071.831] (II) XINPUT: Adding extended input device "Logitech Wireless Mouse" (type: MOUSE, id 11)
+[  1071.834] (**) Option "AccelerationScheme" "none"
+[  1071.838] (**) Logitech Wireless Mouse: (accel) selected scheme none/0
+[  1071.838] (**) Logitech Wireless Mouse: (accel) acceleration factor: 2.000
+[  1071.838] (**) Logitech Wireless Mouse: (accel) acceleration threshold: 4
+[  1071.842] (II) event4  - Logitech Wireless Mouse: is tagged by udev as: Mouse
+[  1071.843] (II) event4  - Logitech Wireless Mouse: device is a pointer
+[  1071.861] (II) config/udev: removing device Logitech Wireless Mouse
+[  1071.862] (**) Option "fd" "62"
+[  1071.862] (II) event4  - Logitech Wireless Mouse: device removed
+[  1071.878] (II) UnloadModule: "libinput"
+[  1071.878] (II) systemd-logind: releasing fd for 13:68
+[  1080.957] (II) config/udev: Adding input device Logitech Wireless Mouse (/dev/input/mouse0)
+[  1080.957] (II) No input driver specified, ignoring this device.
+[  1080.957] (II) This device may have been added with another device file.
+[  1080.999] (II) config/udev: Adding input device Logitech Wireless Mouse (/dev/input/event4)
+[  1081.000] (**) Logitech Wireless Mouse: Applying InputClass "libinput pointer catchall"
+[  1081.000] (II) Using input driver 'libinput' for 'Logitech Wireless Mouse'
+[  1081.003] (II) systemd-logind: got fd for /dev/input/event4 13:68 fd 62 paused 0
+[  1081.003] (**) Logitech Wireless Mouse: always reports core events
+[  1081.003] (**) Option "Device" "/dev/input/event4"
+[  1081.003] (**) Option "_source" "server/udev"
+[  1081.009] (II) event4  - Logitech Wireless Mouse: is tagged by udev as: Mouse
+[  1081.010] (II) event4  - Logitech Wireless Mouse: device is a pointer
+[  1081.011] (II) event4  - Logitech Wireless Mouse: device removed
+[  1081.011] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-6/1-6:1.1/0003:046D:C534.0029/0003:046D:4054.002A/input/input44/event4"
+[  1081.011] (II) XINPUT: Adding extended input device "Logitech Wireless Mouse" (type: MOUSE, id 11)
+[  1081.013] (**) Option "AccelerationScheme" "none"
+[  1081.015] (**) Logitech Wireless Mouse: (accel) selected scheme none/0
+[  1081.015] (**) Logitech Wireless Mouse: (accel) acceleration factor: 2.000
+[  1081.015] (**) Logitech Wireless Mouse: (accel) acceleration threshold: 4
+[  1081.020] (II) event4  - Logitech Wireless Mouse: is tagged by udev as: Mouse
+[  1081.020] (II) event4  - Logitech Wireless Mouse: device is a pointer
+[  1081.056] (II) config/udev: removing device Logitech Wireless Mouse
+[  1081.056] (**) Option "fd" "62"
+[  1081.056] (II) event4  - Logitech Wireless Mouse: device removed
+[  1081.061] (II) UnloadModule: "libinput"
+[  1081.061] (II) systemd-logind: releasing fd for 13:68
+[  1083.398] (II) config/udev: Adding input device Logitech Wireless Mouse (/dev/input/mouse0)
+[  1083.398] (II) No input driver specified, ignoring this device.
+[  1083.398] (II) This device may have been added with another device file.
+[  1083.441] (II) config/udev: Adding input device Logitech Wireless Mouse (/dev/input/event4)
+[  1083.442] (**) Logitech Wireless Mouse: Applying InputClass "libinput pointer catchall"
+[  1083.442] (II) Using input driver 'libinput' for 'Logitech Wireless Mouse'
+[  1083.444] (II) systemd-logind: got fd for /dev/input/event4 13:68 fd 62 paused 0
+[  1083.444] (**) Logitech Wireless Mouse: always reports core events
+[  1083.444] (**) Option "Device" "/dev/input/event4"
+[  1083.444] (**) Option "_source" "server/udev"
+[  1083.449] (II) event4  - Logitech Wireless Mouse: is tagged by udev as: Mouse
+[  1083.451] (II) event4  - Logitech Wireless Mouse: device is a pointer
+[  1083.452] (II) event4  - Logitech Wireless Mouse: device removed
+[  1083.452] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-6/1-6:1.1/0003:046D:C534.002C/0003:046D:4054.002D/input/input45/event4"
+[  1083.452] (II) XINPUT: Adding extended input device "Logitech Wireless Mouse" (type: MOUSE, id 11)
+[  1083.454] (**) Option "AccelerationScheme" "none"
+[  1083.457] (**) Logitech Wireless Mouse: (accel) selected scheme none/0
+[  1083.457] (**) Logitech Wireless Mouse: (accel) acceleration factor: 2.000
+[  1083.457] (**) Logitech Wireless Mouse: (accel) acceleration threshold: 4
+[  1083.461] (II) event4  - Logitech Wireless Mouse: is tagged by udev as: Mouse
+[  1083.462] (II) event4  - Logitech Wireless Mouse: device is a pointer
+[  1083.701] (II) config/udev: removing device Logitech Wireless Mouse
+[  1083.701] (**) Option "fd" "62"
+[  1083.701] (II) event4  - Logitech Wireless Mouse: device removed
+[  1083.705] (II) UnloadModule: "libinput"
+[  1083.706] (II) systemd-logind: releasing fd for 13:68
+[  1086.505] (II) config/udev: Adding input device Logitech Wireless Mouse (/dev/input/mouse0)
+[  1086.505] (II) No input driver specified, ignoring this device.
+[  1086.505] (II) This device may have been added with another device file.
+[  1086.549] (II) config/udev: Adding input device Logitech Wireless Mouse (/dev/input/event4)
+[  1086.549] (**) Logitech Wireless Mouse: Applying InputClass "libinput pointer catchall"
+[  1086.549] (II) Using input driver 'libinput' for 'Logitech Wireless Mouse'
+[  1086.552] (II) systemd-logind: got fd for /dev/input/event4 13:68 fd 62 paused 0
+[  1086.552] (**) Logitech Wireless Mouse: always reports core events
+[  1086.552] (**) Option "Device" "/dev/input/event4"
+[  1086.552] (**) Option "_source" "server/udev"
+[  1086.558] (II) event4  - Logitech Wireless Mouse: is tagged by udev as: Mouse
+[  1086.558] (II) event4  - Logitech Wireless Mouse: device is a pointer
+[  1086.559] (II) event4  - Logitech Wireless Mouse: device removed
+[  1086.559] (**) Option "config_info" "udev:/sys/devices/pci0000:00/0000:00:14.0/usb1/1-6/1-6:1.1/0003:046D:C534.002F/0003:046D:4054.0030/input/input46/event4"
+[  1086.559] (II) XINPUT: Adding extended input device "Logitech Wireless Mouse" (type: MOUSE, id 11)
+[  1086.561] (**) Option "AccelerationScheme" "none"
+[  1086.561] (**) Logitech Wireless Mouse: (accel) selected scheme none/0
+[  1086.561] (**) Logitech Wireless Mouse: (accel) acceleration factor: 2.000
+[  1086.562] (**) Logitech Wireless Mouse: (accel) acceleration threshold: 4
+[  1086.566] (II) event4  - Logitech Wireless Mouse: is tagged by udev as: Mouse
+[  1086.567] (II) event4  - Logitech Wireless Mouse: device is a pointer
+[  4321.941] (EE) event11 - SynPS/2 Synaptics TouchPad: kernel bug: touch 1 ended and began in in same frame.
+[  4684.639] (EE) event11 - SynPS/2 Synaptics TouchPad: kernel bug: touch 1 ended and began in in same frame.
+[  4684.712] (EE) event11 - SynPS/2 Synaptics TouchPad: kernel bug: touch 1 ended and began in in same frame.
+[  4684.800] (EE) event11 - SynPS/2 Synaptics TouchPad: kernel bug: Touch jump detected and discarded.
+See https://wayland.freedesktop.org/libinput/doc/1.15.1/touchpad-jumping-cursors.html for details
