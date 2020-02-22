@@ -1,6 +1,0 @@
-10.0	/home/ssaini/Projects
-14.142135623730951	/home/ssaini/Projects/doctf
-17.320508075688775	/home/ssaini/ctf
-10.0	/home/ssaini/dotfiles
-10.0	/home/ssaini/.local/bin
-10.0	/home/ssaini/.local/share
