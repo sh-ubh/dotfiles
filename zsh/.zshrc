@@ -6,7 +6,7 @@ export ZSH="/home/ssaini/.oh-my-zsh"
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 export BROWSER=firefox
-export PATH=$PATH:$HOME/.local/bin
+export PATH=$PATH:$HOME/bin
 export XDG_CURRENT_DESKTOP=bspwm
 
 # Set name of the theme to load --- if set to "random", it will
