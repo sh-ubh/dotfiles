@@ -1,9 +1,9 @@
 # wm independent hotkeys
 ## terminal emulator
 super + Return
-	urxvtc
+	alacritty
 super + shift + Return
-	bspc rule -a \* -o state=floating && urxvtc
+	bspc rule -a \* -o state=floating && alacritty
 
 # program launcher
 super + @space

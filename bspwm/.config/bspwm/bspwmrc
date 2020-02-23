@@ -1,6 +1,7 @@
 #! /bin/sh
 
 sxhkd &
+urxvtd &
 dunst &
 xset b off &
 xset s 600 &
@@ -11,7 +12,6 @@ compton --config ~/.config/compton.conf &
 ~/scrypts/bat_check.sh &
 redshift -l 13.082680:80.270718 &
 feh --bg-fill ~/Pictures/road.jpg &
-urxvtd &
 
 bspc monitor -d term web music files code virt chat game IX X
 
@@ -22,7 +22,7 @@ bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-bspc rule -a firefox desktop='^2'
+bspc rule -a Firefox desktop='^2'
 bspc rule -a Spotify desktop='^3'
 bspc rule -a telegram-desktop desktop='^7'
 bspc rule -a Pcmanfm desktop='^4'

@@ -13,9 +13,9 @@ URxvt.scrollTtyOutput:   false
 URxvt.scrollWithBuffer:  true
 URxvt.scrollTtyKeypress: true
 
-URxvt.font: xft:Hermit:style=Medium:size=9:antialias=true,xft:DejaVu Sans Mono:size=9:style=Medium:antialias=true 
-URxvt.boldFont: xft:Hermit:size=9:style=Bold:antialias=true
-URxvt.italicFont: xft:Hermit:size=9:style=Italic:antialias=true
+URxvt.font: xft:Hermit:size=9:style=medium:antialias=true 
+!URxvt.boldFont: xft:Hermit:size=9:style=Bold:antialias=true
+!URxvt.italicFont: xft:Hermit:size=9:style=Italic:antialias=true
 URxvt.letterSpace: 1
 urxvt*termName: rxvt
 urxvt*scrollBar: false
@@ -57,14 +57,14 @@ URxvt*inheritPixmap: False
 *color15:	#e0dede
 
 ! Perls
-URxvt.perl-ext-common : default,matcher,keyboard-select,url-select,resize-font
-URxvt.resize-font.step: 1
-URxvt.keysym.M-Escape          	: perl:keyboard-select:activate
-URxvt.keysym.M-u           	: perl:url-select:select_next
-URxvt.keysym.M-s           	: perl:keyboard-select:search
+!URxvt.perl-ext-common : default,matcher,keyboard-select,url-select
+!URxvt.resize-font.step: 1
+!URxvt.keysym.M-Escape          	: perl:keyboard-select:activate
+!URxvt.keysym.M-u           	: perl:url-select:select_next
+!URxvt.keysym.M-s           	: perl:keyboard-select:search
 !URxvt.perl-ext-common     	: tabbed,default,matcher
 !Urxvt.perl-lib            	: /usr/lib/urxvt/perl/
-URxvt.url-select.launcher  	: firefox
-URxvt.url-select.autocopy  	: true
-URxvt.url-select.underline 	: true
-URxvt.url-select.button:   1
+!URxvt.url-select.launcher  	: firefox
+!URxvt.url-select.autocopy  	: true
+!URxvt.url-select.underline 	: true
+!URxvt.url-select.button:   1

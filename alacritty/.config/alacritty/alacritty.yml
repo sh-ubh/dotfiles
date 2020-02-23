@@ -36,13 +36,13 @@ font:
     #   - (macOS) Menlo
     #   - (Linux) monospace
     #   - (Windows) Consolas
-    family: 'Fantasque Sans Mono'
+    family: 'Hermit'
 
     # The `style` can be specified to pick a specific face.
     style: Regular
 
   # Point size
-  size: 8.5
+  size: 9
 
   offset:
     x: 0

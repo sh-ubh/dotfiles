@@ -41,4 +41,5 @@ if [ -n "$DISPLAY" ]; then
 fi
 
 xsetroot -cursor_name left_ptr
-exec dbus-launch bspwm
+xset +fp /usr/share/fonts/liberation-fonts
+exec bspwm
