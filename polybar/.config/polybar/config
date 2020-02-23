@@ -5,6 +5,7 @@ screenchange-reload = true
 #background = ${xrdb:color0:#222}
 background = ${xrdb:background:#0d0f14}
 background-alt = ${xrdb:color0:#000}
+;foreground = ${xrdb:color7:#222}
 foreground = ${xrdb:foreground:#c5c8c6}
 foreground-alt = ${xrdb:colorBD:#444}
 primary = ${xrdb:color4:#ffb52a}
@@ -64,7 +65,7 @@ ws-icon-7 = game;戮
 ws-icon-default = 
 
 label-focused = %name%
-label-focused-foreground = ${xrdb:color6:#ffd7b1}
+label-focused-foreground = ${xrdb:color4:#ffd7b1}
 label-focused-padding = 1
 ;label-focused-font = 10
 
@@ -125,7 +126,7 @@ full-at = 98
 label-discharging = %percentage%%
 label-charging = %percentage%%
 label-full = %percentage%%
-format-discharging = <ramp-capacity> <label-discharging>
+format-discharging = <ramp-capacity>  <label-discharging>
 format-full = <ramp-capacity> <label-full>
 format-charging =  <label-charging>
 ramp-capacity-0 = 

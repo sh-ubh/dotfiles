@@ -2,11 +2,11 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH="/home/ssaini/.oh-my-zsh"
+export ZSH="/home/fd0e/.oh-my-zsh"
 export VISUAL=nvim
 export EDITOR="$VISUAL"
 export BROWSER=firefox
-export PATH=$PATH:$HOME/bin
+export PATH=$PATH:$HOME/.local/bin:$HOME/bin
 export XDG_CURRENT_DESKTOP=bspwm
 
 # Set name of the theme to load --- if set to "random", it will
@@ -73,7 +73,7 @@ ZSH_THEME="mh"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sudo extract python common-aliases archlinux fzf autojump) 
+plugins=(git sudo archlinux extract python common-aliases autojump fzf) 
 
 source $ZSH/oh-my-zsh.sh
 
@@ -114,6 +114,7 @@ alias weather="curl wttr.in"
 alias py="/bin/python"
 alias py2="/bin/python2"
 alias pubip="curl ipinfo.io/ip"
+alias mirror="sudo reflector --verbose --latest 5 --sort rate --save /etc/pacman.d/mirrorlist"
 alias k="pkill "
 alias m="cmus"
 alias vimrc="vim $HOME/.config/nvim/init.vim"
@@ -122,8 +123,6 @@ alias z="zathura"
 alias v="/usr/bin/nvim"
 alias vim="/usr/bin/nvim"
 alias sudo="sudo "
-alias drctf="docker run --rm -v $PWD:/ctf --cap-add=SYS_PTRACE --security-opt seccomp=unconfined -d --name ctf -i ctf"
-alias dectf="docker exec -it ctf /bin/bash"
 
 source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
@@ -139,4 +138,3 @@ source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zs
 
 # To add support for TTYs this line can be optionally added.
 #source ~/.cache/wal/colors-tty.sh
-

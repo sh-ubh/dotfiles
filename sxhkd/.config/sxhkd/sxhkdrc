@@ -1,9 +1,9 @@
 # wm independent hotkeys
 ## terminal emulator
 super + Return
-	alacritty
+	urxvtc
 super + shift + Return
-	bspc rule -a \* -o state=floating && alacritty
+	bspc rule -a \* -o state=floating && urxvtc
 
 # program launcher
 super + @space
@@ -30,7 +30,7 @@ super + Escape
 super + shift + w 
  	firefox
 control + alt + l
-	~/.local/bin/lock
+	light-locker-command -l
 super + shift + f
 	pcmanfm
 Print

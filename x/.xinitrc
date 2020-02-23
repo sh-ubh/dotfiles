@@ -40,6 +40,25 @@ if [ -n "$DISPLAY" ]; then
 	xset b off
 fi
 
-xsetroot -cursor_name left_ptr
-xset +fp /usr/share/fonts/liberation-fonts
+# load additional configs
+if [ "$2" = "nvidia" ]; then
+	XINIT_D="/etc/X11/nvidia/xinit/xinitrc.d"
+else
+	XINIT_D="/etc/X11/xinit/xinitrc.d"
+fi
+
+if [ -d "$XINIT_D" ]; then
+	for f in "$XINIT_D/?*.sh" ; do
+		[ -x "$f" ] && . "$f"
+	done
+	unset f
+fi
+unset XINIT_D
+
+# additional nvidia specific settings
+if [ "$2" = "nvidia" ]; then	
+	xrandr --setprovideroutputsource modesetting NVIDIA-0
+	xrandr --auto
+fi
+
 exec bspwm

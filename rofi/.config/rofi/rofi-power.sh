@@ -30,7 +30,7 @@ then
 	suspend
         ;;
       Lock)
-        /home/ssaini/.local/bin/lock
+        light-locker-command -l
         ;;
       *)
         ;;
