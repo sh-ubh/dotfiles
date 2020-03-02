@@ -1,4 +1,4 @@
-!rofi.theme: ~/.cache/wal/colors-rofi-dark.rasi
+rofi.theme: ~/.cache/wal/colors-rofi-dark.rasi
 rofi.lines: 6
 !rofi.separator-style: none
 !rofi.columns: 1

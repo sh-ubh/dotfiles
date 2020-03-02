@@ -8,7 +8,7 @@ compton --config ~/.config/compton.conf &
 ~/scrypts/bat_check.sh &
 redshift -l 13.082680:80.270718 &
 xbacklight -set 30 & 
-feh --bg-fill ~/Pictures/road.jpg &
+feh --bg-fill ~/Pictures/battle.jpg &
 urxvtd &
 
 bspc monitor -d term web music files code virt chat game IX X
@@ -21,7 +21,6 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 bspc rule -a firefox desktop='^2'
-bspc rule -a Brave-browser desktop='^2'
 bspc rule -a Spotify desktop='^3'
 bspc rule -a telegram-desktop desktop='^7'
 bspc rule -a Pcmanfm desktop='^4'
