@@ -60,5 +60,5 @@ if [ "$2" = "nvidia" ]; then
 	xrandr --setprovideroutputsource modesetting NVIDIA-0
 	xrandr --auto
 fi
-
+xsetroot -cursor_name left_ptr
 exec bspwm

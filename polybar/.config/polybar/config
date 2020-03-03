@@ -65,7 +65,7 @@ ws-icon-7 = game;戮
 ws-icon-default = 
 
 label-focused = %name%
-label-focused-foreground = ${xrdb:color4:#ffd7b1}
+label-focused-foreground = ${xrdb:color14:#ffd7b1}
 label-focused-padding = 1
 ;label-focused-font = 10
 

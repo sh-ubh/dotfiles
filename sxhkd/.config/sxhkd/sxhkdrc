@@ -30,7 +30,7 @@ super + Escape
 super + shift + w 
  	firefox
 control + alt + l
-	light-locker-command -l
+	/home/fd0e/.local/bin/lock
 super + shift + f
 	pcmanfm
 Print
