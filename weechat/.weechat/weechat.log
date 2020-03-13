@@ -1,0 +1,40 @@
+[2020-03-13 13:28:32] WeeChat 2.7.1 (compiled on Feb 20 2020 23:47:25)
+[2020-03-13 13:28:32] Writing configuration file sec.conf (default options)
+[2020-03-13 13:28:32] Reading configuration file sec.conf
+[2020-03-13 13:28:32] Reading configuration file weechat.conf
+[2020-03-13 13:28:32] Writing configuration file plugins.conf (default options)
+[2020-03-13 13:28:32] Reading configuration file plugins.conf
+[2020-03-13 13:28:32] Writing configuration file charset.conf (default options)
+[2020-03-13 13:28:32] Reading configuration file charset.conf
+[2020-03-13 13:28:32] Writing configuration file logger.conf (default options)
+[2020-03-13 13:28:32] Reading configuration file logger.conf
+[2020-03-13 13:28:32] Writing configuration file alias.conf (default options)
+[2020-03-13 13:28:32] Reading configuration file alias.conf
+[2020-03-13 13:28:32] Writing configuration file buflist.conf (default options)
+[2020-03-13 13:28:32] Reading configuration file buflist.conf
+[2020-03-13 13:28:32] Writing configuration file irc.conf (default options)
+[2020-03-13 13:28:32] Reading configuration file irc.conf
+[2020-03-13 13:28:32] Writing configuration file perl.conf (default options)
+[2020-03-13 13:28:32] Reading configuration file perl.conf
+[2020-03-13 13:28:32] Writing configuration file python.conf (default options)
+[2020-03-13 13:28:32] Reading configuration file python.conf
+[2020-03-13 13:28:32] Writing configuration file script.conf (default options)
+[2020-03-13 13:28:32] Reading configuration file script.conf
+[2020-03-13 13:30:20] irc: connecting to server de.lunarbnc.net/8080 (SSL)...
+[2020-03-13 13:40:30] irc: connecting to server de.lunarbnc.net/8080 (SSL)...
+[2020-03-13 13:54:27] irc: connecting to server de.lunarbnc.net/8080 (SSL)...
+[2020-03-13 13:56:14] irc: connecting to server de.lunarbnc.net/8080 (SSL)...
+[2020-03-13 13:59:41] irc: connecting to server de.lunarbnc.net/8080 (SSL)...
+[2020-03-13 14:00:11] irc: connecting to server de.lunarbnc.net/8080 (SSL)...
+[2020-03-13 14:01:51] irc: connecting to server de.lunarbnc.net/8080 (SSL)...
+[2020-03-13 14:04:03] Writing configuration file plugins.conf
+[2020-03-13 14:04:03] Writing configuration file buflist.conf
+[2020-03-13 14:04:03] Writing configuration file python.conf
+[2020-03-13 14:04:03] Writing configuration file charset.conf
+[2020-03-13 14:04:03] Writing configuration file perl.conf
+[2020-03-13 14:04:03] Writing configuration file script.conf
+[2020-03-13 14:04:03] Writing configuration file logger.conf
+[2020-03-13 14:04:03] Writing configuration file alias.conf
+[2020-03-13 14:04:03] Writing configuration file irc.conf
+[2020-03-13 14:04:03] Writing configuration file weechat.conf
+[2020-03-13 14:04:03] Writing configuration file sec.conf

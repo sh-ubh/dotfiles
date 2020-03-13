@@ -1,0 +1,160 @@
+2020-03-13 13:30:22	→	fd0e (~anon6405@anon6405.powered.by.lunarbnc.net) has joined ##linux
+2020-03-13 13:30:22	i	Topic for ##linux is "Channel website: https://freenode.linux.community | Pastebin: "<command> | nc termbin.com 9999" | Need an op? Join ##linux-ops"
+2020-03-13 13:30:22	i	Topic set by sauvin on Wed, 08 Jan 2020 13:39:39
+2020-03-13 13:30:22	i	Channel ##linux: 1896 nicks (0 ops, 0 voices, 1896 normals)
+2020-03-13 13:30:22	***	Buffer Playback...
+2020-03-13 13:30:22	rouji	does the graphical thing also show flatpaks or something?
+2020-03-13 13:30:22	*buffextras	culver!~lz@103.137.210.94 quit: Ping timeout: 240 seconds
+2020-03-13 13:30:22	gambl0re	https://i.imgur.com/55639NC.png
+2020-03-13 13:30:22	*buffextras	DarkTrick!~DarkTrick@pl-768-132.bunbun.ne.jp joined
+2020-03-13 13:30:22	*buffextras	con3!~con3@165.255.107.147 joined
+2020-03-13 13:30:22	*buffextras	chrisccoulson!~chrisccou@ubuntu/member/chrisccoulson joined
+2020-03-13 13:30:22	*buffextras	truthr!~truthr@unaffiliated/truthr joined
+2020-03-13 13:30:22	*buffextras	Freejack_!~quassel@unaffiliated/freejack quit: Quit: No Ping reply in 180 seconds.
+2020-03-13 13:30:22	*buffextras	Freejack_!~quassel@unaffiliated/freejack joined
+2020-03-13 13:30:22	*buffextras	TheFuzzball!~TheFuzzba@81.2.155.27 joined
+2020-03-13 13:30:22	*buffextras	arptiw!~Thunderbi@118.185.145.130 joined
+2020-03-13 13:30:22	*buffextras	c0c0!~coco@212-51-137-149.fiber7.init7.net joined
+2020-03-13 13:30:22	*buffextras	TheFuzzball!~TheFuzzba@81.2.155.27 quit: Client Quit
+2020-03-13 13:30:22	*buffextras	CraneZ!~CZhou@101.87.139.80 quit: Quit: WeeChat 2.1
+2020-03-13 13:30:22	*buffextras	Armand!~Armand@194.168.13.12 joined
+2020-03-13 13:30:22	*buffextras	Data909!~Data909@2a02-ab04-1db9-5d00-39a1-cd66-e937-c064.dynamic.v6.chello.sk joined
+2020-03-13 13:30:22	*buffextras	nobo!~nobo@APN-123-245-90-gprs.simobil.net joined
+2020-03-13 13:30:22	*buffextras	deicide-!~deicide-@unaffiliated/deicide- joined
+2020-03-13 13:30:22	*buffextras	linusw_!uid330592@linaro/linusw joined
+2020-03-13 13:30:22	*buffextras	sQVe!~sQVe@unaffiliated/sqve joined
+2020-03-13 13:30:22	*buffextras	black_ant!~antilope@unaffiliated/black-ant/x-1505394 joined
+2020-03-13 13:30:22	*buffextras	deicide-!~deicide-@unaffiliated/deicide- quit: Remote host closed the connection
+2020-03-13 13:30:22	currybullen	gambl0re: output of 'dnf search firefox'?
+2020-03-13 13:30:22	currybullen	gambl0re:  it may be as rouji says, that the graphical software installer also shows flatpaks (maybe even snaps if you've got snapd installed)
+2020-03-13 13:30:22	*buffextras	nlpqda!~kwz@unaffiliated/nlpqda quit: Quit: Lost terminal
+2020-03-13 13:30:22	*buffextras	psutcliffe!~psutcliff@2a00:801:205:660a:5455:d2d0:8884:6f28 joined
+2020-03-13 13:30:22	currybullen	hence it would show the snap, flatpak and rpm versions of firefox
+2020-03-13 13:30:22	*buffextras	swift110!~swift110@unaffiliated/swift110 quit: Ping timeout: 240 seconds
+2020-03-13 13:30:22	akik	why on earth would you hide that information ???
+2020-03-13 13:30:22	gambl0re	https://termbin.com/kobf
+2020-03-13 13:30:22	*buffextras	otisolsen71!~otisolsen@x50d248d8.cust.hiper.dk joined
+2020-03-13 13:30:22	akik	in trying to make the system usable for normal people, you crap on the advanced users
+2020-03-13 13:30:22	*buffextras	acelogic2!~acelogic@129.3.149.126 joined
+2020-03-13 13:30:22	rouji	the 4th one is oddly specific
+2020-03-13 13:30:22	*buffextras	arptiw!~Thunderbi@118.185.145.130 quit: Quit: arptiw
+2020-03-13 13:30:22	*buffextras	cmj!~c@2603:3023:30a:f300::c0ff:ee quit: Ping timeout: 272 seconds
+2020-03-13 13:30:22	gambl0re	i know right
+2020-03-13 13:30:22	*buffextras	cmj!~c@2603:3023:30a:f300::c0ff:ee joined
+2020-03-13 13:30:22	*buffextras	TheFuzzball!~TheFuzzba@81.2.155.27 joined
+2020-03-13 13:30:22	*buffextras	InspectorCluseau!~Inspector@97-127-30-166.mpls.qwest.net joined
+2020-03-13 13:30:22	*buffextras	acelogic!~acelogic@129.3.148.200 quit: Ping timeout: 265 seconds
+2020-03-13 13:30:22	currybullen	gambl0re:  i'm not sure exactly how the kde software gui works, i'm on fedora 31 gnome and their software gui doesn't display any flatpaks or snaps at least
+2020-03-13 13:30:22	*buffextras	DarkTrick!~DarkTrick@pl-768-132.bunbun.ne.jp quit: Ping timeout: 258 seconds
+2020-03-13 13:30:22	*buffextras	Neo-Andersson!~ac110001@h-2-225.A240.priv.bahnhof.se joined
+2020-03-13 13:30:22	*buffextras	otisolsen71!~otisolsen@x50d248d8.cust.hiper.dk quit: Ping timeout: 268 seconds
+2020-03-13 13:30:22	currybullen	gambl0re:  look through the settings, maybe check that 'sources' button thats on the lower left in the screenshot you sent and see if you can find any references to flatkap or snap. you can also ask in #plasma
+2020-03-13 13:30:22	*buffextras	self!~elf@unaffiliated/elf joined
+2020-03-13 13:30:22	*buffextras	AquaL1te!~AquaL1te@unaffiliated/aqual1te joined
+2020-03-13 13:30:22	*buffextras	MonoMonkey!~MonoMonke@p57801a65.dip0.t-ipconnect.de joined
+2020-03-13 13:30:22	*buffextras	Your_Dog!677b294b@unaffiliated/your-dog/x-6037946 quit: Ping timeout: 240 seconds
+2020-03-13 13:30:22	***	Playback Complete.
+2020-03-13 13:30:22	i	Channel created on Sat, 10 Feb 2001 04:46:24
+2020-03-13 13:31:18	→	slash_ (~slash_@030-245-128-083.dynamic.caiway.nl) has joined ##linux
+2020-03-13 13:31:50	←	bunnypuncher (~user@c-24-129-35-148.hsd1.fl.comcast.net) has quit (Ping timeout: 258 seconds)
+2020-03-13 13:33:02	←	ijens (~ijens@unaffiliated/ijens) has quit (Remote host closed the connection)
+2020-03-13 13:33:48	→	Whirled420_ (~whirled42@cpe-72-131-100-173.wi.res.rr.com) has joined ##linux
+2020-03-13 13:33:52	→	peetaur (~peter@pD953ED56.dip0.t-ipconnect.de) has joined ##linux
+2020-03-13 13:34:13	←	Whirled420 (~whirled42@cpe-72-131-100-173.wi.res.rr.com) has quit (Ping timeout: 255 seconds)
+2020-03-13 13:35:26	←	ghostzec (ghostzec@gateway/vpn/mullvad/ghostzec) has quit (Ping timeout: 256 seconds)
+2020-03-13 13:35:46	→	ImQ009 (~ImQ009@unaffiliated/imq009) has joined ##linux
+2020-03-13 13:37:13	→	cs02rm0 (~rich@richandsian.plus.com) has joined ##linux
+2020-03-13 13:37:18	←	Artistics (~Artistics@unaffiliated/user49) has quit (Ping timeout: 260 seconds)
+2020-03-13 13:37:22	→	drzacek (~drzacek@b941c009.business.dg-w.de) has joined ##linux
+2020-03-13 13:37:29	←	knidos (~knidos@85.98.159.26) has quit (Remote host closed the connection)
+2020-03-13 13:38:07	←	JanC (~janc@lugwv/member/JanC) has quit (Remote host closed the connection)
+2020-03-13 13:39:07	←	cliluw (~cliluw@unaffiliated/cliluw) has quit (Ping timeout: 258 seconds)
+2020-03-13 13:39:10	←	linelevel_ (linelevel@gateway/vpn/privateinternetaccess/linelevel) has quit (Ping timeout: 260 seconds)
+2020-03-13 13:39:19	→	chap (~chap@unaffiliated/chap) has joined ##linux
+2020-03-13 13:39:40	←	Neo-Andersson (~ac110001@h-2-225.A240.priv.bahnhof.se) has quit (Quit: Bye, bye.)
+2020-03-13 13:39:50	→	linelevel (linelevel@gateway/vpn/privateinternetaccess/linelevel) has joined ##linux
+2020-03-13 13:40:10	→	Artistics (~Artistics@unaffiliated/user49) has joined ##linux
+2020-03-13 13:40:20	i	irc: disconnected from server
+2020-03-13 13:40:32	→	fd0e (~anon6405@anon6405.powered.by.lunarbnc.net) has joined ##linux
+2020-03-13 13:40:32	i	Topic for ##linux is "Channel website: https://freenode.linux.community | Pastebin: "<command> | nc termbin.com 9999" | Need an op? Join ##linux-ops"
+2020-03-13 13:40:32	i	Topic set by sauvin on Wed, 08 Jan 2020 13:39:39
+2020-03-13 13:40:32	i	Channel ##linux: 1893 nicks (0 ops, 0 voices, 1893 normals)
+2020-03-13 13:40:32	***	Buffer Playback...
+2020-03-13 13:40:32	*buffextras	acelogic2!~acelogic@129.3.149.126 quit: Ping timeout: 268 seconds
+2020-03-13 13:40:32	psutcliffe	ZombieChicken, no. they're just morons
+2020-03-13 13:40:32	*buffextras	HerbY_NL2!~HerbY_NL2@2001:67c:2564:518:3cb5:89c:bd27:ee69 quit: Quit: Leaving
+2020-03-13 13:40:32	psutcliffe	they don't want to sit around with shitty butts when the world economy collapses
+2020-03-13 13:40:32	***	Playback Complete.
+2020-03-13 13:40:34	→	knidos (~knidos@85.98.159.26) has joined ##linux
+2020-03-13 13:40:40	i	Channel created on Sat, 10 Feb 2001 04:46:24
+2020-03-13 13:41:00	→	ArchitectZ (~Architect@135-23-100-130.cpe.pppoe.ca) has joined ##linux
+2020-03-13 13:41:06	←	knidos (~knidos@85.98.159.26) has quit (Client Quit)
+2020-03-13 13:42:10	→	Jackneill (~Jackneill@unaffiliated/jackneill) has joined ##linux
+2020-03-13 13:42:19	←	gkamathe (~gkamathe@unaffiliated/gkamathe) has quit (Ping timeout: 255 seconds)
+2020-03-13 13:43:26	→	cgp (~Thunderbi@141.8.40.112) has joined ##linux
+2020-03-13 13:44:28	←	ArchitectZ (~Architect@135-23-100-130.cpe.pppoe.ca) has quit (Client Quit)
+2020-03-13 13:44:35	←	Beam_Inn (~Beam_Inn@unaffiliated/beam-inn/x-3943829) has quit (Remote host closed the connection)
+2020-03-13 13:44:54	→	ArchitectZ (~Architect@135-23-100-130.cpe.pppoe.ca) has joined ##linux
+2020-03-13 13:45:22	←	instantp10neer (~instantp1@unaffiliated/instantp10neer) has quit (Quit: Leaving)
+2020-03-13 13:47:06	→	operateur (~operateur@91.143.220.230) has joined ##linux
+2020-03-13 13:47:21	←	bjelleklang (~c@wikipedia/Bjelleklang) has quit (Quit: Leaving)
+2020-03-13 13:47:47	←	Data909 (~Data909@2a02-ab04-1db9-5d00-39a1-cd66-e937-c064.dynamic.v6.chello.sk) has quit (Read error: Connection reset by peer)
+2020-03-13 13:48:07	→	z8z (~x@ac230029.ppp.asahi-net.or.jp) has joined ##linux
+2020-03-13 13:48:22	→	makaveli7 (~makaveli7@unaffiliated/makaveli7) has joined ##linux
+2020-03-13 13:49:37	←	snimavat (~snimavat@219.91.191.174) has quit (Quit: snimavat)
+2020-03-13 13:49:48	→	_0xDEADBEEF (~hamidnaza@121-200-4-166.79c804.syd.nbn.aussiebb.net) has joined ##linux
+2020-03-13 13:51:09	gambl0re	currybullen: i think its getting packages from snap and flatpak
+2020-03-13 13:51:18	→	tsaka__ (~torstein@2a02:587:8102:ca00:145e:52a9:485a:3afa) has joined ##linux
+2020-03-13 13:52:09	←	dmo139 (~dmo@2a02:8071:3e87:700:6d17:4e3b:233b:b4b9) has quit (Ping timeout: 240 seconds)
+2020-03-13 13:52:15	currybullen	gambl0re:  well there's the explanation then :)
+2020-03-13 13:52:26	←	peetaur (~peter@pD953ED56.dip0.t-ipconnect.de) has quit (Ping timeout: 256 seconds)
+2020-03-13 13:53:08	→	Beam_Inn (~Beam_Inn@unaffiliated/beam-inn/x-3943829) has joined ##linux
+2020-03-13 13:53:16	→	peetaur (~peter@pD953ED56.dip0.t-ipconnect.de) has joined ##linux
+2020-03-13 13:53:19	→	ignapk (sid413777@gateway/web/irccloud.com/x-cltprlihzkxaecif) has joined ##linux
+2020-03-13 13:53:30	←	hekel (~hekel@unaffiliated/hekel) has quit (Remote host closed the connection)
+2020-03-13 13:53:53	←	Necktwi (~necktwi@157.48.89.237) has quit (Read error: Connection reset by peer)
+2020-03-13 13:54:04	→	bomb-on (~bomb-on@139-142-17-89.fiber.hringdu.is) has joined ##linux
+2020-03-13 13:54:17	i	irc: disconnected from server
+2020-03-13 13:54:46	→	fd0e (~anon6405@anon6405.powered.by.lunarbnc.net) has joined ##linux
+2020-03-13 13:54:46	i	Topic for ##linux is "Channel website: https://freenode.linux.community | Pastebin: "<command> | nc termbin.com 9999" | Need an op? Join ##linux-ops"
+2020-03-13 13:54:46	i	Topic set by sauvin on Wed, 08 Jan 2020 13:39:39
+2020-03-13 13:55:03	i	Channel ##linux: 1895 nicks (0 ops, 0 voices, 1895 normals)
+2020-03-13 13:55:17	→	hekel (~hekel@unaffiliated/hekel) has joined ##linux
+2020-03-13 13:56:04	i	Channel created on Sat, 10 Feb 2001 04:46:24
+2020-03-13 13:56:04	→	fivegruel (~fivegruel@ufr-132-230-195-201.uni-nat.uni-freiburg.de) has joined ##linux
+2020-03-13 13:56:04	→	cschneid (~cschneid@c-73-78-144-189.hsd1.co.comcast.net) has joined ##linux
+2020-03-13 13:56:04	i	irc: disconnected from server
+2020-03-13 13:56:15	→	fd0e (~anon6405@anon6405.powered.by.lunarbnc.net) has joined ##linux
+2020-03-13 13:56:15	i	Topic for ##linux is "Channel website: https://freenode.linux.community | Pastebin: "<command> | nc termbin.com 9999" | Need an op? Join ##linux-ops"
+2020-03-13 13:56:15	i	Topic set by sauvin on Wed, 08 Jan 2020 13:39:39
+2020-03-13 13:56:16	i	Channel ##linux: 1898 nicks (0 ops, 0 voices, 1898 normals)
+2020-03-13 13:56:23	i	Channel created on Sat, 10 Feb 2001 04:46:24
+2020-03-13 13:56:48	←	cschneid_ (~cschneid@c-73-78-144-189.hsd1.co.comcast.net) has quit (Ping timeout: 265 seconds)
+2020-03-13 13:57:17	→	horseface (~horseface@unaffiliated/horseface) has joined ##linux
+2020-03-13 13:57:54	←	first-order (~Arch-Star@24-139-45-27.fidnet.com) has quit (Ping timeout: 258 seconds)
+2020-03-13 13:59:31	←	daex (daex@gateway/vpn/protonvpn/daex) has quit (Ping timeout: 255 seconds)
+2020-03-13 13:59:31	←	psutcliffe (~psutcliff@2a00:801:205:660a:5455:d2d0:8884:6f28) has quit (Ping timeout: 272 seconds)
+2020-03-13 13:59:31	→	Necktwi (~necktwi@157.48.89.237) has joined ##linux
+2020-03-13 13:59:31	i	irc: disconnected from server
+2020-03-13 14:01:52	→	fd0e (~anon6405@anon6405.powered.by.lunarbnc.net) has joined ##linux
+2020-03-13 14:01:52	i	Topic for ##linux is "Channel website: https://freenode.linux.community | Pastebin: "<command> | nc termbin.com 9999" | Need an op? Join ##linux-ops"
+2020-03-13 14:01:52	i	Topic set by sauvin on Wed, 08 Jan 2020 13:39:39
+2020-03-13 14:01:52	i	Channel ##linux: 1899 nicks (0 ops, 0 voices, 1899 normals)
+2020-03-13 14:01:52	***	Buffer Playback...
+2020-03-13 14:01:52	*buffextras	vqrs!~vqrs@learnprogramming/regular/vqrs quit: Ping timeout: 246 seconds
+2020-03-13 14:01:52	*buffextras	Beam_Inn_!~Beam_Inn@unaffiliated/beam-inn/x-3943829 joined
+2020-03-13 14:01:52	*buffextras	chap!~chap@unaffiliated/chap quit: Quit: I laugh with many, but don't trust any.
+2020-03-13 14:01:52	*buffextras	trens!~trens@cpe-184-54-204-115.swo.res.rr.com joined
+2020-03-13 14:01:52	*buffextras	self!~elf@unaffiliated/elf quit: Ping timeout: 260 seconds
+2020-03-13 14:01:52	*buffextras	vqrs!~vqrs@learnprogramming/regular/vqrs joined
+2020-03-13 14:01:52	*buffextras	NetTerminalGene!~NetTermin@unaffiliated/dontknow joined
+2020-03-13 14:01:52	*buffextras	horseface_!~horseface@unaffiliated/horseface joined
+2020-03-13 14:01:52	*buffextras	daex!daex@gateway/vpn/protonvpn/daex joined
+2020-03-13 14:01:52	***	Playback Complete.
+2020-03-13 14:02:00	i	Channel created on Sat, 10 Feb 2001 04:46:24
+2020-03-13 14:02:32	←	Beam_Inn (~Beam_Inn@unaffiliated/beam-inn/x-3943829) has quit (Ping timeout: 258 seconds)
+2020-03-13 14:02:43	i	Beam_Inn_ is now known as Beam_Inn
+2020-03-13 14:03:32	→	amrx (~zbrute@unaffiliated/amrx) has joined ##linux
+2020-03-13 14:03:55	←	peetaur (~peter@pD953ED56.dip0.t-ipconnect.de) has quit (Ping timeout: 255 seconds)
+2020-03-13 14:03:55	←	horseface (~horseface@unaffiliated/horseface) has quit (Read error: Connection reset by peer)
+2020-03-13 14:03:55	i	irc: disconnected from server

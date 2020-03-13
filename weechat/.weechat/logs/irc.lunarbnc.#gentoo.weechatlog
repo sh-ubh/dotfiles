@@ -1,0 +1,140 @@
+2020-03-13 13:30:22	→	fd0e (~anon6405@anon6405.powered.by.lunarbnc.net) has joined #gentoo
+2020-03-13 13:30:22	i	Topic for #gentoo is "Gentoo Linux Support | Can't speak? /j #gentoo-ops | long pastes: wgetpaste or dpaste.com | Perl conflicts? https://goo.gl/7Miost | Be nice! https://goo.gl/gvnCii | Switch to profile 17.1? https://bit.ly/322fxVr | startx permission problems? emerge -1a xorg-server[suid] or use elogind, systemd, or a DM"
+2020-03-13 13:30:22	i	Topic set by grknight (~grknight@gentoo/developer/grknight) on Wed, 02 Oct 2019 01:53:47
+2020-03-13 13:30:22	i	Channel #gentoo: 1042 nicks (3 ops, 53 voices, 986 normals)
+2020-03-13 13:30:22	***	Buffer Playback...
+2020-03-13 13:30:22	dkjii	mic works on other computer jinx_ ?
+2020-03-13 13:30:22	dkjii	did u use the right device name with arecord
+2020-03-13 13:30:22	dkjii	?
+2020-03-13 13:30:22	jinx_	Ya, it worked fine on the last PC so I am not sure what I did..
+2020-03-13 13:30:22	jinx_	And not sure, how would I know?
+2020-03-13 13:30:22	dkjii	arecord -L
+2020-03-13 13:30:22	dkjii	list devices
+2020-03-13 13:30:22	dkjii	u might want to install pulseaudio too
+2020-03-13 13:30:22	jinx_	OK to the first, no to the later.
+2020-03-13 13:30:22	jinx_	Pulse always manages to brake things and pulls in a tone of config files for features I will never use.
+2020-03-13 13:30:22	jinx_	Ya, I know about sound quality. I like ALSA's sounds.
+2020-03-13 13:30:22	dkjii	i dont like pulse that much either but it auto configures things for u and some apps require it
+2020-03-13 13:30:22	dkjii	also it has slick uis
+2020-03-13 13:30:22	jinx_	Ya, I refuse to use those apps.
+2020-03-13 13:30:22	dkjii	firefox is notoriously bad at using alsa-only systems
+2020-03-13 13:30:22	jinx_	Pulse is something I will avoide as long as I am able.
+2020-03-13 13:30:22	jinx_	And oh ya, let me see something...
+2020-03-13 13:30:22	dkjii	pretty sure theres a unresolved bug report for a few years now about ff not respecting asoundrc
+2020-03-13 13:30:22	earendil	i use apulse as a shim to avoid using audiopus
+2020-03-13 13:30:22	*buffextras	Petrus_Z!~Petrus.Z@unaffiliated/petrus-z/x-5059513 joined
+2020-03-13 13:30:22	jinx_	OK< closing FF didn't work.
+2020-03-13 13:30:22	*buffextras	tdr!tdr@gateway/vpn/privateinternetaccess/tdr joined
+2020-03-13 13:30:22	*buffextras	iambraindead!imbraindea@gateway/shell/xshellz/x-ijuerumtvuzcozyv joined
+2020-03-13 13:30:22	*buffextras	tdr!tdr@gateway/vpn/privateinternetaccess/tdr parted:
+2020-03-13 13:30:22	*buffextras	bowlofeggs!~bowlofegg@fedora/bowlofeggs quit: Ping timeout: 240 seconds
+2020-03-13 13:30:22	*buffextras	bowlofeggs!~bowlofegg@flag.electronsweatshop.com joined
+2020-03-13 13:30:22	*buffextras	bowlofeggs!~bowlofegg@flag.electronsweatshop.com quit: Changing host
+2020-03-13 13:30:22	*buffextras	bowlofeggs!~bowlofegg@fedora/bowlofeggs joined
+2020-03-13 13:30:22	*buffextras	Petrus_Z!~Petrus.Z@unaffiliated/petrus-z/x-5059513 quit: Remote host closed the connection
+2020-03-13 13:30:22	*buffextras	chewyDelicious!~nooblet@ip4d16fc3b.dynamic.kabel-deutschland.de joined
+2020-03-13 13:30:22	*buffextras	Petrus_Z!~Petrus.Z@unaffiliated/petrus-z/x-5059513 joined
+2020-03-13 13:30:22	*buffextras	Petrus_Z!~Petrus.Z@unaffiliated/petrus-z/x-5059513 quit: Remote host closed the connection
+2020-03-13 13:30:22	*buffextras	Petrus_Z!~Petrus.Z@unaffiliated/petrus-z/x-5059513 joined
+2020-03-13 13:30:22	jinx_	http://dpaste.com/0NYNDXK
+2020-03-13 13:30:22	jinx_	http://dpaste.com/3GZNACP
+2020-03-13 13:30:22	jinx_	What did I do wrong now?
+2020-03-13 13:30:22	*buffextras	Petrus_Z!~Petrus.Z@unaffiliated/petrus-z/x-5059513 quit: Remote host closed the connection
+2020-03-13 13:30:22	*buffextras	Ycarus!~Ycarus@2001:bc8:47b0:1b0b::1 joined
+2020-03-13 13:30:22	*buffextras	Petrus_Z!~Petrus.Z@unaffiliated/petrus-z/x-5059513 joined
+2020-03-13 13:30:22	*buffextras	m0u!~m0u@unaffiliated/m0u joined
+2020-03-13 13:30:22	*buffextras	Petrus_Z!~Petrus.Z@unaffiliated/petrus-z/x-5059513 quit: Remote host closed the connection
+2020-03-13 13:30:22	*buffextras	Petrus_Z!~Petrus.Z@unaffiliated/petrus-z/x-5059513 joined
+2020-03-13 13:30:22	*buffextras	acelogic2!~acelogic@129.3.149.126 joined
+2020-03-13 13:30:22	*buffextras	Petrus_Z!~Petrus.Z@unaffiliated/petrus-z/x-5059513 parted:
+2020-03-13 13:30:22	*buffextras	schplaf!~jcb_@salsa-01.enst-bretagne.fr joined
+2020-03-13 13:30:22	*buffextras	acelogic!~acelogic@129.3.148.200 quit: Ping timeout: 265 seconds
+2020-03-13 13:30:22	*buffextras	tuxracer!~mundi@51.154.102.17 joined
+2020-03-13 13:30:22	*buffextras	autopsy!~autopsy@fedora/autopsy joined
+2020-03-13 13:30:22	*buffextras	m0u!~m0u@unaffiliated/m0u quit: Ping timeout: 255 seconds
+2020-03-13 13:30:22	jinx_	So? No ideas?
+2020-03-13 13:30:22	***	Playback Complete.
+2020-03-13 13:30:26	i	Channel created on Sat, 15 Sep 2001 08:45:36
+2020-03-13 13:31:57	→	glongo (uid17594@gateway/web/irccloud.com/x-vokcuwkfatxcxjno) has joined #gentoo
+2020-03-13 13:32:07	→	m0u (~m0u@unaffiliated/m0u) has joined #gentoo
+2020-03-13 13:33:30	→	gauge (~gauge@unaffiliated/gauge) has joined #gentoo
+2020-03-13 13:33:36	←	gauge (~gauge@unaffiliated/gauge) has quit (Remote host closed the connection)
+2020-03-13 13:34:40	hololeap	Unknown PCM Snowball
+2020-03-13 13:34:48	→	orotalt (~orotalt@unaffiliated/f4cl3y) has joined #gentoo
+2020-03-13 13:35:25	hololeap	hmm. i'm not very good with ALSA actually...
+2020-03-13 13:36:34	jinx_	Hhhmmm... Maybe if I do this...
+2020-03-13 13:37:21	jinx_	It will take a little while. ^^;
+2020-03-13 13:38:21	→	oc2k1_ (~oc2k1@62-193-39-77.as16211.net) has joined #gentoo
+2020-03-13 13:39:24	→	feriman (~feriman@176.104.191.183) has joined #gentoo
+2020-03-13 13:40:20	i	irc: disconnected from server
+2020-03-13 13:40:32	→	fd0e (~anon6405@anon6405.powered.by.lunarbnc.net) has joined #gentoo
+2020-03-13 13:40:32	i	Topic for #gentoo is "Gentoo Linux Support | Can't speak? /j #gentoo-ops | long pastes: wgetpaste or dpaste.com | Perl conflicts? https://goo.gl/7Miost | Be nice! https://goo.gl/gvnCii | Switch to profile 17.1? https://bit.ly/322fxVr | startx permission problems? emerge -1a xorg-server[suid] or use elogind, systemd, or a DM"
+2020-03-13 13:40:32	i	Topic set by grknight (~grknight@gentoo/developer/grknight) on Wed, 02 Oct 2019 01:53:47
+2020-03-13 13:40:32	i	Channel #gentoo: 1046 nicks (3 ops, 53 voices, 990 normals)
+2020-03-13 13:40:32	***	Buffer Playback...
+2020-03-13 13:40:32	*buffextras	acelogic2!~acelogic@129.3.149.126 quit: Ping timeout: 268 seconds
+2020-03-13 13:40:32	hololeap	jinx_: try --device=front:CARD=Snowball
+2020-03-13 13:40:32	***	Playback Complete.
+2020-03-13 13:40:44	i	Channel created on Sat, 15 Sep 2001 08:45:36
+2020-03-13 13:40:48	←	_CrustY (~crusty@aftr-62-216-209-36.dynamic.mnet-online.de) has quit (Ping timeout: 268 seconds)
+2020-03-13 13:42:23	←	jvesely (~jvesely@2601:18a:c100:b820:da9c:67ff:fe43:9d5b) has quit (Quit: jvesely)
+2020-03-13 13:43:34	→	jkroon (~jkroon@41.114.52.40) has joined #gentoo
+2020-03-13 13:43:44	jinx_	Ah, thanks.
+2020-03-13 13:44:33	jinx_	It did.
+2020-03-13 13:44:38	jinx_	It did work.
+2020-03-13 13:44:40	jinx_	So it's Telegram itself.
+2020-03-13 13:44:44	jinx_	Good to know./
+2020-03-13 13:44:55	dkjii	why front?
+2020-03-13 13:45:06	dkjii	im confused about also naming schemes
+2020-03-13 13:45:11	dkjii	nah its not telegram
+2020-03-13 13:45:27	dkjii	if it didnt work with arecord on its own, it means the default recording device is set wrong
+2020-03-13 13:45:32	jinx_	No it is, Telegram did not have that option when selecting input.
+2020-03-13 13:45:33	dkjii	i mean maybe it is
+2020-03-13 13:45:35	hololeap	i just guessed. it seemed like the most likely one
+2020-03-13 13:45:50	dkjii	oh u can select device with telegram?
+2020-03-13 13:45:59	jinx_	I kind of understand, but not that much.
+2020-03-13 13:46:14	jinx_	Ya, under advanced settings.
+2020-03-13 13:46:27	dkjii	ah fair, if its not detecting it thats weird
+2020-03-13 13:47:09	→	gauge (~gauge@unaffiliated/gauge) has joined #gentoo
+2020-03-13 13:47:12	←	gauge (~gauge@unaffiliated/gauge) has quit (Read error: Connection reset by peer)
+2020-03-13 13:48:23	→	makaveli7 (~makaveli7@unaffiliated/makaveli7) has joined #gentoo
+2020-03-13 13:52:35	jinx_	Ah! All fixxed.
+2020-03-13 13:52:36	←	Cyb3rN4ut (~psybernau@37.142.174.250) has quit (Read error: Connection reset by peer)
+2020-03-13 13:53:17	jinx_	Added this if you wanted to know: http://dpaste.com/31ZXC6W
+2020-03-13 13:53:18	jinx_	That made it work.
+2020-03-13 13:53:41	jinx_	Replace "Snowball" with your mic's ALSA name if you need to do the same.
+2020-03-13 13:53:49	jinx_	Anyway, see you all.
+2020-03-13 13:53:53	←	Necktwi (~necktwi@157.48.89.237) has quit (Read error: Connection reset by peer)
+2020-03-13 13:53:53	→	waebbl (~waebbl@2001:a61:3a3b:9e01:2169:e4b5:5c51:889) has joined #gentoo
+2020-03-13 13:54:04	←	jinx_ (~jinx@172.58.142.160) has quit (Quit: leaving)
+2020-03-13 13:54:17	i	irc: disconnected from server
+2020-03-13 13:55:03	→	fd0e (~anon6405@anon6405.powered.by.lunarbnc.net) has joined #gentoo
+2020-03-13 13:55:03	i	Topic for #gentoo is "Gentoo Linux Support | Can't speak? /j #gentoo-ops | long pastes: wgetpaste or dpaste.com | Perl conflicts? https://goo.gl/7Miost | Be nice! https://goo.gl/gvnCii | Switch to profile 17.1? https://bit.ly/322fxVr | startx permission problems? emerge -1a xorg-server[suid] or use elogind, systemd, or a DM"
+2020-03-13 13:55:03	i	Topic set by grknight (~grknight@gentoo/developer/grknight) on Wed, 02 Oct 2019 01:53:47
+2020-03-13 13:55:17	i	Channel #gentoo: 1043 nicks (3 ops, 53 voices, 987 normals)
+2020-03-13 13:55:17	***	Buffer Playback...
+2020-03-13 13:55:17	*buffextras	PartierSP!~PartierSP@dhcp-cc-b2-55-d1-46-39.cpe.wightman.ca quit: Quit: O'Brian, beam me up!
+2020-03-13 13:55:17	***	Playback Complete.
+2020-03-13 13:56:04	i	Channel created on Sat, 15 Sep 2001 08:45:36
+2020-03-13 13:56:04	i	irc: disconnected from server
+2020-03-13 13:56:16	→	fd0e (~anon6405@anon6405.powered.by.lunarbnc.net) has joined #gentoo
+2020-03-13 13:56:16	i	Topic for #gentoo is "Gentoo Linux Support | Can't speak? /j #gentoo-ops | long pastes: wgetpaste or dpaste.com | Perl conflicts? https://goo.gl/7Miost | Be nice! https://goo.gl/gvnCii | Switch to profile 17.1? https://bit.ly/322fxVr | startx permission problems? emerge -1a xorg-server[suid] or use elogind, systemd, or a DM"
+2020-03-13 13:56:16	i	Topic set by grknight (~grknight@gentoo/developer/grknight) on Wed, 02 Oct 2019 01:53:47
+2020-03-13 13:56:16	i	Channel #gentoo: 1043 nicks (3 ops, 53 voices, 987 normals)
+2020-03-13 13:56:26	←	m0u (~m0u@unaffiliated/m0u) has quit (Ping timeout: 260 seconds)
+2020-03-13 13:56:26	→	hijacker (~nikolay@149.235.255.3) has joined #gentoo
+2020-03-13 13:56:27	i	Channel created on Sat, 15 Sep 2001 08:45:36
+2020-03-13 13:58:07	←	jkroon (~jkroon@41.114.52.40) has quit (Read error: Connection reset by peer)
+2020-03-13 13:59:31	→	Necktwi (~necktwi@157.48.89.237) has joined #gentoo
+2020-03-13 13:59:31	i	irc: disconnected from server
+2020-03-13 14:01:52	→	fd0e (~anon6405@anon6405.powered.by.lunarbnc.net) has joined #gentoo
+2020-03-13 14:01:52	i	Topic for #gentoo is "Gentoo Linux Support | Can't speak? /j #gentoo-ops | long pastes: wgetpaste or dpaste.com | Perl conflicts? https://goo.gl/7Miost | Be nice! https://goo.gl/gvnCii | Switch to profile 17.1? https://bit.ly/322fxVr | startx permission problems? emerge -1a xorg-server[suid] or use elogind, systemd, or a DM"
+2020-03-13 14:01:52	i	Topic set by grknight (~grknight@gentoo/developer/grknight) on Wed, 02 Oct 2019 01:53:47
+2020-03-13 14:01:52	i	Channel #gentoo: 1045 nicks (3 ops, 53 voices, 989 normals)
+2020-03-13 14:01:52	***	Buffer Playback...
+2020-03-13 14:01:52	*buffextras	_CrustY!~crusty@aftr-62-216-209-36.dynamic.mnet-online.de joined
+2020-03-13 14:01:52	*buffextras	trens!~trens@cpe-184-54-204-115.swo.res.rr.com joined
+2020-03-13 14:01:52	***	Playback Complete.
+2020-03-13 14:02:05	i	Channel created on Sat, 15 Sep 2001 08:45:36
+2020-03-13 14:03:38	←	kalamaki (~kalamaki@tiamat.uom.gr) has quit (Quit: leaving)
+2020-03-13 14:03:55	i	irc: disconnected from server
