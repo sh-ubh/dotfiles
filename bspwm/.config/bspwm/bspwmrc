@@ -9,7 +9,7 @@ compton --config ~/.config/compton.conf &
 ~/scrypts/bat_check.sh &
 redshift -l 13.082680:80.270718 &
 xbacklight -set 30 & 
-feh --bg-fill ~/Pictures/samuria.jpg &
+feh --bg-fill ~/Pictures/wavesss.jpg &
 urxvtd &
 
 bspc monitor -d term web music files code virt chat game IX X
