@@ -3,6 +3,7 @@
 sxhkd &
 dunst &
 unclutter &
+mpDris2 &
 xss-lock -- /home/fd0e/.local/bin/lock &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 compton --config ~/.config/compton.conf &
