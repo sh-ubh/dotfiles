@@ -23,8 +23,6 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 bspc rule -a firefox desktop='^2'
-bspc rule -a Spotify desktop='^3'
-bspc rule -a telegram-desktop desktop='^7'
 bspc rule -a Pcmanfm desktop='^4'
 
 $HOME/.config/polybar/launch.sh &
