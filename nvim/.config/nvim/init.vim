@@ -15,8 +15,6 @@ Plug 'junegunn/goyo.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
-Plug 'vim-airline/vim-airline'
-Plug 'vim-airline/vim-airline-themes'
 call plug#end()
 
 set guicursor=
@@ -88,60 +86,21 @@ let g:keysound_volume = 1000
 let g:keysound_py_version = 3
 let g:keysound_theme = 'default'
 
-" symbols
-let g:Powerline_symbols = "fancy"
-let g:Powerline_dividers_override = ["\Ue0b0","\Ue0b1","\Ue0b2","\Ue0b3"]
-let g:Powerline_symbols_override = {'BRANCH': "\Ue0a0", 'LINE': "\Ue0a1", 'RO': "\Ue0a2"}
-let g:airline_powerline_fonts = 1
-let g:airline_right_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_left_alt_sep= ''
-let g:airline_left_sep = ''
-
-" air-line
-let g:airline_powerline_fonts = 1
-
-if !exists('g:airline_symbols')
-    let g:airline_symbols = {}
-endif
-
-" unicode symbols
-let g:airline_left_sep = '»'
-let g:airline_left_sep = '▶'
-let g:airline_right_sep = '«'
-let g:airline_right_sep = '◀'
-let g:airline_symbols.linenr = '␊'
-let g:airline_symbols.linenr = '␤'
-let g:airline_symbols.linenr = '¶'
-let g:airline_symbols.branch = '⎇'
-let g:airline_symbols.paste = 'ρ'
-let g:airline_symbols.paste = 'Þ'
-let g:airline_symbols.paste = '∥'
-let g:airline_symbols.whitespace = 'Ξ'
-
-" airline symbols
-let g:airline_left_sep = ''
-let g:airline_left_alt_sep = ''
-let g:airline_right_sep = ''
-let g:airline_right_alt_sep = ''
-let g:airline_symbols.branch = ''
-let g:airline_symbols.readonly = ''
-let g:airline_symbols.linenr = ''
-
-"Airline Themes
-"let g:airline_theme='dark'
-"let g:airline_theme='badcat'
-let g:airline_theme='base16_grayscale'
-"let g:airline_theme='ravenpower'
-"let g:airline_theme='simple'
-"let g:airline_theme='term'
-"let g:airline_theme='ubaryd'
-"let g:airline_theme='laederon'
-"let g:airline_theme='kolor'
-"let g:airline_theme='deus'
-"let g:airline_theme='powerlineish'
-
 " nerdtree
 let g:NERDTreeWinPos = "right"
 map <C-n> :NERDTreeToggle<CR>
 nnoremap <c-p> :FZF<CR>
+
+"statusbar
+hi Comment cterm=italic
+hi CursorLine ctermbg=none
+set statusline=
+set statusline +=%1*\ %n\ %*            "buffer number
+set statusline +=%5*%{&ff}%*            "file format
+set statusline +=%3*%y%*                "file type
+set statusline +=%4*\ %<%F%*            "full path
+set statusline +=%2*%m%*                "modified flag
+set statusline +=%1*%=%5l%*             "current line
+set statusline +=%2*/%L%*               "total lines
+set statusline +=%1*%4v\ %*             "virtual column number
+set statusline +=%2*0x%04B\ %*          "character under cursor

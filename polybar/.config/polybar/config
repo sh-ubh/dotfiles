@@ -3,7 +3,7 @@ screenchange-reload = true
 
 [colors]
 #background = ${xrdb:color0:#222}
-background = ${xrdb:background:#0d0f14}
+background = ${xrdb:background:#060808}
 background-alt = ${xrdb:color0:#000}
 ;foreground = ${xrdb:color7:#222}
 foreground = ${xrdb:foreground:#c5c8c6}
@@ -65,7 +65,7 @@ ws-icon-7 = game;戮
 ws-icon-default = 
 
 label-focused = %name%
-label-focused-foreground = ${xrdb:color14:#ffd7b1}
+label-focused-foreground = ${xrdb:color6:#ffd7b1}
 label-focused-padding = 1
 ;label-focused-font = 10
 
