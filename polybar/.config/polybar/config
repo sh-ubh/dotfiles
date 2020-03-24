@@ -34,7 +34,7 @@ module-margin-right = 1.5
 font-0 = Hermit:style=medium:size=9;1
 modules-left = alsa battery date time bspwm
 modules-center = 
-;modules-right = spotify mpd
+modules-right = cmus
 tray-position = right
 cursor-click = pointer
 cursor-scroll = ns-resize
@@ -143,21 +143,20 @@ format = <label>
 format-foreground = #7b8c58
 exec = python ~/.config/polybar/spotify.py -f '{artist}: {song}'
 
-;[module/cmus]
-;type = custom/script
-;exec = ~/.config/polybar/cmus.sh
-;exec-if = pgrep -x cmus
-;interval = 1
-;click-left = cmus-remote --next
-;click-right = cmus-remote --prev
-;click-middle = cmus-remote --pause
-;scroll-up = cmus-remote --volume +5%
-;scroll-down = cmus-remote --volume -5%
-;format = <label>
-;format-prefix = " "
-;format-foreground = #7b8c58
-;label = %output%
-;label-maxlen = 50
+[module/cmus]
+type = custom/script
+exec = ~/.config/polybar/cmus.sh
+exec-if = pgrep -x cmus
+interval = 1
+click-left = cmus-remote --next
+click-right = cmus-remote --prev
+click-middle = cmus-remote --pause
+scroll-up = cmus-remote --volume +5%
+scroll-down = cmus-remote --volume -5%
+format = mus: <label>
+format-foreground = #7b8c58
+label = %output%
+label-maxlen = 50
 
 [module/mpd]
 type = internal/mpd

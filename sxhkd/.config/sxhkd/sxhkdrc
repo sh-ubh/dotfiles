@@ -14,10 +14,10 @@ super + i
 	~/.config/rofi/rofi-wifi.sh
 
 # cmus (I don't know why mpDris is not supported. Got it musl problem lol)
-#super + {u,n}
-#	cmus-remote {-p,-n}
-#super + shift + {u,n}
-#	cmus-remote {-u,-r}
+super + {u,n}
+	cmus-remote {-p,-n}
+super + shift + {u,n}
+	cmus-remote {-u,-r}
 
 
 # make sxhkd reload its configuration files:
