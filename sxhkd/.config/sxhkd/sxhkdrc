@@ -7,8 +7,7 @@ super + shift + Return
 
 # program launcher
 super + @space
-	rofi -show drun -show-icons
-
+	dmenu_run -l 10
 super + c
     rofi -show calc -modi calc -no-show-match -no-sort -no-history
 super + i
@@ -30,15 +29,15 @@ super + Escape
 super + shift + w 
  	firefox
 control + alt + l
-	/home/fd0e/.local/bin/lock
+    lock
 super + shift + f
-	pcmanfm
+	spacefm
 Print
 	scrot
 ctrl + Print
 	scrot 
 super + x
-	~/.config/rofi/rofi-power.sh
+	shut
 super + shift + p
 	rofi-pass
 #
@@ -162,5 +161,7 @@ XF86Audio{Play,Next,Prev}
 	playerctl {play-pause,next,previous}
 
 #light
-XF86MonBrightness{Down,Up}
-	xbacklight {-dec 3,-inc 3}
+XF86MonBrightnessDown
+    sudo sh -c 'for f in /sys/class/backlight/*; do echo $(($(<$f/brightness)-5*$(<$f/max_brightness)/100)) > $f/brightness; done'
+XF86MonBrightnessUp
+    sudo sh -c 'for f in /sys/class/backlight/*; do echo $(($(<$f/brightness)+5*$(<$f/max_brightness)/100)) > $f/brightness; done'

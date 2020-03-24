@@ -3,14 +3,13 @@
 sxhkd &
 dunst &
 unclutter &
+xset b off &
 mpDris2 &
-xss-lock -- /home/fd0e/.local/bin/lock &
-/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
-compton --config ~/.config/compton.conf &
+#xss-lock -- /home/fd0e/.local/bin/lock &
+compton &
 ~/scrypts/bat_check.sh &
 redshift -l 13.082680:80.270718 &
-xbacklight -set 30 & 
-feh --bg-fill ~/Pictures/bech.jpg &
+~/.fehbg &
 urxvtd &
 
 bspc monitor -d term web music files code virt chat game IX X
@@ -23,6 +22,6 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 bspc rule -a firefox desktop='^2'
-bspc rule -a Pcmanfm desktop='^4'
+bspc rule -a Spacefm desktop='^4'
 
 $HOME/.config/polybar/launch.sh &

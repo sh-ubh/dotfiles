@@ -13,7 +13,7 @@ export XDG_CURRENT_DESKTOP=bspwm
 # load a random theme each time oh-my-zsh is loaded, in which case,
 # to know which specific one was loaded, run: echo $RANDOM_THEME
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
-ZSH_THEME="mh"
+ZSH_THEME="half-life"
 
 # Set list of themes to pick from when loading at random
 # Setting this variable when ZSH_THEME=random will cause zsh to load
@@ -73,7 +73,7 @@ ZSH_THEME="mh"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git sudo archlinux extract python common-aliases autojump fzf) 
+plugins=(git sudo extract python common-aliases) 
 
 source $ZSH/oh-my-zsh.sh
 
@@ -105,36 +105,18 @@ source $ZSH/oh-my-zsh.sh
 alias key="vim $HOME/.config/sxhkd/sxhkdrc"
 alias wm="vim ~/.config/bspwm/bspwmrc"
 alias f="ranger"
-alias bb="cat /proc/acpi/bbswitch"
 alias nu="nmcli connection up "
-alias nt="nmtui-connect"
-alias nd="nmcli connection down "
-alias pg="ping google.com"
 alias weather="curl wttr.in"
 alias py="/bin/python"
 alias py2="/bin/python2"
+alias pg="ping google.com"
 alias pubip="curl ipinfo.io/ip"
-alias mirror="sudo reflector --verbose --latest 5 --sort rate --save /etc/pacman.d/mirrorlist"
 alias k="pkill "
 alias m="ncmpcpp"
 alias vimrc="vim $HOME/.config/nvim/init.vim"
 alias poly="vim $HOME/.config/polybar/config"
-alias z="zathura"
 alias v="/usr/bin/nvim"
 alias vim="/usr/bin/nvim"
 alias sudo="sudo "
 
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-
-
-# Import colorscheme from 'wal' asynchronously
-# &   # Run the process in the background.
-# ( ) # Hide shell job control messages.
-#(cat ~/.cache/wal/sequences &)
-
-# Alternative (blocks terminal for 0-3ms)
-#cat ~/.cache/wal/sequences
-
-# To add support for TTYs this line can be optionally added.
-#source ~/.cache/wal/colors-tty.sh
+source /usr/share/zsh/site-functions/zsh-syntax-highlighting.zsh

@@ -16,7 +16,7 @@ URxvt.scrollTtyKeypress: true
 URxvt.font: xft:Hermit:size=9:style=medium:antialias=true 
 !URxvt.boldFont: xft:Hermit:size=9:style=Bold:antialias=true
 !URxvt.italicFont: xft:Hermit:size=9:style=Italic:antialias=true
-URxvt.letterSpace: 1
+!URxvt.letterSpace: 1
 urxvt*termName: rxvt
 urxvt*scrollBar: false
 urxvt*matcher.button: 1
