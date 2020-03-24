@@ -3,9 +3,7 @@
 sxhkd &
 dunst &
 unclutter &
-xset b off &
-mpDris2 &
-#xss-lock -- /home/fd0e/.local/bin/lock &
+xss-lock -- /home/fd0e/.local/bin/lock &
 compton &
 ~/scrypts/bat_check.sh &
 redshift -l 13.082680:80.270718 &
