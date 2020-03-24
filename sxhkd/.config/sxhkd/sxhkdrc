@@ -37,7 +37,7 @@ Print
 ctrl + Print
 	scrot 
 super + x
-	shut
+    shut
 super + shift + p
 	rofi-pass
 #
