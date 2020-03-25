@@ -5,7 +5,7 @@
     follow = keyboard
     indicate_hidden = yes
     shrink = yes
-    transparency = 10
+    transparency = 0
     notification_height = 0
     # Show multiple notifications in the same box
     separator_height = 2
@@ -19,15 +19,15 @@
     horizontal_padding = 14
 
     # The frame color and width of the notification
-    frame_color = "#0f161f"
-    frame_width = 2
+    frame_color = "#000000"
+    frame_width = 5
     line_height = 0
 
     # How long a user needs to be idle for sticky notifications
     idle_threshold = 120
 
     # Font and typography settings
-    icon_path = /usr/share/icons/Papirus/48x48/status/:/usr/share/icons/Papirus/48x48/devices/:/usr/share/icons/Papirus/48x48/apps
+    icon_path = /usr/share/icons/Adwaita/48x48/status/:/usr/share/icons/Adwaita/48x48/devices/:/usr/share/icons/Adwaita/48x48/apps
     font = Hermit 10
     alignment = center
     show_age_threshold = 60
@@ -73,12 +73,12 @@ timeout = 5
 
 [urgency_normal]
 background = "#0c0d0d"
-foreground = "#839496"
+foreground = "#c6c8d1"
 timeout = 5
 
 [urgency_critical]
-background = "#09090d"
-foreground = "#8c5780"
+background = "#ffffff"
+foreground = "#000000"
 timeout = 0
 # vim:ft=cfg
 
