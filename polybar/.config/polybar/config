@@ -156,7 +156,7 @@ scroll-down = cmus-remote --volume -5%
 format = <label>
 format-foreground = #7b8c58
 label = %output%
-label-maxlen = 50
+!label-maxlen = 50
 
 [module/mpd]
 type = internal/mpd

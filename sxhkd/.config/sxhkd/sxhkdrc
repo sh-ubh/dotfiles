@@ -29,7 +29,7 @@ super + Escape
 super + shift + w 
  	firefox
 control + alt + l
-    lock
+    /home/fd0e/.local/bin/lock
 super + shift + f
 	spacefm
 Print
@@ -37,7 +37,7 @@ Print
 ctrl + Print
 	scrot 
 super + x
-    shut
+    /home/fd0e/.local/bin/shut
 super + shift + p
 	rofi-pass
 #
