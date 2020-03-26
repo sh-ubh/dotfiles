@@ -5,7 +5,7 @@ RET=$(echo -e "shutdown\nreboot\nsleep\nlock\ncancel" | dmenu -l 5 -p "Sayonara"
 case $RET in
 	shutdown) sudo poweroff ;;
 	reboot) sudo reboot ;;
-	sleep) lock & sudo sh -c "echo -n mem > /sys/power/state" ;;
-    lock) lock ;;
+	sleep) /home/fd0e/.local/bin/lock & sudo sh -c "echo -n mem > /sys/power/state" ;;
+    lock) /home/fd0e/.local/bin/lock ;;
 	*) ;;
 esac
