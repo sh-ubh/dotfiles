@@ -117,6 +117,6 @@ alias vimrc="vim $HOME/.config/nvim/init.vim"
 alias poly="vim $HOME/.config/polybar/config"
 alias v="/usr/bin/nvim"
 alias vim="/usr/bin/nvim"
-alias sudo="sudo "
+alias sudo="doas "
 
 source /usr/share/zsh/site-functions/zsh-syntax-highlighting.zsh
