@@ -39,7 +39,7 @@ ctrl + Print
 super + x
     /home/fd0e/.local/bin/shut
 super + shift + p
-	rofi-pass
+	/home/fd0e/.local/bin/passmenu
 #
 
 # quit/restart bspwm
