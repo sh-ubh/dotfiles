@@ -61,4 +61,4 @@ if [ "$2" = "nvidia" ]; then
 	xrandr --auto
 fi
 xsetroot -cursor_name left_ptr
-exec bspwm
+exec dbus-launch --exit-with-session bspwm
