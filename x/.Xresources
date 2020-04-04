@@ -34,6 +34,12 @@ URxvt*fading: 0
 URxvt*tintColor: #ffffff
 URxvt*shading: 0
 URxvt*inheritPixmap: False
+Xft.autohint: 0
+Xft.lcdfilter: lcddefault
+Xft.hintstyle: hintfull
+Xft.hinting: 1
+Xft.antialias: 1
+Xft.rgba: rgb
 
 ! special
 *.foreground:   #c6c8d1
