@@ -4,7 +4,7 @@ sxhkd &
 dunst &
 unclutter &
 compton &> /dev/null &
-~/scrypts/bat_check.sh &
+~/.local/bin/bat_check.sh &
 redshift -l 13.082680:80.270718 &
 ~/.fehbg &
 urxvtd &
@@ -18,7 +18,7 @@ bspc config split_ratio          0.52
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
-bspc rule -a Nightly desktop='^2'
+bspc rule -a firefox desktop='^2'
 bspc rule -a Spacefm desktop='^4'
 
 $HOME/.config/polybar/launch.sh &

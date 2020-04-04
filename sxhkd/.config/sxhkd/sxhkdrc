@@ -162,6 +162,6 @@ XF86Audio{Play,Next,Prev}
 
 #light
 XF86MonBrightnessDown
-    doas sh -c 'for f in /sys/class/backlight/*; do echo $(($(<$f/brightness)-5*$(<$f/max_brightness)/100)) > $f/brightness; done'
+    sudo sh -c 'for f in /sys/class/backlight/*; do echo $(($(<$f/brightness)-5*$(<$f/max_brightness)/100)) > $f/brightness; done'
 XF86MonBrightnessUp
-    doas sh -c 'for f in /sys/class/backlight/*; do echo $(($(<$f/brightness)+5*$(<$f/max_brightness)/100)) > $f/brightness; done'
+    sudo sh -c 'for f in /sys/class/backlight/*; do echo $(($(<$f/brightness)+5*$(<$f/max_brightness)/100)) > $f/brightness; done'
