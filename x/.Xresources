@@ -16,7 +16,7 @@ URxvt.scrollTtyKeypress: true
 URxvt.font: xft:Hermit:pixelsize=12:style=medium:antialias=true
 URxvt.boldFont: xft:Hermit:pixelsize=12:style=bold:antialias=true
 URxvt.italicFont: xft:Hermit:pixelsize=12:style=italic:antialias=true
-!URxvt.letterSpace: 1
+URxvt.letterSpace: 1
 urxvt*termName: rxvt
 urxvt*scrollBar: false
 urxvt*matcher.button: 1
@@ -26,20 +26,15 @@ Xft*dpi: 96
 Xft*antialias: true
 Xft*hinting: true
 Xft*hintstyle: hintfull
-URxvt*cursorUnderline:  true
+Xft.lcdfilter: lcddefault
 Xft*rgba: rgb
+URxvt*cursorUnderline:  true
 URxvt*geometry: 85x20
 *internalBorder: 15
 URxvt*fading: 0
 URxvt*tintColor: #ffffff
 URxvt*shading: 0
 URxvt*inheritPixmap: False
-Xft.autohint: 0
-Xft.lcdfilter: lcddefault
-Xft.hintstyle: hintfull
-Xft.hinting: 1
-Xft.antialias: 1
-Xft.rgba: rgb
 
 ! special
 *.foreground:   #c6c8d1

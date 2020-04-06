@@ -62,3 +62,4 @@ if [ "$2" = "nvidia" ]; then
 fi
 xsetroot -cursor_name left_ptr
 exec dbus-launch --exit-with-session bspwm
+#exec bspwm
