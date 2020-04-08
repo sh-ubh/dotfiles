@@ -33,9 +33,7 @@ control + alt + l
 super + shift + f
 	spacefm
 Print
-	scrot
-ctrl + Print
-	scrot 
+	scrot -u
 super + x
     /home/fd0e/.local/bin/shut
 super + shift + p
