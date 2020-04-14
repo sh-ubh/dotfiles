@@ -1,6 +1,4 @@
-runtime! archlinux.vim
-set number relativenumber
-
+"vimplug
 call plug#begin()
 Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
 Plug 'Shougo/deoplete-clangx'
@@ -17,11 +15,14 @@ Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 call plug#end()
 
+"sets
 set guicursor=
+set number relativenumber
 set mouse=a
 set background=dark
 syntax on
 set cursorline
+set ignorecase
 set smartcase
 set wildmenu                                      " Tab autocomplete in command mode
 set autoread                                      " Auto reload changed files
@@ -94,9 +95,18 @@ autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
 
+"insert centered
+autocmd InsertEnter * norm zz
+
+"shortcut split navigation
+map <C-h> <C-w>h
+map <C-j> <C-w>j
+map <C-k> <C-w>k
+map <C-l> <C-w>l
+
 "statusbar
 hi Comment cterm=italic
-hi CursorLine ctermbg=none
+hi CursorLine ctermbg=none cterm=bold guibg=#2b2b2b
 set statusline=
 set statusline +=%1*\ %n\ %*            "buffer number
 set statusline +=%5*%{&ff}%*            "file format
