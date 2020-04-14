@@ -19,7 +19,7 @@ call plug#end()
 set guicursor=
 set number relativenumber
 set mouse=a
-set background=dark
+"set background=dark
 syntax on
 set cursorline
 set ignorecase
@@ -106,7 +106,7 @@ map <C-l> <C-w>l
 
 "statusbar
 hi Comment cterm=italic
-hi CursorLine ctermbg=none cterm=bold guibg=#2b2b2b
+hi CursorLine ctermbg=black cterm=bold guibg=#2b2b2b
 set statusline=
 set statusline +=%1*\ %n\ %*            "buffer number
 set statusline +=%5*%{&ff}%*            "file format
