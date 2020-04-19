@@ -1,5 +1,3 @@
 xrdb ~/.Xresources &
-compton &
 urxvtd &
-exec spectrwm
-#exec bspwm
+exec dbus-launch --exit-with-session spectrwm
