@@ -1,3 +1,4 @@
+#exec dbus-launch --exit-with-session spectrwm
 xrdb ~/.Xresources &
-urxvtd &
+xset s 600 &
 exec dbus-launch --exit-with-session spectrwm

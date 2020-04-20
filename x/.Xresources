@@ -38,7 +38,7 @@ URxvt*inheritPixmap: False
 
 ! special
 *.foreground:   #c6c8d1
-*.background:   #0c0c0f
+*.background:   #000000
 *.cursorColor:  #c6c8d1
 
 ! black

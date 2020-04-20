@@ -1,11 +1,11 @@
 #!/bin/bash
 
-RET=$(echo -e "shutdown\nreboot\nsleep\nlock\ncancel" | dmenu -l 5 -p "Sayonara")
+RET=$(echo -e "shutdown\nreboot\nsleep\nlock\ncancel" | dmenu -l 5 -p "Sayonara" -nb "#000000" -nf "#bfbfbf" -sb "#84a0c6" -sf "#000000" -fn "Hermit:size=10")
 
 case $RET in
 	shutdown) sudo poweroff ;;
 	reboot) sudo reboot ;;
-	sleep) /home/fd0e/.local/bin/lock & sudo sh -c "echo -n mem > /sys/power/state" ;;
-    	lock) /home/fd0e/.local/bin/lock ;;
+	sleep) xset s activate & sudo zzz ;;
+   	lock) xset s activate ;;
 	*) ;;
 esac
