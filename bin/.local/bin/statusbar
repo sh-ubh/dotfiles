@@ -14,12 +14,16 @@ bat() {
 }
 
 dte() {
-  dte="$(date +"%A, %B %d")"
-  time="$(date +"%l:%M %p")"
-  echo -e "+@fg=1;date+@fg=0; $dte  +@fg=1;time+@fg=0; $time"
+  dte=$(date +"%A, %B %d")
+  echo -e "+@fg=1;date+@fg=0; $dte "
+}
+
+tie() {
+  tme=$(date +"%I:%M %p")
+  echo -e "+@fg=1;time+@fg=0; $tme "
 }
 
 while :; do
-    echo "$(vol) $(bat) $(dte)" 
+    echo "$(vol) $(bat) $(tie) $(dte)" 
 	sleep 2
 done

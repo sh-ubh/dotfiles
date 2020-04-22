@@ -14,9 +14,9 @@ set scroll-step    "120"    # Increase the scroll distance when using j/k
 set recolor        "false"   # Use our theme colors (<C-r> for the original document colors)
 
 # [colors]
-set default-bg                     "#09090d"
+set default-bg                     "#000000"
 set default-fg                     "#a3a6ab"
-set statusbar-bg                   "#09090d"
+set statusbar-bg                   "#000000"
 set statusbar-fg                   "#a3a6ab"
 set inputbar-bg                    "#09090d"
 set inputbar-fg                    "#a3a6ab"
