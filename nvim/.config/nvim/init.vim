@@ -13,6 +13,7 @@ Plug 'junegunn/goyo.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
+Plug 'jacoborus/tender.vim'
 call plug#end()
 
 "sets
@@ -20,7 +21,7 @@ set guicursor=
 set number relativenumber
 set mouse=a
 "set background=dark
-syntax on
+syntax enable
 set cursorline
 set ignorecase
 set smartcase
@@ -34,6 +35,9 @@ set shiftwidth=4    " number of spaces to use for autoindent
 set expandtab       " tabs are space
 set autoindent
 set copyindent      " copy indent from the previous line
+colorscheme tender
+hi Normal ctermbg=16 guibg=#000000
+hi LineNr ctermbg=16 guibg=#000000
 
 " deoplete
 let g:deoplete#enable_at_startup = 1
