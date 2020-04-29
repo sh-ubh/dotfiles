@@ -4,8 +4,8 @@ BOLD='\033[1m'
 BB='\033[00m'
 
 vol(){
-    vol=$(amixer get Master | awk -F'[][]' 'END{ print $2 }')
-	echo -e "+@fg=1;vol+@fg=0; $vol "
+    vol=$(pulsemixer --get-volume | awk '{print $1}')
+	echo -e "+@fg=1;vol+@fg=0; $vol% "
 }
 
 bat() {
