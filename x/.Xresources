@@ -17,7 +17,7 @@ URxvt.font: xft:Hermit:pixelsize=12:style=medium:antialias=true
 URxvt.boldFont: xft:Hermit:pixelsize=12:style=bold:antialias=true
 URxvt.italicFont: xft:Hermit:pixelsize=12:style=italic:antialias=true
 URxvt.letterSpace: 1
-urxvt*termName: rxvt
+urxvt*termName: rxvt-256color
 urxvt*scrollBar: false
 urxvt*matcher.button: 1
 urxvt.transparent: false
