@@ -1,10 +1,10 @@
 #!/bin/bash
 screenshot() {
 	case $1 in
-	full)
+	f*)
 		scrot -m
 		;;
-	window)
+	w*)
 		sleep 1
 		scrot -s
 		;;

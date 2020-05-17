@@ -5,25 +5,26 @@ BB='\033[00m'
 
 vol(){
     vol=$(pulsemixer --get-volume | awk '{print $1}')
-	echo -e "vol $vol% "
+	echo -e "+@fg=1;vol+@fg=0; $vol% "
 }
 
 bat() {
 	power=$(cat /sys/class/power_supply/BAT0/capacity)
-	echo -e "bat $power% "
+	echo -e "+@fg=1;bat+@fg=0; $power% "
 }
 
 dte() {
   dte=$(date +"%A, %B %d")
-  echo -e "date $dte "
+  echo -e "+@fg=1;date+@fg=0; $dte "
 }
 
 tie() {
   tme=$(date +"%I:%M %p")
-  echo -e "time $tme "
+  echo -e "+@fg=1;time+@fg=0; $tme "
 }
 
 while :; do
     echo "$(vol) $(bat) $(tie) $(dte)" 
 	sleep 2
 done
+
