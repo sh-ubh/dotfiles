@@ -108,6 +108,9 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+"replace all using S
+nnoremap S :%s//gI<Left><Left><Left>
+
 "statusbar
 hi Comment cterm=italic
 hi CursorLine ctermbg=black cterm=bold guibg=#2b2b2b
