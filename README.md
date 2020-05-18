@@ -3,6 +3,8 @@ Dot files for my setup (bspwm, rofi, compton, neovim, i3blocks, polybar, lockscr
 
 ![alt text](arch.png)
 
+For my suckless configs - [suckless](https://github.com/fd0e/suckless)
+
 # To replicate
 ```shell
 $ git clone https://github.com/anon6405/dotfiles.git
