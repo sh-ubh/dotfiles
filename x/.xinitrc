@@ -4,7 +4,7 @@ xset b off &
 xset s 600 &
 ~/bin/xss &
 ~/.fehbg &
-~/.local/bin/bat_check.sh &
+~/bin/batcheck &
 picom 2>/dev/null &
 dwmbar &
 
