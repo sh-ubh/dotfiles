@@ -2,10 +2,10 @@
 #.xinitrc
 xset b off &
 xset s 600 &
-~/bin/xss &
-~/.fehbg &
-~/bin/batcheck &
-picom 2>/dev/null &
-dwmbar &
+# ~/bin/xss &
+# ~/.fehbg &
+# ~/bin/batcheck &
+# picom 2>/dev/null &
+# dwmbar &
 
-exec dbus-launch --exit-with-session startdwm
+exec dbus-launch --exit-with-session spectrwm
