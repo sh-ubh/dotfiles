@@ -1,30 +1,30 @@
 colors:
   # Default colors
   primary:
-    background: "#000000"
-    foreground: "#D8DEE9"
+    background: '0x000000'
+    foreground: '0xc0c5ce'
 
   # Normal colors
   normal:
-    black: "#3B4252"
-    red: "#BF616A"
-    green: "#A3BE8C"
-    yellow: "#EBCB8B"
-    blue: "#81A1C1"
-    magenta: "#B48EAD"
-    cyan: "#88C0D0"
-    white: "#abb2bf"
+    black:   '0x2b303b'
+    red:     '0xbf616a'
+    green:   '0xa3be8c'
+    yellow:  '0xebcb8b'
+    blue:    '0x8fa1b3'
+    magenta: '0xb48ead'
+    cyan:    '0x96b5b4'
+    white:   '0xc0c5ce'
 
   # Bright colors
   bright:
-    black: "#5c6370"
-    red: "#e06c75"
-    green: "#98c379"
-    yellow: "#d19a66"
-    blue: "#61afef"
-    magenta: "#c678dd"
-    cyan: "#56b6c2"
-    white: "#ECEFF4"
+    black:   '0x65737e'
+    red:     '0xbf616a'
+    green:   '0xa3be8c'
+    yellow:  '0xebcb8b'
+    blue:    '0x8fa1b3'
+    magenta: '0xb48ead'
+    cyan:    '0x96b5b4'
+    white:   '0xeff1f5'
 
 background_opacity: 1.0
 
@@ -46,6 +46,8 @@ font:
   size: 9.0
   antialias: true
   autohint: true
+  lcdfiler: lcddefault
+  rgba: rgb
 
   offset:
     x: 0
@@ -58,6 +60,12 @@ window:
   padding:
     x: 8
     y: 8
+
+cursor:
+  #   - ▇ Block
+  #   - _ Underline
+  #   - | Beam
+  style: Underline
 
 scrolling:
   # Maximum number of lines in the scrollback buffer.

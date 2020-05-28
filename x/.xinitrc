@@ -7,4 +7,4 @@ xset s 600 &
 # picom 2>/dev/null &
 # dwmbar &
 
-exec dbus-launch --exit-with-session spectrwm 2>/dev/null
+exec dbus-launch --exit-with-session spectrwm
