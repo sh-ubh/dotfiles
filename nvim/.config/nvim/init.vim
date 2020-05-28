@@ -112,7 +112,7 @@ nnoremap S :%s//gI<Left><Left><Left>
 
 "statusbar
 hi Comment cterm=italic
-hi CursorLine ctermbg=black cterm=bold guibg=#2b2b2b
+hi CursorLine cterm=bold guibg=#2b2b2b
 set statusline=
 set statusline +=%1*\ %n\ %*            "buffer number
 set statusline +=%5*%{&ff}%*            "file format

@@ -1,10 +1,10 @@
 #!/bin/bash
 
-RET=$(echo -e "shutdown\nreboot\nsleep\nlock\ncancel" | dmenu -l 5 -p "Sayonara" -nb "#000000" -nf "#bfbfbf" -sb "#84a0c6" -sf "#000000" -fn "Hermit:size=10")
+RET=$(echo -e "shutdown\nreboot\nsleep\nlock\ncancel" | dmenu -l 5 -p "Sayonara" -nb "#000000" -nf "#bfbfbf" -sb "#84a0c6" -sf "#000000" -fn "ASM\-Bold:style=☞:size=10")
 
 case $RET in
-	shutdown) doas poweroff ;;
-	reboot) doas reboot ;;
+	shutdown) sudo poweroff ;;
+	reboot) sudo reboot ;;
 	sleep) xset s activate & sudo zzz;;
    	lock) xset s activate ;;
 	*) ;;
