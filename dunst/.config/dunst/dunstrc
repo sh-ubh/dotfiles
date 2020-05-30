@@ -28,7 +28,7 @@
 
     # Font and typography settings
     icon_path = /usr/share/icons/Adwaita/48x48/status/:/usr/share/icons/Adwaita/48x48/devices/:/usr/share/icons/Adwaita/48x48/apps
-    font = Hermit 10
+    font = JetBrainsMono Nerd Font Mono 10
     alignment = center
     show_age_threshold = 60
     ellipsize = middle

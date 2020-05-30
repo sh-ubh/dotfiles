@@ -30,20 +30,20 @@ background_opacity: 1.0
 
 font:
   normal:
-    family: "ASM-Regular"
+    family: "JetBrainsMono Nerd Font Mono"
     style: Regular
   bold:
-    family: "ASM-Bold"
+    family: "JetBrainsMono Nerd Font Mono"
     style: Bold
   italic:
-    family: "ASM-RegularItalic"
+    family: "JetBrainsMono Nerd Font Mono"
     style: Italic
   bold_italic:
-    family: "ASM-BoldItalic"
+    family: "JetBrainsMono Nerd Font Mono"
     style: Bold Italic
 
   # Point size
-  size: 9.0
+  size: 9
   antialias: true
   autohint: true
   lcdfiler: lcddefault
@@ -65,7 +65,7 @@ cursor:
   #   - ▇ Block
   #   - _ Underline
   #   - | Beam
-  style: Underline
+  style: Block
 
 scrolling:
   # Maximum number of lines in the scrollback buffer.
