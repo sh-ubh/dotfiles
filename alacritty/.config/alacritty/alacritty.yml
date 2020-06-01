@@ -30,20 +30,17 @@ background_opacity: 1.0
 
 font:
   normal:
-    family: "JetBrainsMono Nerd Font Mono"
+    family: "Hermit"
     style: Regular
   bold:
-    family: "JetBrainsMono Nerd Font Mono"
+    family: "Hermit"
     style: Bold
   italic:
-    family: "JetBrainsMono Nerd Font Mono"
+    family: "Hermit"
     style: Italic
-  bold_italic:
-    family: "JetBrainsMono Nerd Font Mono"
-    style: Bold Italic
 
   # Point size
-  size: 9
+  size: 8.5
   antialias: true
   autohint: true
   lcdfiler: lcddefault
