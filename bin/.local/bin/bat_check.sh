@@ -10,5 +10,5 @@ do
     elif [ $battery_level -le 20 ] && [ $state == "Discharging" ]; then
        notify-send -u critical 'Plug me NOW!' $battery_level%
     fi
-    sleep 2 # 300 seconds or 5 minutes
+    sleep 300 # 300 seconds or 5 minutes
 done
