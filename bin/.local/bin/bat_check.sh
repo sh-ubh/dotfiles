@@ -3,7 +3,7 @@ while true
 do
     battery_level=$(cat /sys/class/power_supply/BAT0/capacity)
     state=$(cat /sys/class/power_supply/BAT0/status)
-    if [ $battery_level -ge 95 ] && [ $state == "Discharging" ]; then
+    if [ $battery_level -ge 95 ] && [ $state == "Charging" ]; then
        notify-send 'Pull the plug!' $battery_level%
     elif [ $battery_level -le 30 -a $battery_level -ge 20 ] && [ $state == "Discharging" ]; then
        notify-send 'Plug me!' $battery_level%
