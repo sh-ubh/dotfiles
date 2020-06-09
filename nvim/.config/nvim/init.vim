@@ -13,6 +13,7 @@ Plug 'junegunn/goyo.vim'
 Plug 'airblade/vim-gitgutter'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
+Plug 'vimwiki/vimwiki'
 call plug#end() 
 
 "sets
