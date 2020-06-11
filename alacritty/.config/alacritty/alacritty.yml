@@ -30,13 +30,13 @@ background_opacity: 1.0
 
 font:
   normal:
-    family: "Input Mono"
+    family: "Hermit"
     style: Regular
   bold:
-    family: "Input Mono"
+    family: "Hermit"
     style: Bold
   italic:
-    family: "Input Mono"
+    family: "Hermit"
     style: Italic
 
   # Point size
