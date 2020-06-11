@@ -1,87 +1,76 @@
-URxvt.urgentOnBell: off
-URxvt.visualBell: false
-URxvt.iso14755: false
-URxvt.iso14755_52: off
-URxvt.meta8: false
-URxvt.depth: 32
-URxvt.metaSendsEscape: true
-URxvt.scrollBar: off
-URxvt.cursorBlink: true
-URxvt.cursorUnderline: true
-URxvt.saveLines: 10000
-URxvt.scrollTtyOutput:   false
-URxvt.scrollWithBuffer:  true
-URxvt.scrollTtyKeypress: true
+! ------------------------------------------------------------------------------
+!  Colors
+! ------------------------------------------------------------------------------
+!
+!------------------------------------------------------------------------------
 
-URxvt.font: xft:Hermit:pixelsize=12:style=medium:antialias=true
-URxvt.boldFont: xft:Hermit:pixelsize=12:style=bold:antialias=true
-URxvt.italicFont: xft:Hermit:pixelsize=12:style=italic:antialias=true
-URxvt.letterSpace: 1
-urxvt*termName: rxvt-256color
-urxvt*scrollBar: false
-urxvt*matcher.button: 1
-urxvt.transparent: false
-!urxvt.boldFont:
-Xft*dpi: 96
-Xft*antialias: true
-Xft*hinting: true
-Xft*hintstyle: hintfull
+#define base00 #000000
+#define base01 #303030
+#define base02 #353535
+#define base03 #4A4A4A
+#define base04 #787878
+#define base05 #EEFFFF
+#define base06 #EEFFFF
+#define base07 #FFFFFF
+#define base08 #F07178
+#define base09 #F78C6C
+#define base0A #00fdb4
+#define base0B #13CA91
+#define base0C #79ffe1
+#define base0D #7898FB
+#define base0E #ff3299
+#define base0F #FF5370
+
+!  URxvt
+! ------------------------------------------------------------------------------
+
+*foreground:   base05
+*background:   base00
+*cursorColor:  base05
+
+*color0:       base00
+*color1:       base08
+*color2:       base0B
+*color3:       base0A
+*color4:       base0D
+*color5:       base0E
+*color6:       base0C
+*color7:       base05
+
+*color8:       base03
+*color9:       base09
+*color10:      base01
+*color11:      base02
+*color12:      base04
+*color13:      base06
+*color14:      base0F
+*color15:      base07
+
+URxvt.cursorBlink : 1
+URxvt.font       :xft:Input Mono:pixelsize=12.5:style=Regular \
+                  xft:DejaVu Sans Mono:size=12.5:style=Medium
+
+URxvt.italicFont :xft:Input Mono:pixelsize=12.5:style=Italic
+URxvt.boldFont   :xft:Input Mono:pixelsize=12.5:style=Bold
+
+URxvt.lineSpace           : 0
+URxvt.letterSpace         : -1
+URxvt.scrollBar           : false
+URxvt.internalBorder      : 25
+URxvt.cursorUnderline     : false
+URxvt.geometry            : 70x35
+URxvt.thickness           : 5
+URxvt.titleBar            : false
+URxvt.intensityStyles     : false
+
+
+URxvt.perl-ext-common : default,matcher
+URxvt.url-launcher    : firefox-bin
+URxvt.matcher.button  : 1
+
+Xft.autohint: 1
+Xft.antialias: 1
 Xft.lcdfilter: lcddefault
-Xft*rgba: rgb
-URxvt*cursorUnderline:  true
-URxvt*geometry: 85x20
-*internalBorder: 15
-URxvt*fading: 0
-URxvt*tintColor: #ffffff
-URxvt*shading: 0
-URxvt*inheritPixmap: False
-
-! special
-*.foreground:   #c6c8d1
-*.background:   #000000
-*.cursorColor:  #c6c8d1
-
-! black
-*.color0:       #161821
-*.color8:       #6b7089
-
-! red
-*.color1:       #e27878
-*.color9:       #e98989
-
-! green
-*.color2:       #b4be82
-*.color10:      #c0ca8e
-
-! yellow
-*.color3:       #e2a478
-*.color11:      #e9b189
-
-! blue
-*.color4:       #84a0c6
-*.color12:      #91acd1
-
-! magenta
-*.color5:       #a093c7
-*.color13:      #ada0d3
-
-! cyan
-*.color6:       #89b8c2
-*.color14:      #95c4ce
-
-! white
-*.color7:       #c6c8d1
-*.color15:      #d2d4de
-
-! Perls
-URxvt.perl-ext-common : default,matcher,keyboard-select,resize-font
-URxvt.resize-font.step: 1
-URxvt.keysym.M-Escape       : perl:keyboard-select:activate
-URxvt.keysym.M-u           	: perl:url-select:select_next
-URxvt.keysym.M-s           	: perl:keyboard-select:search
-!URxvt.perl-ext-common     	: tabbed,default,matcher
-Urxvt.perl-lib            	: /usr/lib64/urxvt/perl/
-URxvt.url-select.launcher  	: firefox
-URxvt.url-select.autocopy  	: true
-URxvt.url-select.underline 	: true
-URxvt.url-select.button:   1
+Xft.hinting: true
+Xft.rgba: rgb
+Xft.dpi: 96

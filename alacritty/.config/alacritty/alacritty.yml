@@ -2,41 +2,41 @@ colors:
   # Default colors
   primary:
     background: '0x000000'
-    foreground: '0xc0c5ce'
+    foreground: '0xeeffff'
 
   # Normal colors
   normal:
-    black:   '0x2b303b'
-    red:     '0xbf616a'
-    green:   '0xa3be8c'
-    yellow:  '0xebcb8b'
-    blue:    '0x8fa1b3'
-    magenta: '0xb48ead'
-    cyan:    '0x96b5b4'
-    white:   '0xc0c5ce'
+    black:   '0x000000'
+    red:     '0xf07178'
+    green:   '0x13ca91'
+    yellow:  '0x00fdb4'
+    blue:    '0x7898fb'
+    magenta: '0xff3299'
+    cyan:    '0x79ffe1'
+    white:   '0xeeffff'
 
   # Bright colors
   bright:
-    black:   '0x65737e'
-    red:     '0xbf616a'
-    green:   '0xa3be8c'
-    yellow:  '0xebcb8b'
-    blue:    '0x8fa1b3'
-    magenta: '0xb48ead'
-    cyan:    '0x96b5b4'
-    white:   '0xeff1f5'
+    black:   '0x4a4a4a'
+    red:     '0xf78c6c'
+    green:   '0x303030'
+    yellow:  '0x353535'
+    blue:    '0x787878'
+    magenta: '0xeeffff'
+    cyan:    '0xff5370'
+    white:   '0xffffff'
 
 background_opacity: 1.0
 
 font:
   normal:
-    family: "Hermit"
+    family: "Input Mono"
     style: Regular
   bold:
-    family: "Hermit"
+    family: "Input Mono"
     style: Bold
   italic:
-    family: "Hermit"
+    family: "Input Mono"
     style: Italic
 
   # Point size
