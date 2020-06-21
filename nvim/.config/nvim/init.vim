@@ -247,5 +247,3 @@ augroup MyStatusLine
   autocmd WinEnter * setl statusline=%!StatusLine('active')
   autocmd WinLeave * setl statusline=%!StatusLine('inactive')
 augroup END
-
-
