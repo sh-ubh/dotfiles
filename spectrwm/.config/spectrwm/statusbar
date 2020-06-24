@@ -2,7 +2,12 @@
 
 vol(){
     vol=$(pulsemixer --get-volume | awk '{print $1}')
-	echo -e "+@fg=1;vol+@fg=0; $vol% "
+    mute=$(pulsemixer --get-mute)
+    if [ "$mute" == 1 ]; then
+        echo -e "+@fg=1;vol+@fg=0; muted "
+    elif [ "$mute" == 0 ]; then
+	    echo -e "+@fg=1;vol+@fg=0; $vol% "
+    fi
 }
 
 bat() {
@@ -11,7 +16,7 @@ bat() {
     if [ "$status" == "Charging" ]; then
         echo -e "+@fg=1;bat+@fg=0; +$power% "
     elif [ "$status" == "Discharging" ]; then
-        echo -e "+@fg=1;bat+@fg=0; -$power% "
+        echo -e "+@fg=1;bat+@fg=0; $power% "
     fi
 }
 
