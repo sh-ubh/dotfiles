@@ -7,7 +7,12 @@ vol(){
 
 bat() {
 	power=$(cat /sys/class/power_supply/BAT0/capacity)
-	echo -e "+@fg=1;bat+@fg=0; $power% "
+    status=$(cat /sys/class/power_supply/BAT0/status)
+    if [ "$status" == "Charging" ]; then
+        echo -e "+@fg=1;bat+@fg=0; +$power% "
+    elif [ "$status" == "Discharging" ]; then
+        echo -e "+@fg=1;bat+@fg=0; -$power% "
+    fi
 }
 
 dte() {
