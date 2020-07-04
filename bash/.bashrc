@@ -33,7 +33,6 @@ alias f="ranger"
 alias weather="curl wttr.in"
 alias py="/usr/bin/python"
 alias pg="ping google.com"
-alias pubip="curl ipinfo.io/ip"
 alias m="cmus"
 alias vimrc="vim $HOME/.config/nvim/init.vim"
 alias v="nvim"
@@ -46,6 +45,10 @@ up() {
 
 dict() {
     curl dict://dict.org/d:$* | less
+}
+
+sip() {
+    curl https://ipinfo.io/$*
 }
 
 # prompt
