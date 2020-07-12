@@ -11,32 +11,7 @@ export BROWSER=firefox
 export PATH=$PATH:$HOME/.local/bin:$HOME/bin
 export XDG_CURRENT_DESKTOP=spectrwm
 
-setopt autocd extendedglob nomatch globdots correctall
-unsetopt beep
-bindkey -v
-
-# completions
-zstyle :compinstall filename '/home/x/.zshrc'
-autoload -U colors && colors
-autoload -Uz compinit && compinit
-zstyle ':completion:*' menu select
-zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
-#zstyle ':completion:*:descriptions' format '%U%B%d%b%u'
-#zstyle ':completion:*:warnings' format '%BSorry, no matches for: %d%b'
-
-# sources
-source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
-source /usr/share/zsh/plugins/zsh-autosuggestions/zsh-autosuggestions.zsh
-
-# prompt
-PROMPT=$'\n'"%B%F{240}%m "$'\n'"%(?.%F{248}▲.%F{red}?%?)%f "
-git_branch() {
-    git branch 2> /dev/null | sed -e '/^[^*]/d' -e 's/* \(.*\)/ (\1)/'
-}
-setopt PROMPT_SUBST
-RPROMPT='%9c%{%F{green}%}$(git_branch)%{%F{none}%} $ '
-
-# aliases
+#aliases
 alias ls='ls --color=auto'
 alias ll='ls --color=auto -al'
 alias key="vim $HOME/.config/spectrwm/keybindings.conf"
@@ -52,7 +27,6 @@ alias vimrc="vim $HOME/.config/nvim/init.vim"
 alias v="nvim"
 alias vim="nvim"
 alias sudo="sudo "
-alias parrot="VBoxManage startvm Parrot"
 
 up() {
     curl -F "file=@$*" https://0x0.st | xclip -selection clipboard
@@ -62,3 +36,53 @@ dict() {
     curl dict://dict.org/d:$*
 }
 
+# Enable colors and change prompt:
+autoload -U colors && colors
+fpath+=$HOME/.zsh/pure
+autoload -U promptinit; promptinit
+prompt pure
+PURE_PROMPT_SYMBOL=$
+#PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+
+# Basic auto/tab complete:
+autoload -U compinit
+zstyle ':completion:*' menu select
+zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
+zmodload zsh/complist
+compinit
+_comp_options+=(globdots)		# Include hidden files.
+
+# vi mode
+bindkey -v
+export KEYTIMEOUT=1
+
+# Use vim keys in tab complete menu:
+bindkey -M menuselect 'h' vi-backward-char
+bindkey -M menuselect 'k' vi-up-line-or-history
+bindkey -M menuselect 'l' vi-forward-char
+bindkey -M menuselect 'j' vi-down-line-or-history
+bindkey -v '^?' backward-delete-char
+
+# Change cursor shape for different vi modes.
+function zle-keymap-select {
+  if [[ ${KEYMAP} == vicmd ]] ||
+     [[ $1 = 'block' ]]; then
+    echo -ne '\e[1 q'
+  elif [[ ${KEYMAP} == main ]] ||
+       [[ ${KEYMAP} == viins ]] ||
+       [[ ${KEYMAP} = '' ]] ||
+       [[ $1 = 'beam' ]]; then
+    echo -ne '\e[5 q'
+  fi
+}
+zle -N zle-keymap-select
+zle-line-init() {
+    zle -K viins # initiate `vi insert` as keymap (can be removed if `bindkey -V` has been set elsewhere)
+    echo -ne "\e[5 q"
+}
+zle -N zle-line-init
+echo -ne '\e[5 q' # Use beam shape cursor on startup.
+preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
+
+# Load zsh-syntax-highlighting; should be last.
+source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null

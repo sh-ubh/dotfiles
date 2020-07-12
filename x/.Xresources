@@ -1,60 +1,49 @@
-! ------------------------------------------------------------------------------
-!  Colors
-! ------------------------------------------------------------------------------
-!
-!------------------------------------------------------------------------------
+! special
+*.foreground:   #2f2f2f
+*.background:   #f3f4f5
+*.cursorColor:  #565e65
 
-#define base00 #000000
-#define base01 #303030
-#define base02 #353535
-#define base03 #4A4A4A
-#define base04 #787878
-#define base05 #EEFFFF
-#define base06 #EEFFFF
-#define base07 #FFFFFF
-#define base08 #F07178
-#define base09 #F78C6C
-#define base0A #00fdb4
-#define base0B #13CA91
-#define base0C #79ffe1
-#define base0D #7898FB
-#define base0E #ff3299
-#define base0F #FF5370
+! black
+*.color0:       #1c2023
+*.color8:       #747c84
 
-!  URxvt
-! ------------------------------------------------------------------------------
+! red
+*.color1:       #c7ae95
+*.color9:       #c7ae95
 
-*foreground:   base05
-*background:   base00
-*cursorColor:  base05
+! green
+*.color2:       #95c7ae
+*.color10:      #95c7ae
 
-*color0:       base00
-*color1:       base08
-*color2:       base0B
-*color3:       base0A
-*color4:       base0D
-*color5:       base0E
-*color6:       base0C
-*color7:       base05
+! yellow
+*.color3:       #aec795
+*.color11:      #aec795
 
-*color8:       base03
-*color9:       base09
-*color10:      base01
-*color11:      base02
-*color12:      base04
-*color13:      base06
-*color14:      base0F
-*color15:      base07
+! blue
+*.color4:       #ae95c7
+*.color12:      #ae95c7
+
+! magenta
+*.color5:       #c795ae
+*.color13:      #c795ae
+
+! cyan
+*.color6:       #95aec7
+*.color14:      #95aec7
+
+! white
+*.color7:       #c7ccd1
+*.color15:      #f3f4f5
 
 URxvt.cursorBlink : 1
-URxvt.font       :xft:Input Mono:pixelsize=12.5:style=Regular \
+URxvt.font       :xft:JetBrainsMono Nerd Font Mono:pixelsize=12.5:style=Regular \
                   xft:DejaVu Sans Mono:size=12.5:style=Medium
 
-URxvt.italicFont :xft:Input Mono:pixelsize=12.5:style=Italic
-URxvt.boldFont   :xft:Input Mono:pixelsize=12.5:style=Bold
+URxvt.italicFont :xft:JetBrainsMono Nerd Font Mono:pixelsize=12.5:style=Italic
+URxvt.boldFont   :xft:JetBrainsMono Nerd Font Mono:pixelsize=12.5:style=Bold
 
 URxvt.lineSpace           : 0
-URxvt.letterSpace         : -1
+URxvt.letterSpace         : 0
 URxvt.scrollBar           : false
 URxvt.internalBorder      : 25
 URxvt.cursorUnderline     : false
@@ -65,12 +54,11 @@ URxvt.intensityStyles     : false
 
 
 URxvt.perl-ext-common : default,matcher
-URxvt.url-launcher    : firefox-bin
+URxvt.url-launcher    : chromium
 URxvt.matcher.button  : 1
 
-Xft.autohint: 1
-Xft.antialias: 1
+Xft.autohint: true
+Xft.antialias: true
 Xft.lcdfilter: lcddefault
-Xft.hinting: true
 Xft.rgba: rgb
 Xft.dpi: 96
