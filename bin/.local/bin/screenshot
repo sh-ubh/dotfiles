@@ -2,11 +2,11 @@
 screenshot() {
 	case $1 in
 	f*)
-		scrot -m
+		scrot -m -e 'mv $f ~/scrots'
 		;;
 	w*)
 		sleep 1
-		scrot -s
+		scrot -s -e 'mv $f ~/scrots'
 		;;
 	*)
 		;;
