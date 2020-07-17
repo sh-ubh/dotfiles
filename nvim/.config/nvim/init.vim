@@ -87,6 +87,9 @@ hi Comment cterm=italic
 " statusbar
 scriptencoding utf-8
 
+" cpp template
+autocmd BufNewFile *.cpp 0r ~/.config/nvim/templates/skeleton.cpp
+
 " statusline
 hi PrimaryBlock   ctermbg=NONE ctermfg=8
 hi ModeBlock      ctermbg=NONE ctermfg=2

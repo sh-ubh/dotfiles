@@ -53,7 +53,8 @@ URxvt.titleBar            : false
 URxvt.intensityStyles     : false
 
 
-URxvt.perl-ext-common : default,matcher
+URxvt.perl-ext-common : default,matcher,font-size
+URxvt.font-size.step: 1
 URxvt.url-launcher    : chromium
 URxvt.matcher.button  : 1
 
