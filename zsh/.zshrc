@@ -36,6 +36,10 @@ dict() {
     curl dict://dict.org/d:$*
 }
 
+sip() {
+    curl https://ipinfo.io/$*
+}
+
 # Enable colors and change prompt:
 autoload -U colors && colors
 fpath+=$HOME/.zsh/pure
@@ -50,7 +54,7 @@ zstyle ':completion:*' menu select
 zstyle ':completion:*' matcher-list '' 'm:{a-zA-Z}={A-Za-z}' 'r:|[._-]=* r:|=*' 'l:|=* r:|=*'
 zmodload zsh/complist
 compinit
-_comp_options+=(globdots)		# Include hidden files.
+#_comp_options+=(globdots)		# Include hidden files.
 
 # vi mode
 bindkey -v
