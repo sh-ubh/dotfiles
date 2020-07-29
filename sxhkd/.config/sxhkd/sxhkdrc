@@ -29,7 +29,7 @@ super + Escape
 super + shift + w 
  	firefox
 control + alt + l
-    /home/fd0e/.local/bin/lock
+    xset s activate
 super + shift + f
 	spacefm
 Print
@@ -150,16 +150,16 @@ super + {Left,Down,Up,Right}
 
 #Volume
 XF86Audio{RaiseVolume,LowerVolume}
-	amixer set Master {'5%+','5%-'}
+    pulsemixer --change-volume {+5,-5}
 XF86AudioMute 
-	amixer set Master toggle
+    pulsemixer --toggle-mute
 
 #Playerctl
 XF86Audio{Play,Next,Prev}
-	playerctl {play-pause,next,previous}
+    cmus-remote {-u,-n,-r}
 
 #light
 XF86MonBrightnessDown
-    sudo bash -c 'for f in /sys/class/backlight/*; do echo $(($(<$f/brightness)-5*$(<$f/max_brightness)/100)) > $f/brightness; done'
+    sudo ~/bin/light d
 XF86MonBrightnessUp
-    sudo bash -c 'for f in /sys/class/backlight/*; do echo $(($(<$f/brightness)+5*$(<$f/max_brightness)/100)) > $f/brightness; done'
+    sudo ~/bin/light u

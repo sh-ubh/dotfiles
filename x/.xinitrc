@@ -14,4 +14,4 @@ urxvtd &
 ~/.local/bin/bat_check.sh &
 picom &
 dunst &
-exec spectrwm
+exec bspwm
