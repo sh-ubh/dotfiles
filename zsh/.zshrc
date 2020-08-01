@@ -9,7 +9,8 @@ export VISUAL=nvim
 export EDITOR="$VISUAL"
 export BROWSER=firefox
 export PATH=$PATH:$HOME/.local/bin:$HOME/bin
-export XDG_CURRENT_DESKTOP=spectrwm
+export TERM=rxvt-unicode-256color
+export XDG_CURRENT_DESKTOP=bspwm
 
 #aliases
 alias ls='ls --color=auto'

@@ -1,5 +1,0 @@
-#!/bin/sh
-
-password=$(find ~/.password-store/ -type f -name '*.gpg' |
-	sed 's/.*\/\(.*\)\.gpg$/\1/' | dmenu -l 5 -p "Pass:")
-[ -n "$password" ] && st -e pass -c "$password" 

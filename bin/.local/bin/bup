@@ -1,1 +1,0 @@
-for f in /sys/class/backlight/*; do echo $(($(<$f/brightness)+5*$(<$f/max_brightness)/100)) > $f/brightness; done
