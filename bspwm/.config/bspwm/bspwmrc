@@ -12,10 +12,7 @@ bspc config gapless_monocle      true
 # rules
 bspc rule -a Chromium desktop='^2'
 bspc rule -a Steam desktop='^6'
-
-# scratchpad
-bspc rule -a scratchpad sticky=on state=floating hidden=on
-[ "$(ps -x | grep -c 'scratchpad')" -eq "1" ] && st -c scratchpad -e ~/bin/scratch &
+bspc rule -a "VirtualBox Manager" desktop='^6'
 
 # autostart
 xrdb -merge ~/.Xresources &

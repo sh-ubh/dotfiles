@@ -5,19 +5,19 @@ super + shift + Return
 super + @space
 	dmenu_run -i -fn "JetBrains Mono Nerd Font Mono:style=medium:pixelsize=12.5" -nb "#f3f4f5" -nf "#2f2f2f" -sb "#626868" -sf "#ffffff"
 super + shift + w 
- 	chromium
+ 	chromium --profile-directory=Default
 control + alt + l
     xset s activate
 super + shift + f
 	urxvtc -e ranger
+super + n
+    urxvtc -e nvim ~/.cache/bujo/todo.md
 Print
-    screenshot f
+    ~/.local/bin/screenshot f
 control + Print
-    screenshot w
-super + x
-    /home/fd0e/.local/bin/shut
+    ~/.local/bin/screenshot w
 super + shift + p
-	/home/fd0e/.local/bin/passmenu
+    passmenu -i -fn "JetBrains Mono Nerd Font Mono:style=medium:pixelsize=12.5" -nb "#f3f4f5" -nf "#2f2f2f" -sb "#626868" -sf "#ffffff"
 super + Escape
 	pkill -USR1 -x sxhkd
 
@@ -73,7 +73,7 @@ alt + {_,shift + }Tab
 super + bracket{left,right}
 	bspc desktop -f {prev,next}.local
 # focus the last node/desktop
-super + {grave,Tab}
+super + Tab
 	bspc {node,desktop} -f last
 # focus the older or newer node in the focus history
 super + {o,i}
