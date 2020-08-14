@@ -1,6 +1,6 @@
 #!/bin/bash
 
-vol(){
+vol() {
     vol=$(pulsemixer --get-volume | awk '{print $1}')
     mute=$(pulsemixer --get-mute)
     if [ "$mute" == 1 ]; then
@@ -21,13 +21,13 @@ bat() {
 }
 
 dte() {
-  dte=$(date +"%a, %b %d")
-  echo -e "+@fg=1;date+@fg=0; $dte "
+    dte=$(date +"%a, %b %d")
+    echo -e "+@fg=1;date+@fg=0; $dte "
 }
 
 tie() {
-  tme=$(date +"%I:%M %P")
-  echo -e "+@fg=1;time+@fg=0; $tme "
+    tme=$(date +"%I:%M %P")
+    echo -e "+@fg=1;time+@fg=0; $tme "
 }
 
 while :; do
