@@ -53,7 +53,7 @@ imap <C-P> <Plug>BujoCheckinsert
 
 " nerdtree
 let g:NERDTreeWinPos = "right"
-map <C-i> :NERDTreeToggle<CR>
+map <leader>n :NERDTreeToggle<CR>
 autocmd StdinReadPre * let s:std_in=1
 autocmd VimEnter * if argc() == 0 && !exists("s:std_in") | NERDTree | endif
 autocmd bufenter * if (winnr("$") == 1 && exists("b:NERDTree") && b:NERDTree.isTabTree()) | q | endif
@@ -156,6 +156,7 @@ let g:coc_global_extensions = [
   \ 'coc-json',
   \ 'coc-clangd',
   \ 'coc-python',
+  \ 'coc-sh',
   \ 'coc-vimtex'
   \ ]
 
