@@ -28,6 +28,7 @@ alias vimrc="vim $HOME/.config/nvim/init.vim"
 alias v="nvim"
 alias vim="nvim"
 alias sudo="sudo "
+alias mp3dl="youtube-dl -x --audio-format mp3"
 
 up() {
     curl -F "file=@$*" https://0x0.st | xclip -selection clipboard
