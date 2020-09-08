@@ -36,11 +36,11 @@
 *.color15:      #f3f4f5
 
 URxvt.cursorBlink : 1
-URxvt.font       :xft:JetBrainsMono Nerd Font Mono:pixelsize=12.5:style=Regular \
-                  xft:DejaVu Sans Mono:size=12.5:style=Medium
+URxvt.font       :xft:JetBrainsMono Nerd Font Mono:pixelsize=13:style=Regular \
+                  xft:DejaVu Sans Mono:size=13:style=Medium
 
-URxvt.italicFont :xft:JetBrainsMono Nerd Font Mono:pixelsize=12.5:style=Italic
-URxvt.boldFont   :xft:JetBrainsMono Nerd Font Mono:pixelsize=12.5:style=Bold
+URxvt.italicFont :xft:JetBrainsMono Nerd Font Mono:pixelsize=13:style=Italic
+URxvt.boldFont   :xft:JetBrainsMono Nerd Font Mono:pixelsize=13:style=Bold
 
 URxvt.lineSpace           : 0
 URxvt.letterSpace         : 0

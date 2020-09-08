@@ -18,7 +18,7 @@ bspc rule -a "VirtualBox Manager" desktop='^6'
 xrdb -merge ~/.Xresources &
 xsetroot -cursor_name left_ptr &
 sxhkd &
-xss-lock -- slock &
+#xss-lock -- slock &
 xset b off &
 xset s 300 &
 ~/.fehbg &
@@ -26,4 +26,3 @@ urxvtd &
 ~/.local/bin/bat_check.sh &
 picom &
 dunst &
-~/bin/panel

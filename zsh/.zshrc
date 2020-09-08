@@ -7,10 +7,10 @@ setopt appendhistory hist_ignore_all_dups hist_ignore_space
 #exports
 export VISUAL=nvim
 export EDITOR="$VISUAL"
-export BROWSER=firefox
-export PATH=$PATH:$HOME/.local/bin:$HOME/bin
+export BROWSER=brave
+export PATH=$PATH:$HOME/.local/bin:$HOME/bin:/opt/brave
 export TERM=rxvt-unicode-256color
-export XDG_CURRENT_DESKTOP=spectrwm
+export XDG_CURRENT_DESKTOP=bspwm
 
 #aliases
 alias ls='ls --color=auto'
@@ -48,7 +48,7 @@ fpath+=$HOME/.zsh/pure
 autoload -U promptinit; promptinit
 prompt pure
 PURE_PROMPT_SYMBOL=$
-#PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
+# PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
 # Basic auto/tab complete:
 autoload -U compinit

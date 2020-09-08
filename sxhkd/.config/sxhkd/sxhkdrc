@@ -5,7 +5,7 @@ super + shift + Return
 super + @space
 	dmenu_run -i -fn "JetBrains Mono Nerd Font Mono:style=medium:pixelsize=12.5" -nb "#f3f4f5" -nf "#2f2f2f" -sb "#626868" -sf "#ffffff"
 super + shift + w 
- 	chromium --profile-directory=Default
+    brave
 control + alt + l
     xset s activate
 super + shift + f
