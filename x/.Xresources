@@ -58,8 +58,9 @@ URxvt.font-size.step: 1
 URxvt.url-launcher    : chromium
 URxvt.matcher.button  : 1
 
-Xft.autohint: true
-Xft.antialias: true
-Xft.lcdfilter: lcddefault
-Xft.rgba: rgb
-Xft.dpi: 96
+Xft.antialias:	1
+Xft.hinting:	1
+Xft.autohint:	0
+Xft.hintstyle:	hintslight
+Xft.rgba:	rgb
+Xft.lcdfilter:	lcddefault

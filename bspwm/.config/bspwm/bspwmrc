@@ -10,7 +10,7 @@ bspc config borderless_monocle   true
 bspc config gapless_monocle      true
 
 # rules
-bspc rule -a Chromium desktop='^2'
+bspc rule -a Brave-browser desktop='^2'
 bspc rule -a Steam desktop='^6'
 bspc rule -a "VirtualBox Manager" desktop='^6'
 
@@ -18,7 +18,7 @@ bspc rule -a "VirtualBox Manager" desktop='^6'
 xrdb -merge ~/.Xresources &
 xsetroot -cursor_name left_ptr &
 sxhkd &
-#xss-lock -- slock &
+xss-lock -- slock &
 xset b off &
 xset s 300 &
 ~/.fehbg &
@@ -26,3 +26,4 @@ urxvtd &
 ~/.local/bin/bat_check.sh &
 picom &
 dunst &
+~/.config/polybar/launch.sh
