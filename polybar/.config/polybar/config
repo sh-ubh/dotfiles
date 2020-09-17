@@ -1,6 +1,5 @@
 [settings]
 screenchange-reload = true
-# wm-restack = bspwm
 
 [colors]
 #background = ${xrdb:color0:#222}
@@ -39,6 +38,7 @@ modules-right = bspwm
 tray-position = right
 cursor-click = pointer
 cursor-scroll = ns-resize
+wm-restack = bspwm
 
 [module/xwindow]
 type = internal/xwindow
@@ -63,18 +63,18 @@ ws-icon-6 = chat;
 ws-icon-7 = game;戮
 ws-icon-default = 
 
-label-focused = %name%
+label-focused = 
 label-focused-foreground = ${xrdb:color6:#ffd7b1}
 label-focused-padding = 1
 ;label-focused-font = 10
 
-label-occupied = %name%
+label-occupied = 
 ;label-occupied-foreground = ${xrdb:color15:#85befd}
 label-occupied-foreground = #5e5c5c
 label-occupied-padding = 1
 
-label-empty = 
-label-empty-foreground = ${xrdb:color1:#bd2c40}
+label-empty = 
+label-empty-foreground = #5e5c5c
 label-empty-padding = 1
 
 ; urgent = Workspace with urgency hint set
@@ -110,11 +110,16 @@ format-disconnected =
 type = internal/date
 interval = 1.0
 date = %I:%M %p
+label = %date%
+label-foreground = #565e65
+format = time <label>
 
 [module/date]
 type = internal/date
 date = %a, %d %b
 label = %date%
+label-foreground = #565e65
+format= date <label>
 
 [module/battery]
 type = internal/battery
@@ -122,17 +127,21 @@ battery = BAT0
 adapter = ADP1
 poll-interval = 1
 ;full-at = 98
-label-discharging = bat %percentage%%
-label-charging = +bat %percentage%%
-label-full = ^bat %percentage%%
-format-discharging = <label-discharging>
-format-full = <label-full>
-format-charging = <label-charging>
+label-discharging = %percentage%%
+label-discharging-foreground = #565e65
+label-charging = %percentage%%
+label-charging-foreground = #565e65
+label-full = %percentage%%
+label-full-foreground = #565e65
+format-discharging = bat <label-discharging>
+format-full = ^bat <label-full>
+format-charging = +bat <label-charging>
 
 [module/pulseaudio]
 type = internal/pulseaudio
 format-volume = vol <label-volume>
 label-volume = %percentage%%
+label-volume-foreground = #565e65
 label-muted = muted
 
 [module/cmus]

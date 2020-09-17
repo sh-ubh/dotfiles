@@ -9,7 +9,7 @@ super + shift + w
 control + alt + l
     xset s activate
 super + shift + f
-	urxvtc -e lf
+	urxvtc -e ranger
 super + n
     urxvtc -e nvim ~/.cache/bujo/todo.md
 Print
