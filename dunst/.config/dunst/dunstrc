@@ -19,7 +19,7 @@
     horizontal_padding = 14
 
     # The frame color and width of the notification
-    frame_color = "#2f2f2f"
+    frame_color = "#161616"
     frame_width = 5
     line_height = 0
 
@@ -67,18 +67,18 @@
 
 # Set the background and foreground (text) color for all notifications
 [urgency_low]
-background = "#f3f4f5"
-foreground = "#2f2f2f"
+background = "#000000"
+foreground = "#eeffff"
 timeout = 5
 
 [urgency_normal]
-background = "#f3f4f5"
-foreground = "#2f2f2f"
+background = "#000000"
+foreground = "#eeffff"
 timeout = 5
 
 [urgency_critical]
-background = "#f3f4f5"
-foreground = "#2f2f2f"
+background = "#000000"
+foreground = "#eeffff"
 timeout = 0
 # vim:ft=cfg
 

@@ -3,7 +3,7 @@ super + Return
 super + shift + Return
 	bspc rule -a \* -o state=floating && urxvtc
 super + @space
-	dmenu_run -i -fn "JetBrains Mono Nerd Font Mono:style=medium:pixelsize=12.5" -nb "#f3f4f5" -nf "#2f2f2f" -sb "#626868" -sf "#ffffff"
+	dmenu_run -i -fn "JetBrains Mono Nerd Font Mono:style=medium:pixelsize=12.5" -nb "#000000" -nf "#f3f4f5" -sb "#626868" -sf "#000000"
 super + shift + w 
     /opt/brave/brave
 control + alt + l

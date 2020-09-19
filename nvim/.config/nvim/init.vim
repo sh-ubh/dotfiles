@@ -17,7 +17,7 @@ call plug#end()
 set guicursor=
 set number relativenumber
 set mouse=a
-set background=light
+set background=dark
 syntax enable
 set cursorline
 set ignorecase
@@ -32,7 +32,7 @@ set shiftwidth=4    " number of spaces to use for autoindent
 set expandtab       " tabs are space
 set autoindent
 set copyindent      " copy indent from the previous line
-colorscheme pencil
+colorscheme plain
 "hi Normal ctermbg=16 guibg=#000000
 "hi LineNr ctermbg=16 guibg=#000000
 

@@ -2,11 +2,11 @@
 screenchange-reload = true
 
 [colors]
-#background = ${xrdb:color0:#222}
-background = ${xrdb:background:#060808}
+;background = ${xrdb:background:#060808}
+background = #00000000
 background-alt = ${xrdb:color0:#000}
-;foreground = ${xrdb:color7:#222}
-foreground = ${xrdb:foreground:#c5c8c6}
+;foreground = ${xrdb:foreground:#c5c8c6}
+foreground = #5e5c5c
 foreground-alt = ${xrdb:colorBD:#444}
 primary = ${xrdb:color4:#ffb52a}
 secondary = ${xrdb:color3:#e60053}
@@ -111,14 +111,14 @@ type = internal/date
 interval = 1.0
 date = %I:%M %p
 label = %date%
-label-foreground = #565e65
+label-foreground = #EEFFFF
 format = time <label>
 
 [module/date]
 type = internal/date
 date = %a, %d %b
 label = %date%
-label-foreground = #565e65
+label-foreground = #EEFFFF
 format= date <label>
 
 [module/battery]
@@ -128,11 +128,11 @@ adapter = ADP1
 poll-interval = 1
 ;full-at = 98
 label-discharging = %percentage%%
-label-discharging-foreground = #565e65
+label-discharging-foreground = #EEFFFF
 label-charging = %percentage%%
-label-charging-foreground = #565e65
+label-charging-foreground = #EEFFFF
 label-full = %percentage%%
-label-full-foreground = #565e65
+label-full-foreground = #EEFFFF
 format-discharging = bat <label-discharging>
 format-full = ^bat <label-full>
 format-charging = +bat <label-charging>
@@ -141,7 +141,7 @@ format-charging = +bat <label-charging>
 type = internal/pulseaudio
 format-volume = vol <label-volume>
 label-volume = %percentage%%
-label-volume-foreground = #565e65
+label-volume-foreground = #EEFFFF
 label-muted = muted
 
 [module/cmus]
@@ -155,7 +155,7 @@ click-middle = cmus-remote --pause
 scroll-up = cmus-remote --volume +5%
 scroll-down = cmus-remote --volume -5%
 format = <label>
-format-foreground = #7b8c58
+format-foreground = ${xrdb:color6:#ffd7b1}
 label = %output%
 !label-maxlen = 50
 

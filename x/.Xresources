@@ -1,39 +1,50 @@
-! special
-*.foreground:   #2f2f2f
-*.background:   #f3f4f5
-*.cursorColor:  #565e65
+! ------------------------------------------------------------------------------
+!  Colors
+! ------------------------------------------------------------------------------
+!
+!------------------------------------------------------------------------------
 
-! black
-*.color0:       #1c2023
-*.color8:       #747c84
+#define base00 #000000
+#define base01 #303030
+#define base02 #353535
+#define base03 #4A4A4A
+#define base04 #787878
+#define base05 #EEFFFF
+#define base06 #EEFFFF
+#define base07 #FFFFFF
+#define base08 #3b3b3b
+#define base09 #F78C6C
+#define base0A #353531
+#define base0B #13CA91
+#define base0C #79ffe1
+#define base0D #7898FB
+#define base0E #3b3b3b
+#define base0F #FF5370
 
-! red
-*.color1:       #b55651
-*.color9:       #b55651
+!  URxvt
+! ------------------------------------------------------------------------------
 
-! green
-*.color2:       #11703c
-*.color10:      #11703c
+*foreground:   base05
+*background:   base00
+*cursorColor:  base05
 
-! yellow
-*.color3:       #4d4f4b
-*.color11:      #4d4f4b
+*color0:       base00
+*color1:       base08
+*color2:       base0B
+*color3:       base0A
+*color4:       base0D
+*color5:       base0E
+*color6:       base0C
+*color7:       base05
 
-! blue
-*.color4:       #304560
-*.color12:      #304560
-
-! magenta
-*.color5:       #aa297f
-*.color13:      #aa297f
-
-! cyan
-*.color6:       #4ba39a
-*.color14:      #4ba39a
-
-! white
-*.color7:       #c7ccd1
-*.color15:      #f3f4f5
+*color8:       base03
+*color9:       base09
+*color10:      base01
+*color11:      base02
+*color12:      base04
+*color13:      base06
+*color14:      base0F
+*color15:      base07
 
 URxvt.cursorBlink : 1
 URxvt.font       :xft:JetBrainsMono Nerd Font Mono:pixelsize=13:style=Regular \

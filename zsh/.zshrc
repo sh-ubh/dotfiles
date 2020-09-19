@@ -42,6 +42,10 @@ sip() {
     curl https://ipinfo.io/$*
 }
 
+rmdata() {
+    exiftool -overwrite_original -all= $*
+}
+
 # Enable colors and change prompt:
 autoload -U colors && colors
 fpath+=$HOME/.zsh/pure
