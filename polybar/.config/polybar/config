@@ -6,7 +6,7 @@ screenchange-reload = true
 background = #00000000
 background-alt = ${xrdb:color0:#000}
 ;foreground = ${xrdb:foreground:#c5c8c6}
-foreground = #5e5c5c
+foreground = #757474
 foreground-alt = ${xrdb:colorBD:#444}
 primary = ${xrdb:color4:#ffb52a}
 secondary = ${xrdb:color3:#e60053}
@@ -140,9 +140,11 @@ format-charging = +bat <label-charging>
 [module/pulseaudio]
 type = internal/pulseaudio
 format-volume = vol <label-volume>
+format-muted = vol <label-muted>
 label-volume = %percentage%%
 label-volume-foreground = #EEFFFF
 label-muted = muted
+label-muted-foreground = #EEFFFF
 
 [module/cmus]
 type = custom/script

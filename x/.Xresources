@@ -12,13 +12,13 @@
 #define base05 #EEFFFF
 #define base06 #EEFFFF
 #define base07 #FFFFFF
-#define base08 #3b3b3b
+#define base08 #D75F5F
 #define base09 #F78C6C
 #define base0A #353531
 #define base0B #13CA91
 #define base0C #79ffe1
-#define base0D #7898FB
-#define base0E #3b3b3b
+#define base0D #6987e0
+#define base0E #e59595
 #define base0F #FF5370
 
 !  URxvt
