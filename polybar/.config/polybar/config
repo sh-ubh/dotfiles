@@ -64,7 +64,7 @@ ws-icon-7 = game;戮
 ws-icon-default = 
 
 label-focused = 
-label-focused-foreground = ${xrdb:color6:#ffd7b1}
+label-focused-foreground = #79ffe1
 label-focused-padding = 1
 ;label-focused-font = 10
 
@@ -157,7 +157,7 @@ click-middle = cmus-remote --pause
 scroll-up = cmus-remote --volume +5%
 scroll-down = cmus-remote --volume -5%
 format = <label>
-format-foreground = ${xrdb:color6:#ffd7b1}
+format-foreground = #79ffe1
 label = %output%
 !label-maxlen = 50
 

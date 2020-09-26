@@ -3,9 +3,9 @@ super + Return
 super + shift + Return
 	bspc rule -a \* -o state=floating && urxvtc
 super + @space
-	dmenu_run -i -fn "JetBrains Mono Nerd Font Mono:style=medium:pixelsize=12.5" -nb "#000000" -nf "#f3f4f5" -sb "#626868" -sf "#000000"
+	dmenu_run -i -fn "JetBrains Mono Nerd Font Mono:style=medium:pixelsize=12.5" -nb "#000000" -nf "#f3f4f5" -sb "#EEFFFF" -sf "#000000"
 super + shift + w 
-    /opt/brave/brave
+    brave
 control + alt + l
     xset s activate
 super + shift + f
@@ -13,11 +13,11 @@ super + shift + f
 super + n
     urxvtc -e nvim ~/.cache/bujo/todo.md
 Print
-    ~/.local/bin/screenshot f
+    maim ~/scrots/$(date +%d-%b-%y).png
 control + Print
-    ~/.local/bin/screenshot w
+    maim -i $(xdotool getactivewindow) ~/scrots/$(date +%d-%b-%y).png
 super + shift + p
-    passmenu -i -fn "JetBrains Mono Nerd Font Mono:style=medium:pixelsize=12.5" -nb "#f3f4f5" -nf "#2f2f2f" -sb "#626868" -sf "#ffffff"
+    passmenu -i -fn "JetBrains Mono Nerd Font Mono:style=medium:pixelsize=12.5" -nb "#000000" -nf "#f3f4f5" -sb "#EEFFFF" -sf "#000000"
 super + Escape
 	pkill -USR1 -x sxhkd
 
