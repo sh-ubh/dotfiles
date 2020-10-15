@@ -80,5 +80,3 @@ timeout = 5
 background = "#000000"
 foreground = "#eeffff"
 timeout = 0
-# vim:ft=cfg
-

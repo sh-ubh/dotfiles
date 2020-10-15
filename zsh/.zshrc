@@ -66,6 +66,9 @@ compinit
 bindkey -v
 export KEYTIMEOUT=1
 
+# reverse search
+bindkey '^R' history-incremental-search-backward
+
 # Use vim keys in tab complete menu:
 bindkey -M menuselect 'h' vi-backward-char
 bindkey -M menuselect 'k' vi-up-line-or-history
