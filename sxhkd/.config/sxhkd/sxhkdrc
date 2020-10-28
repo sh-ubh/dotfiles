@@ -16,6 +16,8 @@ Print
     maim ~/scrots/$(date +%d-%b-%y).png
 control + Print
     maim -i $(xdotool getactivewindow) ~/scrots/$(date +%d-%b-%y).png
+control + shift + Print
+    maim -s ~/scrots/$(date +%d-%b-%y).png
 super + shift + p
     passmenu -i -fn "JetBrains Mono Nerd Font Mono:style=medium:pixelsize=12.5" -nb "#000000" -nf "#f3f4f5" -sb "#EEFFFF" -sf "#000000"
 super + Escape

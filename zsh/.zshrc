@@ -15,6 +15,7 @@ export XDG_CURRENT_DESKTOP=bspwm
 #aliases
 alias ..="cd .."
 alias ...="cd ../../"
+alias l='ls --color=auto'
 alias ls='ls --color=auto'
 alias ll='ls --color=auto -al'
 alias key="vim $HOME/.config/spectrwm/keybindings.conf"
