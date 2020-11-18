@@ -7,7 +7,7 @@ setopt appendhistory hist_ignore_all_dups hist_ignore_space
 #exports
 export VISUAL=nvim
 export EDITOR="$VISUAL"
-export BROWSER=brave
+export BROWSER=chromium
 export PATH=$PATH:$HOME/.local/bin:$HOME/bin
 export TERM=rxvt-unicode-256color
 export XDG_CURRENT_DESKTOP=bspwm

@@ -11,6 +11,7 @@ Plug 'airblade/vim-gitgutter'
 Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'vuciv/vim-bujo'
+Plug 'lervag/vimtex'
 call plug#end() 
 
 " sets
@@ -81,6 +82,9 @@ let g:vim_markdown_toml_frontmatter=1
 let g:vim_markdown_yaml_frontmatter=1
 let g:vim_markdown_folding_disabled=1
 let g:vim_markdown_conceal=0
+
+" vimtex
+let g:tex_flavor = 'latex'
 
 " insert centered
 autocmd InsertEnter * norm zz

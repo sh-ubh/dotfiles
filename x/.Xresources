@@ -64,8 +64,11 @@ URxvt.titleBar            : false
 URxvt.intensityStyles     : false
 
 
-URxvt.perl-ext-common : default,matcher,font-size
-URxvt.font-size.step: 1
+URxvt.perl-ext-common : default,matcher,font-size,keyboard-select
+URxvt.keysym.M-Escape      : perl:keyboard-select:activate
+URxvt.keysym.M-s      : perl:keyboard-select:search
+URxvt.keyboard-select.clipboard: true
+URxvt.font-size.step  : 1
 URxvt.url-launcher    : chromium
 URxvt.matcher.button  : 1
 
