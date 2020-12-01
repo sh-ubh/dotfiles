@@ -1,0 +1,22 @@
+#!/bin/sh
+
+case "$1" in
+    i*)
+        sudo xbps-install "$@"
+        ;;
+    d*)
+        sudo xbps-remove -R "$@"
+        ;;
+    q*)
+        sudo xbps-query "$@"
+        ;;
+    u*)
+        sudo xbps-install -Syu
+        ;;
+    o*)
+        sudo xbps-remove -Oo
+        ;;
+    *)
+        printf "i - install\nd - delete\nq - query\nu - update\no - remove obs"
+        ;;
+esac

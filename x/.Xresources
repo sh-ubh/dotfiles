@@ -47,11 +47,11 @@
 *color15:      base07
 
 URxvt.cursorBlink : 1
-URxvt.font       :xft:JetBrainsMono Nerd Font Mono:pixelsize=13:style=Regular \
+URxvt.font       :xft:JetBrainsMono Nerd Font Mono:size=10:style=Regular \
                   xft:DejaVu Sans Mono:size=13:style=Medium
 
-URxvt.italicFont :xft:JetBrainsMono Nerd Font Mono:pixelsize=13:style=Italic
-URxvt.boldFont   :xft:JetBrainsMono Nerd Font Mono:pixelsize=13:style=Bold
+URxvt.italicFont :xft:JetBrainsMono Nerd Font Mono:size=10:style=Italic
+URxvt.boldFont   :xft:JetBrainsMono Nerd Font Mono:size=10:style=Bold
 
 URxvt.lineSpace           : 0
 URxvt.letterSpace         : 0
@@ -76,5 +76,6 @@ Xft.antialias:	1
 Xft.hinting:	1
 Xft.autohint:	0
 Xft.hintstyle:	hintslight
-Xft.rgba:	rgb
+Xft.rgba:	    rgb
+Xft.dpi:        120
 Xft.lcdfilter:	lcddefault

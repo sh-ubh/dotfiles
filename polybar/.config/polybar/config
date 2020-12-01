@@ -31,7 +31,7 @@ padding-left = 2
 padding-right = 2
 module-margin-left = 1.5
 module-margin-right = 1.5
-font-0 = JetBrains Mono Nerd Font Mono:style=medium:pixelsize=10:antialias=true:autohint=true:lcdfilter=lcddefault:rgba=rgb
+font-0 = JetBrains Mono Nerd Font Mono:style=medium:size=11.5:antialias=true:autohint=true:lcdfilter=lcddefault:rgba=rgb
 modules-left = pulseaudio battery date time cmus
 modules-center = 
 modules-right = bspwm

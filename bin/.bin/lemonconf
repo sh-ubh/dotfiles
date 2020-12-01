@@ -1,0 +1,74 @@
+#!/bin/bash
+# Outputs a configuration for lemonbar
+
+vol(){
+    vol=$(pulsemixer --get-volume | awk '{print $1}')
+    mute=$(pulsemixer --get-mute)
+    if [ "$mute" == 1 ]; then
+        echo -e "%{F#787878}vol%{F-} muted "
+    elif [ "$mute" == 0 ]; then
+	    echo -e "%{F#787878}vol%{F-} $vol% "
+    fi
+}
+
+bat() {
+	power=$(cat /sys/class/power_supply/BAT0/capacity)
+    status=$(cat /sys/class/power_supply/BAT0/status)
+    if [ "$status" == "Charging" ]; then
+        echo -e "%{F#787878}bat%{F-} +$power% "
+    elif [ "$status" == "Discharging" ]; then
+        echo -e "%{F#787878}bat%{F-} $power% "
+    fi
+}
+
+dte() {
+  dte=$(date +"%a, %b %d")
+  echo -e "%{F#787878}date%{F-} $dte "
+}
+
+tie() {
+  tme=$(date +"%I:%M %P")
+  echo -e "%{F#787878}time%{F-} $tme "
+}
+
+groups() {
+    cur=`xprop -root _NET_CURRENT_DESKTOP | awk '{print $3}'`
+    tot=`xprop -root _NET_NUMBER_OF_DESKTOPS | awk '{print $3}'`
+
+    for w in `seq 0 $((cur - 1))`; do line="${line}  "; done
+    line="${line}  "
+    for w in `seq $((cur + 2)) $tot`; do line="${line}  "; done
+    echo $line
+}
+
+workspaces() {
+    all=$(bspc query -D)
+    occupied=$(bspc query -D -d .occupied)
+    current=$(bspc query -D -d .focused)
+    result=""
+    padding=" "
+    while IFS= read -r line; do
+        # Get the name of the current desktop
+        name=""
+        if [[ "$occupied" == *"$line"* ]];
+        then
+            name=""
+        fi
+        
+        if [[ "$current" == *"$line"* ]];
+        then
+            name=""
+        fi
+        
+        result="$result$padding"
+        result="$result$name"
+        result="$result$padding"
+    done <<< "$all"
+    echo -e "$result"
+}
+
+while true; do
+    echo "    $(vol)  $(bat)  $(tie)  $(dte)  %{F#787878}%{r}$(workspaces)%{F-}    "
+    xdo above -t $(xdo id -n root) $(xdo id -n lemonbar)
+	sleep 3
+done

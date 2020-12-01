@@ -3,9 +3,9 @@ super + Return
 super + shift + Return
 	bspc rule -a \* -o state=floating && urxvtc
 super + @space
-	dmenu_run -i -fn "JetBrains Mono Nerd Font Mono:style=medium:pixelsize=12.5" -nb "#000000" -nf "#f3f4f5" -sb "#EEFFFF" -sf "#000000"
+	dmenu_run -i -fn "JetBrains Mono Nerd Font Mono:style=medium:size=9" -nb "#000000" -nf "#f3f4f5" -sb "#EEFFFF" -sf "#000000"
 super + shift + w 
-    chromium
+    firefox
 control + alt + l
     xset s activate
 super + shift + f
@@ -19,7 +19,7 @@ control + Print
 control + shift + Print
     maim -s ~/scrots/$(date +%d-%b-%y-%I:%M%p).png
 super + shift + p
-    passmenu -i -fn "JetBrains Mono Nerd Font Mono:style=medium:pixelsize=12.5" -nb "#000000" -nf "#f3f4f5" -sb "#EEFFFF" -sf "#000000"
+    passmenu -i -fn "JetBrains Mono Nerd Font Mono:style=medium:size=10" -nb "#000000" -nf "#f3f4f5" -sb "#EEFFFF" -sf "#000000"
 super + Escape
 	pkill -USR1 -x sxhkd
 
@@ -35,9 +35,9 @@ XF86Audio{Play,Next,Prev}
 
 # brightness
 XF86MonBrightnessDown
-    sudo ~/bin/light d
+    sudo ~/.bin/light d
 XF86MonBrightnessUp
-    sudo ~/bin/light u
+    sudo ~/.bin/light u
 
 
 # bspwm hotkeys

@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 # brightness wrapper
 
 case "$1" in
