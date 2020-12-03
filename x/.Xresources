@@ -4,7 +4,7 @@
 !
 !------------------------------------------------------------------------------
 
-#define base00 #000000
+#define base00 #101010
 #define base01 #303030
 #define base02 #353535
 #define base03 #4A4A4A
@@ -48,7 +48,7 @@
 
 URxvt.cursorBlink : 1
 URxvt.font       :xft:JetBrainsMono Nerd Font Mono:size=10:style=Regular \
-                  xft:DejaVu Sans Mono:size=13:style=Medium
+                  xft:DejaVu Sans Mono:size=9:style=Medium
 
 URxvt.italicFont :xft:JetBrainsMono Nerd Font Mono:size=10:style=Italic
 URxvt.boldFont   :xft:JetBrainsMono Nerd Font Mono:size=10:style=Bold

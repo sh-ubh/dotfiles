@@ -3,7 +3,7 @@
 case "$1" in
     r*)
         sudo pkill wpa_supplicant
-        sudo wpa_supplicant -i wlp3s0 -B -c /etc/wpa_supplicant/wpa_supplicant.conf
+        sudo wpa_supplicant -i wlp3s0 -B -c /etc/wpa_supplicant/wpa_supplicant-wlp3s0.conf
         ;;
     n*)
         sudo wpa_cli -i wlp3s0 select_network "$2"

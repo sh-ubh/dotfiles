@@ -67,16 +67,16 @@
 
 # Set the background and foreground (text) color for all notifications
 [urgency_low]
-background = "#000000"
+background = "#101010"
 foreground = "#eeffff"
 timeout = 5
 
 [urgency_normal]
-background = "#000000"
+background = "#101010"
 foreground = "#eeffff"
 timeout = 5
 
 [urgency_critical]
-background = "#000000"
+background = "#101010"
 foreground = "#eeffff"
 timeout = 0

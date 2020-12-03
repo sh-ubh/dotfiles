@@ -26,4 +26,5 @@ urxvtd &
 ~/.bin/bat_check &
 picom &
 dunst &
-~/.config/polybar/launch.sh
+~/.config/polybar/launch.sh &
+sudo rtcwake -m mem -s 1
