@@ -2,19 +2,19 @@
 
 case "$1" in
     i*)
-        sudo xbps-install "$@"
+        sudo pacman -S "$@"
         ;;
     d*)
-        sudo xbps-remove -R "$@"
+        sudo pacman -Rs "$@"
         ;;
     q*)
-        sudo xbps-query "$@"
+        sudo pacman -Ss "$@"
         ;;
     u*)
-        sudo xbps-install -Syu
+        yay
         ;;
     o*)
-        sudo xbps-remove -Oo
+        sudo pacman -Rsn $(pacman -Qdtq)
         ;;
     *)
         printf "i - install\nd - delete\nq - query\nu - update\no - remove obs"
