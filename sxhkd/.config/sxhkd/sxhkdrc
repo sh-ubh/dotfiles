@@ -26,8 +26,8 @@ super + Escape
 # volume
 XF86Audio{RaiseVolume,LowerVolume}
     pulsemixer --change-volume {+5,-5}
-XF86AudioMute 
-    pulsemixer --toggle-mute
+XF86Audio{Mute,MicMute}
+    pulsemixer --toggle-mute {--id sink-0,--id source-1} 
 
 # cmus
 XF86Audio{Play,Next,Prev}
