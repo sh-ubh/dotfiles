@@ -4,12 +4,12 @@
 case "$1" in
     u*)
         for f in /sys/class/backlight/*; do
-            echo $(($(<$f/brightness)+5*$(<$f/max_brightness)/100)) > $f/brightness;
+            echo $(($(<$f/brightness)+2*$(<$f/max_brightness)/100)) > $f/brightness;
         done
         ;;
     d*)
         for f in /sys/class/backlight/*; do
-            echo $(($(<$f/brightness)-5*$(<$f/max_brightness)/100)) > $f/brightness;
+            echo $(($(<$f/brightness)-2*$(<$f/max_brightness)/100)) > $f/brightness;
         done
         ;;
     *)
