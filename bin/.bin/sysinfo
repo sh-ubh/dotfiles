@@ -4,7 +4,7 @@
 
 wm="$(echo $XDG_CURRENT_DESKTOP)"
 distro="$(cat /etc/*-release | grep PRETTY_NAME | cut -d '=' -f2 | tr -d '"')"
-packages="$(xbps-query -l | wc -l)"
+packages="$(pacman -Q | wc -l)"
 font="jetbrains mono"
 colors="pencil"
 

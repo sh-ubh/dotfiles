@@ -1,11 +1,11 @@
 #!/bin/bash
 
-RET=$(echo -e "shutdown\nreboot\nsleep\nlock\ncancel" | dmenu -l 5 -p "Sayonara" -nb "#000000" -nf "#bfbfbf" -sb "#84a0c6" -sf "#000000" -fn "Hermit:size=10:antialias=true:autohint=true")
+RET=$(echo -e "shutdown\nreboot\nsleep\nlock\ncancel" | dmenu -p "Sayonara" -fn "JetBrains Mono Nerd Font Mono:style=medium:size=9" -nb "#171a1f" -nf "#f3f4f5" -sb "#c6c8d1" -sf "#171a1f")
 
 case $RET in
-	shutdown) doas poweroff ;;
-	reboot) doas reboot ;;
-	sleep) xset s activate & doas zzz;;
+	shutdown) systemctl poweroff ;;
+	reboot) systemctl reboot ;;
+	sleep) systemctl suspend ;;
    	lock) xset s activate ;;
 	*) ;;
 esac

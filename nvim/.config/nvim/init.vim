@@ -33,7 +33,7 @@ set shiftwidth=4    " number of spaces to use for autoindent
 set expandtab       " tabs are space
 set autoindent
 set copyindent      " copy indent from the previous line
-colorscheme plain
+colorscheme pencil
 "hi Normal ctermbg=16 guibg=#000000
 "hi LineNr ctermbg=16 guibg=#000000
 
@@ -108,9 +108,9 @@ scriptencoding utf-8
 autocmd BufNewFile * silent! 0r $HOME/.config/nvim/templates/skelton.%:e
 
 " statusline
-hi PrimaryBlock   ctermbg=NONE ctermfg=8
+hi PrimaryBlock   ctermbg=NONE ctermfg=237
 hi ModeBlock      ctermbg=NONE ctermfg=2
-hi SecondaryBlock ctermbg=NONE ctermfg=8
+hi SecondaryBlock ctermbg=NONE ctermfg=237
 hi TeritaryBlock  ctermbg=NONE ctermfg=9
 hi Blanks         ctermbg=NONE
 hi statusline     ctermbg=NONE

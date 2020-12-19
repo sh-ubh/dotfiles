@@ -3,10 +3,10 @@ screenchange-reload = true
 
 [colors]
 ;background = ${xrdb:background:#060808}
-background = #00000000
+background = #00b7b7b7
 background-alt = ${xrdb:color0:#000}
 ;foreground = ${xrdb:foreground:#c5c8c6}
-foreground = #a3a1a1
+foreground = #b7b7b7
 foreground-alt = ${xrdb:colorBD:#444}
 primary = ${xrdb:color4:#ffb52a}
 secondary = ${xrdb:color3:#e60053}
@@ -63,18 +63,18 @@ ws-icon-6 = chat;
 ws-icon-7 = game;戮
 ws-icon-default = 
 
-label-focused = 
+label-focused = 
 label-focused-foreground = #79ffe1
 label-focused-padding = 1
 ;label-focused-font = 10
 
 label-occupied = 
 ;label-occupied-foreground = ${xrdb:color15:#85befd}
-label-occupied-foreground = #5e5c5c
+label-occupied-foreground = #b7b7b7
 label-occupied-padding = 1
 
 label-empty = 
-label-empty-foreground = #5e5c5c
+label-empty-foreground = #b7b7b7
 label-empty-padding = 1
 
 ; urgent = Workspace with urgency hint set

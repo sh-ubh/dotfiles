@@ -1,50 +1,39 @@
-! ------------------------------------------------------------------------------
-!  Colors
-! ------------------------------------------------------------------------------
-!
-!------------------------------------------------------------------------------
+! special
+*.foreground:   #FFF
+*.background:   #171a1f
+*.cursorColor:  #F8F8F2
 
-#define base00 #101010
-#define base01 #303030
-#define base02 #353535
-#define base03 #4A4A4A
-#define base04 #787878
-#define base05 #EEFFFF
-#define base06 #EEFFFF
-#define base07 #FFFFFF
-#define base08 #D75F5F
-#define base09 #F78C6C
-#define base0A #353531
-#define base0B #13CA91
-#define base0C #79ffe1
-#define base0D #6987e0
-#define base0E #e59595
-#define base0F #FF5370
+! black
+*.color0:       #171a1f
+*.color8:       #20242a
 
-!  URxvt
-! ------------------------------------------------------------------------------
+! red
+*.color1:       #EE4F84
+*.color9:       #F48FB1
 
-*foreground:   base05
-*background:   base00
-*cursorColor:  base05
+! green
+*.color2:       #53E2AE
+*.color10:      #A1EFD3
 
-*color0:       base00
-*color1:       base08
-*color2:       base0B
-*color3:       base0A
-*color4:       base0D
-*color5:       base0E
-*color6:       base0C
-*color7:       base05
+! yellow
+*.color3:       #F1FF52
+*.color11:      #F1FA8C
 
-*color8:       base03
-*color9:       base09
-*color10:      base01
-*color11:      base02
-*color12:      base04
-*color13:      base06
-*color14:      base0F
-*color15:      base07
+! blue
+*.color4:       #6498EF
+*.color12:      #92B6F4
+
+! magenta
+*.color5:       #985EFF
+*.color13:      #BD99FF
+
+! cyan
+*.color6:       #24D1E7
+*.color14:      #87DFEB
+
+! white
+*.color7:       #E5E5E5
+*.color15:      #F8F8F2
 
 URxvt.cursorBlink : 1
 URxvt.font       :xft:JetBrainsMono Nerd Font Mono:size=10:style=Regular \
@@ -69,7 +58,7 @@ URxvt.keysym.M-Escape      : perl:keyboard-select:activate
 URxvt.keysym.M-s      : perl:keyboard-select:search
 URxvt.keyboard-select.clipboard: true
 URxvt.font-size.step  : 1
-URxvt.url-launcher    : chromium
+URxvt.url-launcher    : firefox
 URxvt.matcher.button  : 1
 
 Xft.antialias:	1
