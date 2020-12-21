@@ -21,7 +21,7 @@ control + Print
 control + shift + Print
     maim -s ~/scrots/$(date +%d-%b-%y-%I:%M%p).png
 super + shift + p
-    passmenu -i -fn "JetBrains Mono Nerd Font Mono:style=medium:size=10" -nb "#000000" -nf "#f3f4f5" -sb "#EEFFFF" -sf "#000000"
+    passmenu -i -fn "JetBrains Mono Nerd Font Mono:style=medium:size=9" -nb "#171a1f" -nf "#f3f4f5" -sb "#c6c8d1" -sf "#171a1f"
 super + Escape
 	pkill -USR1 -x sxhkd
 
