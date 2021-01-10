@@ -31,9 +31,9 @@ XF86Audio{RaiseVolume,LowerVolume}
 XF86Audio{Mute,MicMute}
     pulsemixer --toggle-mute {--id sink-0,--id source-1} 
 
-# cmus
-XF86Audio{Play,Next,Prev}
-    cmus-remote {-u,-n,-r}
+# display
+XF86Favorites
+    ~/.bin/disp
 
 # brightness
 XF86MonBrightnessDown

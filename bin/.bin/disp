@@ -1,0 +1,7 @@
+#!/bin/sh
+status=$(cat /sys/class/drm/card0/*HDMI*/status)
+if [ $status == "connected" ]; then
+    xrandr --output eDP --primary --mode 1920x1080 --pos 0x1080 --rotate normal --output HDMI-A-0 --mode 1366x768 --pos 0x0 --scale 1.4x1.4 --rotate normal --output DisplayPort-0 --off
+else
+    xrandr --output eDP --primary --mode 1920x1080 --pos 0x0 --rotate normal --output HDMI-A-0 --off
+fi
