@@ -36,11 +36,11 @@
 *.color15:      #F8F8F2
 
 URxvt.cursorBlink : 1
-URxvt.font       :xft:JetBrainsMono Nerd Font Mono:size=10:style=Regular \
+URxvt.font       :xft:Input Mono:size=10:style=Regular \
                   xft:DejaVu Sans Mono:size=9:style=Medium
 
-URxvt.italicFont :xft:JetBrainsMono Nerd Font Mono:size=10:style=Italic
-URxvt.boldFont   :xft:JetBrainsMono Nerd Font Mono:size=10:style=Bold
+URxvt.italicFont :xft:Input Mono:size=10:style=Italic
+URxvt.boldFont   :xft:Input Mono:size=10:style=Bold
 
 URxvt.lineSpace           : 0
 URxvt.letterSpace         : 0

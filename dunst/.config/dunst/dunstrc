@@ -28,7 +28,7 @@
 
     # Font and typography settings
     icon_path = /home/x/.icons/Blue-Maia/status/:/home/x/.icons/Blue-Maia/status/devices/:/home/x/.icons/Blue-Maia/status/apps
-    font = JetBrains Mono Nerd Font Mono 10
+    font = Input Mono 10
     alignment = center
     show_age_threshold = 60
     ellipsize = middle

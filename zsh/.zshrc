@@ -7,7 +7,7 @@ setopt appendhistory hist_ignore_all_dups hist_ignore_space
 #exports
 export VISUAL=nvim
 export EDITOR="$VISUAL"
-export BROWSER=chromium
+export BROWSER=brave
 export PATH=$PATH:$HOME/.bin
 export TERM=rxvt-unicode-256color
 export XDG_CURRENT_DESKTOP=bspwm
@@ -51,7 +51,7 @@ rmdata() {
 
 # Enable colors and change prompt:
 autoload -U colors && colors
-fpath+=$HOME/.config/zsh/pure
+fpath+=$HOME/.cache/zsh/pure
 autoload -U promptinit; promptinit
 prompt pure
 PURE_PROMPT_SYMBOL=$
