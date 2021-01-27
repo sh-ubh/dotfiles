@@ -28,8 +28,10 @@ super + Escape
 # volume
 XF86Audio{RaiseVolume,LowerVolume}
     pulsemixer --change-volume {+5,-5}
-XF86Audio{Mute,MicMute}
-    pulsemixer --toggle-mute {--id sink-0,--id source-1} 
+XF86AudioMute
+    pulsemixer --toggle-mute
+XF86AudioMicMute
+    pulsemixer --toggle-mute --id source-1
 
 # display
 XF86Favorites
