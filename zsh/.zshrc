@@ -7,10 +7,10 @@ setopt appendhistory hist_ignore_all_dups hist_ignore_space
 #exports
 export VISUAL=nvim
 export EDITOR="$VISUAL"
-export BROWSER=brave
+export BROWSER=brave-bin
 export PATH=$PATH:$HOME/.bin
-export TERM=rxvt-unicode-256color
-export XDG_CURRENT_DESKTOP=bspwm
+export TERM=foot
+export XDG_CURRENT_DESKTOP=sway
 
 #aliases
 alias ..="cd .."
