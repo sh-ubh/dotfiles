@@ -1,9 +1,9 @@
 # dot-files
-Dot files for my setup (bspwm, rofi, compton, neovim, i3blocks, polybar, lockscreen, i3[not using anymore])
+dotfiles of my linux setup. Feel free to use it.
 
 ![alt text](gent.png)
 
-For my suckless configs - [suckless](https://github.com/fd0e/suckless)
+For my suckless configs - [suckless](https://github.com/pryr07/suckless)
 
 # To replicate
 ```shell
