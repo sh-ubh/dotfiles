@@ -1,0 +1,203 @@
+# pryr's sway config
+
+font pango: Input Mono 10
+smart_gaps on
+gaps inner 8
+focus_follows_mouse yes
+
+set $mod Mod4
+set $left h
+set $down j
+set $up k
+set $right l
+set $term foot
+set $menu dmenu_path | wofi --show drun -i | xargs swaymsg exec --
+
+default_border pixel 2
+default_floating_border normal
+hide_edge_borders smart
+
+output * bg /home/pryr/Downloads/walls/jpn.jpg fill
+
+input type:touchpad {
+        events disabled
+}
+
+# hide cursor
+seat *
+{
+    hide_cursor 2000
+}
+
+exec swayidle -w \
+         timeout 200 'swaylock -f -c 000000' \
+         timeout 210 'swaymsg "output * dpms off"' resume 'swaymsg "output * dpms on"' \
+         before-sleep 'swaylock -f -c 000000'
+
+# Exit 
+set $mode_system System (l) lock, (e) logout, (s) suspend, (r) reboot, (Shift+s) shutdown
+mode "$mode_system" {
+    bindsym l exec --no-startup-id swaylock -f -c 000000, mode "default"
+    bindsym e exec --no-startup-id swaymsg exit, mode "default"
+    bindsym s exec --no-startup-id systemctl suspend, mode "default"
+    bindsym r exec --no-startup-id systemctl reboot, mode "default"
+    bindsym Shift+s exec --no-startup-id systemctl poweroff, mode "default"
+
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+shift+e mode "$mode_system"
+
+floating_modifier $mod normal
+bindsym $mod+Return exec $term
+bindsym $mod+Shift+Return exec --no-startup-id foot -T floating_term
+bindsym $mod+w kill
+bindsym $mod+d exec $menu
+bindsym $mod+Shift+c reload
+#moving
+bindsym $mod+$left focus left
+bindsym $mod+$down focus down
+bindsym $mod+$up focus up
+bindsym $mod+$right focus right
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+bindsym $mod+Shift+$left move left
+bindsym $mod+Shift+$down move down
+bindsym $mod+Shift+$up move up
+bindsym $mod+Shift+$right move right
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+# Switch to workspace
+bindsym $mod+1 workspace number 1
+bindsym $mod+2 workspace number 2
+bindsym $mod+3 workspace number 3
+bindsym $mod+4 workspace number 4
+bindsym $mod+5 workspace number 5
+bindsym $mod+6 workspace number 6
+bindsym $mod+7 workspace number 7
+bindsym $mod+8 workspace number 8
+bindsym $mod+9 workspace number 9
+bindsym $mod+0 workspace number 10
+# Move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace number 1
+bindsym $mod+Shift+2 move container to workspace number 2
+bindsym $mod+Shift+3 move container to workspace number 3
+bindsym $mod+Shift+4 move container to workspace number 4
+bindsym $mod+Shift+5 move container to workspace number 5
+bindsym $mod+Shift+6 move container to workspace number 6
+bindsym $mod+Shift+7 move container to workspace number 7
+bindsym $mod+Shift+8 move container to workspace number 8
+bindsym $mod+Shift+9 move container to workspace number 9
+bindsym $mod+Shift+0 move container to workspace number 10
+# Layout stuff
+bindsym $mod+b splith
+bindsym $mod+v splitv
+# Switch the current container between different layout styles
+bindsym $mod+s layout stacking
+bindsym $mod+t layout tabbed
+bindsym $mod+e layout toggle split
+bindsym $mod+f fullscreen
+bindsym $mod+Shift+space floating toggle
+bindsym $mod+space focus mode_toggle
+bindsym $mod+a focus parent
+# Move the currently focused window to the scratchpad
+bindsym $mod+Shift+minus move scratchpad
+bindsym $mod+minus scratchpad show
+# Resizing containers
+mode "resize" {
+    bindsym $left resize shrink width 10px
+    bindsym $down resize grow height 10px
+    bindsym $up resize shrink height 10px
+    bindsym $right resize grow width 10px
+    bindsym Left resize shrink width 10px
+    bindsym Down resize grow height 10px
+    bindsym Up resize shrink height 10px
+    bindsym Right resize grow width 10px
+    bindsym Return mode "default"
+    bindsym Escape mode "default"
+}
+bindsym $mod+r mode "resize"
+
+bindsym $mod+Shift+w exec brave --enable-features=UseOzonePlatform --ozone-platform=wayland
+bindsym $mod+Shift+f exec foot ranger
+bindsym $mod+n exec foot nvim ~/.cache/bujo/todo.md
+bindsym XF86AudioRaiseVolume exec --no-startup-id pulsemixer --change-volume +5
+bindsym XF86AudioLowerVolume exec --no-startup-id pulsemixer --change-volume -5
+bindsym XF86AudioMute exec --no-startup-id pulsemixer --toggle-mute
+bindsym XF86AudioMicMute exec --no-startup-id pulsemixer --toggle-mute --id source-47
+bindsym XF86MonBrightnessDown exec --no-startup-id sudo ~/.bin/light d
+bindsym XF86MonBrightnessUp exec --no-startup-id sudo ~/.bin/light u
+bindsym ctrl+space exec makoctl dismiss
+bindsym ctrl+Mod1+l exec --no-startup-id swaylock -f -c 000000
+bindsym ctrl+Print exec --no-startup-id slurp | grim -t png -g - ~/screens/$(date '+%d-%m-%Y_%s_grim.png')
+bindsym Print exec --no-startup-id grim -t png ~/screens/$(date '+%d-%m-%Y_%s_grim.png')
+
+# color defines for zenburn styled i3
+set $bg     #171a1f
+set $fg     #e5e5e5
+set $hi     #efef8f
+set $ac     #909090
+set $tx     #040404
+set $ia     #8f8f8f
+set $be     #76bfa4
+set $yw     #ccdc90
+set $gn     #88b090
+set $rd     #e89393
+
+# set some nice colors      border     background  text
+client.focused              $ac        $ac         $tx
+client.unfocused            $bg        $bg         $ia
+client.focused_inactive     $bg        $bg         $ac
+client.urgent               $rd        $rd         $tx
+
+# Read `man 5 sway-bar` for more information about this section.
+bar
+{
+    height 20
+    position top
+    wrap_scroll no
+    tray_output none
+    strip_workspace_name no
+    strip_workspace_numbers yes
+    status_padding 0
+    status_edge_padding 0
+    status_command exec ~/.config/sway/statusbar
+    pango_markup on
+    colors
+    {
+        separator $hi
+        statusline $fg
+        background $bg
+        active_workspace $hi $hi $bg
+        inactive_workspace $ac $ac $bg
+        focused_workspace $fg $fg $bg
+        urgent_workspace $yw $yw $bg
+    }
+}
+
+assign [app_id="Brave"] 2
+for_window [app_id="Brave"] inhibit_idle fullscreen
+for_window [title=floating_term] floating enable
+for_window [app_id="zathura"] floating enable
+for_window [class="^.*"] border pixel 5
+for_window [shell="xwayland"] title_format "<span>[X] %title</span>"
+for_window [title=".+[Ss]haring (Indicator|your screen)"] floating enable, move to scratchpad, nofocus
+for_window [class="Slack"] move window to workspace $ws4
+
+# gtk
+set $gnome-schema org.gnome.desktop.interface
+exec_always {
+  gsettings set $gnome-schema font-name 'Input Mono 10'
+}
+
+#autostart
+exec --no-startup-id ~/.bin/bat_check
+exec --no-startup-id sudo rtcwake -m mem -s 1
+exec --no-startup-id autotiling
+exec_always pkill kanshi; exec kanshi
+
+include /etc/sway/config.d/*
