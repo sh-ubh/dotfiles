@@ -1,4 +1,4 @@
-# dot-files
+# dotfiles
 dotfiles of my linux setup. Feel free to use it.
 
 ![alt text](gent.png)
