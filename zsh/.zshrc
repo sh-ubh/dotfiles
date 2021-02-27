@@ -14,8 +14,7 @@ export XDG_CURRENT_DESKTOP=sway
 export MANPAGER="nvim -c 'set ft=man' - "
 
 #aliases
-alias ..="cd .."
-alias ...="cd ../../"
+alias ..='cd ..'
 alias l='ls --color=auto'
 alias ls='ls --color=auto'
 alias ll='ls --color=auto -al'
@@ -34,7 +33,6 @@ alias vim="nvim"
 alias sudo="sudo "
 alias mp3dl="youtube-dl -x --audio-format mp3"
 alias o="xdg-open"
-alias webm="rm ~/src/site/dst/.files && ssg5 ~/src/site/src ~/src/site/dst 'pryr\'s website' 'https://pryr.xyz'"
 
 up() {
     curl -F "file=@$*" https://0x0.st | xclip -selection clipboard
@@ -50,6 +48,15 @@ sip() {
 
 rmdata() {
     exiftool -overwrite_original -all= $*
+}
+
+generate() {
+    rm ~/src/site/dst/.files
+    ssg5 ~/src/site/src ~/src/site/dst "pryr's website" "https://pryr.xyz"
+}
+
+deploy() {
+    rsync --rsync-path "sudo -u www-data rsync" -avP --delete ~/src/site/dst/ rem:site/
 }
 
 # Enable colors and change prompt:
