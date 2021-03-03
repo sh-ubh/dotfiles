@@ -198,6 +198,7 @@ exec_always {
 exec --no-startup-id ~/.bin/bat_check
 exec --no-startup-id sudo rtcwake -m mem -s 1
 exec --no-startup-id autotiling
+exec --no-startup-id /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1
 exec_always pkill kanshi; exec kanshi
 
 include /etc/sway/config.d/*

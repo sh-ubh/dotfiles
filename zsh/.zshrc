@@ -53,6 +53,7 @@ rmdata() {
 generate() {
     rm ~/src/site/dst/.files
     ssg5 ~/src/site/src ~/src/site/dst "pryr's website" "https://pryr.xyz"
+    rssg ~/src/site/dst/index.html "pryr\'s feed" > ~/src/site/dst/rss.xml
 }
 
 deploy() {
