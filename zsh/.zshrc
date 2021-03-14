@@ -9,8 +9,8 @@ export VISUAL=nvim
 export EDITOR="$VISUAL"
 export BROWSER=/usr/bin/brave
 export PATH=$PATH:$HOME/.bin
-export TERM=foot
-export XDG_CURRENT_DESKTOP=sway
+export TERM=rxvt-unicode-256color
+export XDG_CURRENT_DESKTOP=bspwm
 export MANPAGER="nvim -c 'set ft=man' - "
 
 #aliases
@@ -53,7 +53,7 @@ rmdata() {
 generate() {
     rm ~/src/site/dst/.files
     ssg5 ~/src/site/src ~/src/site/dst "pryr's website" "https://pryr.xyz"
-    rssg ~/src/site/dst/index.html "pryr\'s feed" > ~/src/site/dst/rss.xml
+    # rssg ~/src/site/dst/index.html "pryr\'s feed" > ~/src/site/dst/rss.xml
 }
 
 deploy() {

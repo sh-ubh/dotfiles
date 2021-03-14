@@ -32,4 +32,5 @@ urxvtd &
 picom --experimental-backends &
 dunst &
 ~/.config/polybar/launch.sh &
+/usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 sudo rtcwake -m mem -s 1

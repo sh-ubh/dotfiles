@@ -36,11 +36,11 @@
 *.color15:      #F8F8F2
 
 URxvt.cursorBlink : 1
-URxvt.font       :xft:Input Mono:size=10:style=Regular \
+URxvt.font       :xft:Input Mono:size=12:style=Regular \
                   xft:DejaVu Sans Mono:size=9:style=Medium
 
-URxvt.italicFont :xft:Input Mono:size=10:style=Italic
-URxvt.boldFont   :xft:Input Mono:size=10:style=Bold
+URxvt.italicFont :xft:Input Mono:size=12:style=Italic
+URxvt.boldFont   :xft:Input Mono:size=12:style=Bold
 
 URxvt.lineSpace           : 0
 URxvt.letterSpace         : 0
@@ -66,5 +66,5 @@ Xft.hinting:	1
 Xft.autohint:	0
 Xft.hintstyle:	hintslight
 Xft.rgba:	    rgb
-Xft.dpi:        120
+!Xft.dpi:        110
 Xft.lcdfilter:	lcddefault

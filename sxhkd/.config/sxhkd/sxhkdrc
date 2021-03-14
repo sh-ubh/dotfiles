@@ -15,11 +15,11 @@ super + shift + f
 super + n
     urxvtc -e nvim ~/.cache/bujo/todo.md
 Print
-    maim ~/scrots/$(date +%d-%b-%y-%I:%M%p).png
+    maim ~/screens/$(date +%d-%b-%y-%I:%M%p).png
 control + Print
-    maim -i $(xdotool getactivewindow) ~/scrots/$(date +%d-%b-%y-%I:%M%p).png
+    maim -i $(xdotool getactivewindow) ~/screens/$(date +%d-%b-%y-%I:%M%p).png
 control + shift + Print
-    maim -s ~/scrots/$(date +%d-%b-%y-%I:%M%p).png
+    maim -s ~/screens/$(date +%d-%b-%y-%I:%M%p).png
 super + shift + p
     passmenu -i -fn "Input Mono:style=medium:size=9" -nb "#171a1f" -nf "#f3f4f5" -sb "#c6c8d1" -sf "#171a1f"
 super + Escape
