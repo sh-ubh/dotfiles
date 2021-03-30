@@ -80,3 +80,7 @@ timeout = 5
 background = "#101010"
 foreground = "#eeffff"
 timeout = 0
+
+[play_sound]
+summary = "*"
+script = ~/.bin/notify.sh
