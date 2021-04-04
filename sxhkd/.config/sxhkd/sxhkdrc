@@ -37,6 +37,10 @@ XF86AudioMicMute
 XF86Favorites
     ~/.bin/disp
 
+# touchpad
+control + XF86Favorites
+    ~/.bin/touchpad
+
 # brightness
 XF86MonBrightnessDown
     sudo ~/.bin/light d

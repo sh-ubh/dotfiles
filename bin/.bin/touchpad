@@ -1,0 +1,9 @@
+#!/bin/bash
+
+enabled=$(xinput --list-props ETPS/2\ Elantech\ Touchpad | grep "Device Enabled" | awk '{print $4}')
+
+if [ $enabled == 1 ]; then
+    xinput --disable ETPS/2\ Elantech\ Touchpad
+else
+    xinput --enable ETPS/2\ Elantech\ Touchpad
+fi
