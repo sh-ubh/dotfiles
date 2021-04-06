@@ -34,11 +34,11 @@ XF86AudioMicMute
     pulsemixer --toggle-mute --id source-1
 
 # display
-XF86Favorites
+control + XF86Favorites
     ~/.bin/disp
 
 # touchpad
-control + XF86Favorites
+XF86Favorites
     ~/.bin/touchpad
 
 # brightness
