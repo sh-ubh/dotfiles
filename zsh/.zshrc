@@ -24,7 +24,6 @@ alias f="ranger"
 alias weather="curl wttr.in"
 alias py="/usr/bin/python"
 alias pg="ping google.com"
-alias pubip="curl ipinfo.io/ip"
 alias k="pkill "
 alias m="cmus"
 alias vimrc="vim $HOME/.config/nvim/init.vim"
@@ -39,7 +38,7 @@ up() {
 }
 
 dict() {
-    curl dict://dict.org/d:$*
+    curl dict://dict.org/d:$* | less
 }
 
 sip() {
@@ -58,6 +57,10 @@ generate() {
 
 deploy() {
     rsync --rsync-path "sudo -u www-data rsync" -avP --delete ~/src/site/dst/ rem:site/
+}
+
+bind() {
+    ssh -L localhost\:$1\:localhost\:$1 $2
 }
 
 # Enable colors and change prompt:
