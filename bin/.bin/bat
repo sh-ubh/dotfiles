@@ -1,0 +1,12 @@
+#!/bin/bash
+while true
+do
+    battery_level=$(cat /sys/class/power_supply/BAT0/capacity)
+    state=$(cat /sys/class/power_supply/BAT0/status)
+    if [ $state == "Charging" ]; then
+       echo -e +$battery_level%
+    else
+       echo -e $battery_level%
+    fi
+    sleep 3
+done
