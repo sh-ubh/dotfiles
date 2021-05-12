@@ -84,7 +84,7 @@ bindkey -v
 # export KEYTIMEOUT=1
 
 # reverse search
-bindkey '^R' history-incremental-search-backward
+# bindkey '^R' history-incremental-search-backward
 
 # Use vim keys in tab complete menu:
 bindkey -M menuselect 'h' vi-backward-char
@@ -115,5 +115,7 @@ echo -ne '\e[5 q' # Use beam shape cursor on startup.
 preexec() { echo -ne '\e[5 q' ;} # Use beam shape cursor for each new prompt.
 
 # Load plugins
-source ~/.cache/zsh/plugins/sudo.plugin.zsh
+for plugin in ~/.cache/zsh/plugins/*; do
+    source "$plugin"
+done
 source /usr/share/zsh/plugins/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh 2>/dev/null
