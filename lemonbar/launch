@@ -1,5 +1,0 @@
-#!/bin/bash
-# Launches an instance of lemonbar
-killall -q lime lemonbar 
-
-~/.config/lemonbar/lime | lemonbar -p -F "#2f2f2f" -f "JetBrains Mono Nerd Font Mono:style=medium:pixelsize=12.5:antialias=true:autohint=true:lcdfilter=lcddefault:rgba=rgb"
