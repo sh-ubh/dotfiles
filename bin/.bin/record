@@ -1,10 +1,24 @@
 #!/bin/bash
 
-ffmpeg -f x11grab \
--s 1920x1080 \
--an -i :0.0 \
--c:v libvpx \
--b:v 5M \
--crf 10 \
--quality realtime \
--y ~/record.mkv
+usage() {
+    echo "
+screen recording using ffmpeg
+usage: ${0##*/} [ -w/a ]
+
+option:
+  -w        without audio 
+  -a        with audio
+"
+    exit 1
+}
+
+case $1 in 
+        -w)
+            ffmpeg -video_size 1920x1080 -framerate 25 -f x11grab -i :0.0 ~/screens/vids/record_$(date +%d-%b-%y-%I:%M%p).mkv
+            ;;
+        -a)
+            ffmpeg -video_size 1920x1080 -framerate 25 -f x11grab -i :0.0 -f pulse -ac 2 -i default ~/screens/vids/record_$(date +%d-%b-%y-%I:%M%p).mkv
+            ;;
+        *) usage
+esac
+

@@ -20,16 +20,12 @@ bspc rule -a Steam desktop='^6'
 bspc rule -a "VirtualBox Manager" desktop='^6'
 
 # autostart
-xrdb -merge ~/.Xresources &
-xsetroot -cursor_name left_ptr &
 sxhkd &
 xss-lock -- slock &
-xset b off &
-xset s 300 &
-~/.fehbg &
 urxvtd &
-~/.bin/bat_check &
 picom --experimental-backends &
 dunst &
-~/.config/polybar/launch.sh &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
+~/.fehbg &
+~/.config/polybar/launch &
+~/.bin/bat n &
