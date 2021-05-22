@@ -43,6 +43,9 @@ let mapleader=" "
 nnoremap <leader>q :wq<CR>
 nnoremap <leader>w :w<CR>
 
+" toggle fzf
+nnoremap <leader><tab> :FZF<CR>
+
 " Save file as sudo when no sudo permissions
 cmap w!! w !sudo tee > /dev/null %
 
