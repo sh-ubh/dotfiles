@@ -65,6 +65,10 @@ bind() {
     ssh -L localhost\:$1\:localhost\:$1 $2
 }
 
+findstr() {
+    find . -type f -exec grep -H "$1" {} \;
+}
+
 # Enable colors and change prompt:
 autoload -U colors && colors
 fpath+=$HOME/.cache/zsh/pure

@@ -16,8 +16,6 @@ super + n
     urxvtc -e nvim ~/.cache/bujo/todo.md
 Print
     maim ~/screens/$(date +%d-%b-%y-%I:%M%p).png
-control + Print
-    maim -i $(xdotool getactivewindow) ~/screens/$(date +%d-%b-%y-%I:%M%p).png
 control + alt + Print
     maim -s ~/screens/$(date +%d-%b-%y-%I:%M%p).png
 super + shift + p
