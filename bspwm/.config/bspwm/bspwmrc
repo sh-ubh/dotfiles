@@ -28,4 +28,4 @@ dunst &
 /usr/lib/polkit-gnome/polkit-gnome-authentication-agent-1 &
 ~/.fehbg &
 ~/.config/polybar/launch &
-~/.bin/bat n &
+~/.bin/bat &

@@ -1,34 +1,15 @@
 #!/bin/sh
 
-pane() {
+while true
+do
     battery_level=$(cat /sys/class/power_supply/BAT*/capacity)
-    state=$(cat /sys/class/power_supply/BAT0/status)
-    if [ $state == "Charging" ]; then
-       echo -e +$battery_level%
-    else
-       echo -e $battery_level%
+    state=$(cat /sys/class/power_supply/BAT*/status)
+    if [ $battery_level -ge 90 ] && [ $state == "Charging" ]; then
+       notify-send 'Pull the plug!' $battery_level%
+    elif [ $battery_level -le 30 -a $battery_level -ge 20 ] && [ $state == "Discharging" ]; then
+       notify-send 'Plug me!' $battery_level%
+    elif [ $battery_level -le 20 ] && [ $state == "Discharging" ]; then
+       notify-send -u critical 'Plug me NOW!' $battery_level%
     fi
-}
-
-notifs() {
-    while true
-    do
-        battery_level=$(cat /sys/class/power_supply/BAT*/capacity)
-        state=$(cat /sys/class/power_supply/BAT*/status)
-        if [ $battery_level -ge 90 ] && [ $state == "Charging" ]; then
-           notify-send 'Pull the plug!' $battery_level%
-        elif [ $battery_level -le 30 -a $battery_level -ge 20 ] && [ $state == "Discharging" ]; then
-           notify-send 'Plug me!' $battery_level%
-        elif [ $battery_level -le 20 ] && [ $state == "Discharging" ]; then
-           notify-send -u critical 'Plug me NOW!' $battery_level%
-        fi
-        sleep 300
-    done
-}
-
-case "$1" in
-    n)
-        notifs;;
-    *)
-        pane;;
-esac
+    sleep 300
+done
