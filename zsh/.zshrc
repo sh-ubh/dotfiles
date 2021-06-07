@@ -69,6 +69,14 @@ findstr() {
     find . -type f -exec grep -H "$1" {} \;
 }
 
+revid() {
+    ffmpeg -i $1 -vf reverse -qp 16 $2
+}
+
+slowvid() {
+    ffmpeg -i $1 -vf "setpts=0.5*PTS" $2
+}
+
 # Enable colors and change prompt:
 autoload -U colors && colors
 fpath+=$HOME/.cache/zsh/pure

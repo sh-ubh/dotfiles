@@ -3,7 +3,7 @@ screenchange-reload = true
 
 [colors]
 ;background = ${xrdb:background:#060808}
-background = #171a1f
+background = #00171a1f
 background-alt = ${xrdb:color0:#000}
 ;foreground = ${xrdb:foreground:#c5c8c6}
 foreground = #b7b7b7
