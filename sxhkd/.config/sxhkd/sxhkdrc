@@ -13,8 +13,8 @@ control + alt + l
 super + shift + f
 	urxvtc -e ranger
 super + n
-    urxvtc -e nvim ~/.cache/bujo/todo.md
-Print
+    urxvtc -e nvim ~/.local/todo.md
+super + Print
     maim ~/screens/$(date +%d-%b-%y-%I:%M%p).png
 control + alt + Print
     maim -s ~/screens/$(date +%d-%b-%y-%I:%M%p).png
