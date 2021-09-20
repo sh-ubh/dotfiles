@@ -15,9 +15,9 @@ super + shift + f
 super + n
     urxvtc -e nvim ~/.local/todo.md
 super + Print
-    maim ~/screens/$(date +%d-%b-%y-%I:%M%p).png
+    maim ~/Pictures/$(date +%d-%b-%y-%I:%M%p).png
 control + alt + Print
-    maim -s ~/screens/$(date +%d-%b-%y-%I:%M%p).png
+    maim -s ~/Pictures/$(date +%d-%b-%y-%I:%M%p).png
 super + shift + p
     passmenu -i -fn "Input Mono:style=medium:size=9" -nb "#171a1f" -nf "#f3f4f5" -sb "#c6c8d1" -sf "#171a1f"
 super + Escape
