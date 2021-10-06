@@ -10,7 +10,7 @@ export EDITOR="$VISUAL"
 export PATH=$PATH:$HOME/.bin
 export TERM=rxvt-unicode-256color
 export XDG_CURRENT_DESKTOP=bspwm
-export MANPAGER="nvim -c 'set ft=man' - "
+export MANPAGER="nvim +Man!"
 export FZF_DEFAULT_COMMAND="find ."
 export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
 export FZF_DEFAULT_OPTS='-m --height 40% --layout=reverse --border'
