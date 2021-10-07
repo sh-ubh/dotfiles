@@ -82,7 +82,7 @@ autoload -U colors && colors
 fpath+=$HOME/.cache/zsh/pure
 autoload -U promptinit; promptinit
 prompt pure
-PURE_PROMPT_SYMBOL=$
+PURE_PROMPT_SYMBOL=❯
 # PS1="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%M %{$fg[magenta]%}%~%{$fg[red]%}]%{$reset_color%}$%b "
 
 # Basic auto/tab complete:
