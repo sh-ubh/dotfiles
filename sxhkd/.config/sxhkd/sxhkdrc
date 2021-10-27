@@ -1,5 +1,7 @@
 super + Return
 	urxvtc
+super + r
+    urxvtc
 super + shift + Return
 	bspc rule -a \* -o state=floating && urxvtc
 super + @space
