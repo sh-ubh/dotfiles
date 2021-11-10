@@ -14,10 +14,10 @@ option:
 
 case $1 in 
         -w)
-            ffmpeg -video_size 1920x1080 -framerate 25 -f x11grab -i :0.0 ~/screens/vids/record_$(date +%d-%b-%y-%I:%M%p).mkv
+            ffmpeg -video_size 1920x1080 -framerate 25 -f x11grab -i :0.0 ~/Pictures/vids/record_$(date +%d-%b-%y-%I:%M%p).mkv
             ;;
         -a)
-            ffmpeg -video_size 1920x1080 -framerate 25 -f x11grab -i :0.0 -f pulse -ac 2 -i default ~/screens/vids/record_$(date +%d-%b-%y-%I:%M%p).mkv
+            ffmpeg -video_size 1920x1080 -framerate 25 -f x11grab -i :0.0 -f pulse -ac 2 -i default ~/Pictures/vids/record_$(date +%d-%b-%y-%I:%M%p).mkv
             ;;
         *) usage
 esac
