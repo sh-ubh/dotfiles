@@ -33,7 +33,7 @@ module-margin-left = 1.5
 module-margin-right = 1.5
 font-0 = Input Mono:style=medium:size=10:antialias=true:autohint=true:lcdfilter=lcddefault:rgba=rgb
 font-1 = JetBrains Mono Nerd Font Mono:style=medium:size=10:antialias=true:autohint=true:lcdfilter=lcddefault:rgba=rgb
-modules-left = pulseaudio battery date time cmus
+modules-left = pulseaudio battery date time bt cmus
 modules-center = 
 modules-right = bspwm
 tray-position = right
@@ -181,3 +181,12 @@ bar-progress-width = 10
 bar-progress-indicator = |
 bar-progress-fill = ─
 bar-progress-empty = ─
+
+[module/bt]
+type = custom/script
+exec = ~/.config/polybar/bt.sh
+tail = true
+click-left = ~/.config/polybar/bt.sh --toggle &
+format = tooth <label>
+label = %output%
+label-foreground = #EEFFFF
