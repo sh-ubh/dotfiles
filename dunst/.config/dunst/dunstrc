@@ -1,12 +1,14 @@
 [global]
     # Make the width 3740 (3840 - 100), have 50 left margin and 95 above
-    geometry = "350x5-10+25"
+    #geometry = "350x5-10+25"
+    width = 330
+    height = 60
+    offset = 10x35
     monitor = 0
     follow = keyboard
     indicate_hidden = yes
     shrink = yes
     transparency = 0
-    notification_height = 0
     # Show multiple notifications in the same box
     separator_height = 2
     separator_color = frame
@@ -27,7 +29,7 @@
     idle_threshold = 120
 
     # Font and typography settings
-    icon_path = /home/x/.icons/Blue-Maia/status/:/home/x/.icons/Blue-Maia/status/devices/:/home/x/.icons/Blue-Maia/status/apps
+    # icon_path = /home/x/.icons/Blue-Maia/status/:/home/x/.icons/Blue-Maia/status/devices/:/home/x/.icons/Blue-Maia/status/apps
     font = Input Mono 10
     alignment = center
     show_age_threshold = 60
@@ -48,7 +50,7 @@
 
     title = Dunst
     class = Dunst
-    startup_notification = false
+    # startup_notification = false
     force_xinerama = false
     word_wrap = yes
 
@@ -58,12 +60,6 @@
 
     # Allow some HTML tags like <i> and <u> in notifications
     markup = full
-
-# These are the keybindings used to control dunst notifications
-[shortcuts]
-    close = ctrl+space
-    close_all = ctrl+shift+space
-    history = ctrl+grave
 
 # Set the background and foreground (text) color for all notifications
 [urgency_low]

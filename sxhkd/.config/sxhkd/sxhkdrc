@@ -47,6 +47,11 @@ XF86MonBrightnessDown
 XF86MonBrightnessUp
     sudo ~/.bin/light u
 
+# dunst
+ctrl + space
+    dunstctl close
+ctrl + alt + space
+    dunstctl close-all
 
 # bspwm hotkeys
 # quit/restart bspwm
