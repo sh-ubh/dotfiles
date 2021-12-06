@@ -17,9 +17,9 @@ super + shift + f
 super + n
     urxvtc -e nvim ~/.local/todo.md
 super + Print
-    maim | tee ~/Pictures/$(date +%d-%b-%y-%I:%M%p).png | xclip -selection clipboard -t image/png
+    maim | tee ~/Pictures/$(date +%d-%b-%y-%I:%M:%S%p).png | xclip -selection clipboard -t image/png
 control + alt + Print
-    maim -s | tee ~/Pictures/$(date +%d-%b-%y-%I:%M%p).png | xclip -selection clipboard -t image/png
+    maim -s | tee ~/Pictures/$(date +%d-%b-%y-%I:%M:%S%p).png | xclip -selection clipboard -t image/png
 super + shift + p
     passmenu -i -fn "Input Mono:style=medium:size=9" -nb "#171a1f" -nf "#f3f4f5" -sb "#c6c8d1" -sf "#171a1f"
 super + Escape
