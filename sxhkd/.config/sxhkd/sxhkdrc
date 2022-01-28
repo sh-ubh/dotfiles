@@ -4,6 +4,8 @@ super + r
     urxvtc
 super + shift + Return
 	bspc rule -a \* -o state=floating && urxvtc
+super + v
+    bspc node @parent -R 90
 super + @space
 	dmenu_run -i -fn "Input Mono:style=medium:size=9" -nb "#171a1f" -nf "#f3f4f5" -sb "#c6c8d1" -sf "#171a1f"
 super + x

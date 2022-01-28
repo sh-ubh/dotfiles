@@ -164,7 +164,8 @@ let g:coc_global_extensions = [
   \ 'coc-clangd',
   \ 'coc-python',
   \ 'coc-sh',
-  \ 'coc-vimtex'
+  \ 'coc-vimtex',
+  \ 'coc-go'
   \ ]
 
 " From Coc Readme
