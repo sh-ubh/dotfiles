@@ -7,7 +7,7 @@ setopt appendhistory hist_ignore_all_dups hist_ignore_space
 #exports
 export VISUAL=nvim
 export EDITOR="$VISUAL"
-export PATH=$PATH:$HOME/.bin
+export PATH=$PATH:$HOME/.bin:$HOME/.local/bin
 export TERM=rxvt-unicode-256color
 export XDG_CURRENT_DESKTOP=bspwm
 export MANPAGER="nvim +Man!"
