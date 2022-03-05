@@ -12,6 +12,7 @@ Plug 'godlygeek/tabular'
 Plug 'plasticboy/vim-markdown'
 Plug 'vuciv/vim-bujo'
 Plug 'lervag/vimtex'
+Plug 'metakirby5/codi.vim'
 call plug#end() 
 
 " sets
