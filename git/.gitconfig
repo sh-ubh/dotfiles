@@ -1,3 +1,5 @@
 [user]
 	email = pryr@pryr.xyz
 	name = Shubham Saini
+[init]
+	defaultBranch = master
