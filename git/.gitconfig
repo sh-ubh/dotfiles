@@ -1,5 +1,9 @@
 [user]
 	email = pryr@pryr.xyz
 	name = Shubham Saini
+	signingkey = E0404DDE4BCF9DB5
+[commit]
+    gpgsign = true
+    verbose = true
 [init]
 	defaultBranch = master
