@@ -1,0 +1,53 @@
+# Mako notification daemon configuration
+
+# ── Appearance ────────────────────────────────────────────────────────────────
+width=380
+height=110
+margin=10
+padding=15
+
+font=JetBrainsMono Nerd Font 11
+border-radius=10
+border-size=2
+
+background-color=#111111ee
+text-color=#dedede
+border-color=#96bddbcc
+
+# ── Icons ─────────────────────────────────────────────────────────────────────
+icons=1
+max-icon-size=48
+
+# ── Behavior ──────────────────────────────────────────────────────────────────
+default-timeout=5000
+ignore-timeout=0
+sort=-time
+
+layer=overlay
+anchor=top-right
+
+# Play sound on notification
+on-notify=exec paplay /usr/share/sounds/freedesktop/stereo/message-new-instant.oga
+
+# Limit stacked notifications
+max-visible=5
+
+# ── Urgency: Low ──────────────────────────────────────────────────────────────
+[urgency=low]
+background-color=#111111cc
+border-color=#919191cc
+text-color=#bdbdbd
+default-timeout=3000
+
+# ── Urgency: Normal (default) ─────────────────────────────────────────────────
+[urgency=normal]
+background-color=#111111ee
+border-color=#96bddbcc
+
+# ── Urgency: High (critical) ────────────────────────────────────────────────────
+[urgency=high]
+background-color=#111111ee
+border-color=#e17373cc
+text-color=#e17373
+on-notify=exec paplay /usr/share/sounds/freedesktop/stereo/dialog-error.oga
+default-timeout=0

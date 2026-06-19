@@ -1,0 +1,76 @@
+/* ── Custom theme — matches kitty/waybar palette ─────────────────────────── */
+
+* {
+    font-family: "JetBrainsMono Nerd Font", "Noto Sans", monospace;
+    font-size: 14px;
+}
+
+#window {
+    background-color: rgba(17, 17, 17, 0.96); /* background */
+    border: 1.5px solid rgba(255, 255, 255, 0.12);
+    border-radius: 12px;
+    box-shadow: 0px 4px 16px rgba(0, 0, 0, 0.6);
+}
+
+#outer-box {
+    margin: 12px;
+    background-color: transparent;
+}
+
+#input {
+    background-color: #1c1c1c; /* surface0 */
+    color: #dedede; /* text */
+    border: 1.5px solid #2a2a2a; /* surface1 */
+    border-radius: 8px;
+    padding: 8px 12px;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+#input:focus {
+    border-color: #96bddb; /* blue */
+    outline: none;
+}
+
+#inner-box {
+    background-color: transparent;
+}
+
+#scroll {
+    background-color: transparent;
+    border: none;
+    margin: 0;
+}
+
+#entry {
+    background-color: transparent;
+    border-radius: 8px;
+    padding: 6px 10px;
+    margin: 1px 0;
+    color: #bdbdbd; /* subtext */
+    transition: all 0.15s ease;
+}
+
+#entry:selected {
+    background-color: rgba(150, 189, 219, 0.15); /* blue tint */
+    border: 1px solid rgba(150, 189, 219, 0.3);
+}
+
+#text {
+    color: #bdbdbd; /* subtext */
+    padding: 0 4px;
+    background-color: transparent;
+}
+
+#text:selected {
+    color: #dedede; /* text — brighter when selected */
+}
+
+#img {
+    background-color: transparent;
+    padding: 4px 8px 4px 4px;
+}
+
+#img:selected {
+    background-color: transparent;
+}

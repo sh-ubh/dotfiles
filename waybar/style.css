@@ -1,0 +1,203 @@
+/* ── Custom theme — matches kitty palette ────────────────────────────────── */
+@define-color background #111111;
+@define-color foreground #dedede;
+@define-color base       #111111;
+@define-color mantle     #0d0d0d;
+@define-color surface0   #1c1c1c;
+@define-color surface1   #2a2a2a;
+@define-color overlay0   #919191;
+@define-color text       #dedede;
+@define-color subtext    #bdbdbd;
+@define-color blue       #96bddb;
+@define-color lavender   #b1d7f6;
+@define-color mauve      #e1c0fa;
+@define-color pink       #e17373;
+@define-color green      #94b978;
+@define-color yellow     #ffb97b;
+@define-color peach      #ffa460;
+@define-color teal       #00988e;
+
+* {
+    border: none;
+    font-family: "JetBrainsMono Nerd Font", "Noto Sans", monospace;
+    font-size: 12px;
+    min-height: 0;
+}
+
+tooltip {
+    opacity: 1;
+}
+
+window#waybar {
+    background-color: transparent;
+    color: @foreground;
+}
+
+window#waybar.empty #window {
+    background: transparent;
+    color: transparent;
+    border: none;
+    padding: 0;
+    margin: 0;
+}
+
+#waybar > box {
+    border: 1.5px solid rgba(255, 255, 255, 0.25);
+    border-radius: 10px;
+    margin: 0px 8px 4px 8px;
+    background-color: @background;
+    box-shadow: 1px 1px 3px 1px #101010;
+    transition-property: background-color;
+    transition-duration: 0.5s;
+}
+
+.modules-left {
+    font-size: 12px;
+    margin-left: 4px;
+}
+
+.modules-right {
+    font-size: 12px;
+    margin-right: 4px;
+}
+
+.modules-center {
+    font-size: 12px;
+}
+
+#custom-launcher {
+    font-size: 16px;
+}
+
+#workspaces {
+    padding: 0;
+    margin: 0;
+}
+
+#workspaces button {
+    all: initial;
+    font-size: 14px;
+    min-width: 0;
+    min-height: 0;
+    padding: 0 6px;
+    margin: 0px;
+    opacity: 0.6;
+    color: @foreground;
+}
+
+#workspaces button.active {
+    color: @foreground;
+    opacity: 1;
+    padding: 0 6px;
+    margin: 0px;
+    font-size: 18px;
+    transition: all 0.15s ease-in-out;
+}
+
+#workspaces button.empty.active {
+    color: @foreground;
+    opacity: 1;
+    font-size: 16px;
+    transition: all 0.15s ease-in-out;
+}
+
+#workspaces button.empty {
+    opacity: 0.3;
+    font-size: 14px;
+}
+
+#workspaces button.urgent {
+    color: @pink;
+    opacity: 1;
+}
+
+#power-profiles-daemon,
+#power-profiles-daemon.performance,
+#power-profiles-daemon.balanced,
+#power-profiles-daemon.power-saver,
+#window,
+#tray,
+#group-tray-expander,
+#cpu,
+#clock,
+#mpris,
+#battery,
+#network,
+#bluetooth,
+#wireplumber,
+#custom-launcher,
+#backlight,
+#idle_inhibitor,
+#custom-updatespacman,
+#custom-expand-icon {
+    min-width: 12px;
+    margin: 0px 3px 0px 3px;
+    padding: 0 4px;
+}
+
+tooltip {
+    padding: 4px;
+    background: @background;
+    font-size: 12px;
+    border: 1px solid alpha(@foreground, 0.8);
+    border-radius: 8px;
+    box-shadow: 1px 1px 3px 1px #131313;
+    font-weight: lighter;
+}
+
+tooltip label {
+    color: @foreground;
+    font-weight: normal;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+#tray-expander {
+    margin-left: 0px;
+}
+
+#custom-separator {
+    opacity: 0.2;
+    padding-top: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+}
+
+#mpris {
+    color: @foreground;
+    font-size: 12px;
+    animation-name: blink;
+    animation-duration: 3s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    to {
+        color: #4a4a4a;
+    }
+}
+
+#battery.warning {
+    color: #c95d0f;
+}
+
+@keyframes blink-critical {
+    to {
+        background-color: transparent;
+        color: #f53c3c;
+    }
+}
+
+#battery.critical:not(.charging) {
+    background-color: transparent;
+    color: #e6d8ba;
+    animation-name: blink-critical;
+    animation-duration: 0.5s;
+    animation-timing-function: steps(12);
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
